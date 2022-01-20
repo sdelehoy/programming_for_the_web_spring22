@@ -1,12 +1,17 @@
 function setup() {
-  createCanvas(400, 400);
+  createCanvas(windowWidth, windowHeight);
+  background('purple');
 }
 
 function draw() {
   if (mouseIsPressed) {
-    fill(0);
+    fill('orange');
+    noStroke();
+
   } else {
-    fill(255);
+    noFill();
+    noStroke();
+    blendMode(HARD_LIGHT);
   }
-  ellipse(mouseX, mouseY, 80, 80);
+  circle(mouseX, mouseY, 80);
 }
