@@ -2,22 +2,22 @@ let grid = undefined;
 
 function setup() {
   createCanvas(1000,800);
-  background("#4ECDFF");
   grid = loadImage("images/100px_grid.png");
 }
 
 function draw() {
-  //ground
-  noStroke();
+  //background
+  strokeWeight(5);
   fill(250);
-  rect(0,532,1000,268);
+  rect(3,532,994,265);
+  fill("#4ECDFF");
+  rect(3,3,994,535);
 
-  background(grid);
+  //background(grid);
   
   //snow creature
   fill(250);
   stroke(0);
-  strokeWeight(5);
 
   //body
   circle(300, 550, 300);
