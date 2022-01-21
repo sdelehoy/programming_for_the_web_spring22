@@ -23,10 +23,21 @@ function draw() {
   circle(300, 550, 300);
   circle(300, 325, 250);
 
+  //buttons
+  circle(300, 275, 5);
+  circle(300, 325, 5);
+  circle(300, 375, 5);
+
   //head
   circle(600, 600, 200);
 
-  //face
+  //eyes
   circle(575, 575, 30);
   circle(625, 575, 30);
+  circle(568, 569, 5);
+  circle(618, 569, 5);
+
+  //nose
+  fill("orange");
+  triangle(600, 600, 550, 610, 600, 625);
 }
