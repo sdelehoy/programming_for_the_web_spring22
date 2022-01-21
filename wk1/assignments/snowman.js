@@ -11,8 +11,8 @@ function draw() {
   
   //ground
   noStroke();
-  fill(255);
-  rect(0,532,999,268);
+  fill(250);
+  rect(0,532,1000,268);
   
   //snow creature
   fill("#f1f1f1");
