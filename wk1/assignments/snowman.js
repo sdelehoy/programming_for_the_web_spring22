@@ -7,14 +7,26 @@ function setup() {
 }
 
 function draw() {
-  background(grid);
-  
   //ground
   noStroke();
   fill(250);
   rect(0,532,1000,268);
+
+  background(grid);
   
   //snow creature
-  fill("#f1f1f1");
-  stroke(100, 250, 100);
+  fill(250);
+  stroke(0);
+  strokeWeight(5);
+
+  //body
+  circle(300, 550, 300);
+  circle(300, 325, 250);
+
+  //head
+  circle(600, 600, 200);
+
+  //face
+  circle(575, 575, 30);
+  circle(625, 575, 30);
 }
