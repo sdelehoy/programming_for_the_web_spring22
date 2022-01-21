@@ -8,5 +8,5 @@ function setup() {
 
 function draw() {
   background(grid);
-  FileList("#f1f1f1");
+  fill("#f1f1f1");
 }
