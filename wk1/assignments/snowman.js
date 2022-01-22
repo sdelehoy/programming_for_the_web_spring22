@@ -8,12 +8,12 @@ function setup() {
 function draw() {
   //background
   strokeWeight(5);
-  fill(250);
-  rect(3,532,994,265);
   fill("#4ECDFF");
   rect(3,3,994,535);
+  fill(250);
+  rect(3,532,994,265);
 
-  //background(grid);
+  background(grid);
   
   //snow creature
   fill(250);
@@ -37,7 +37,13 @@ function draw() {
   circle(568, 569, 5);
   circle(618, 569, 5);
 
+  //mouth
+  arc(600,660,40,40,180,360);
+
   //nose
   fill("orange");
   triangle(600, 600, 550, 610, 600, 625);
+
+  //arms
+  line(183,275,100,200);
 }
