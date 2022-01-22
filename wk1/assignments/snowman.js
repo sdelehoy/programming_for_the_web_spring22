@@ -13,7 +13,7 @@ function draw() {
   fill(250);
   rect(3,532,994,265);
 
-  //background(grid);
+  background(grid);
   
   //snow creature
   fill(250);
@@ -56,5 +56,14 @@ function draw() {
   circle(300, 275, 5);
   circle(300, 325, 5);
   circle(300, 375, 5);
+
+  //bird
+  fill(0);
+
+  //body
+  arc(610,450,130,60,0.5,PI+QUARTER_PI, CHORD);
+  
+  //head
+  circle(555,415,40);
 }
 
