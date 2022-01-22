@@ -23,19 +23,12 @@ function draw() {
   circle(300, 550, 300);
   circle(300, 325, 250);
 
-  //buttons
-  circle(300, 275, 5);
-  circle(300, 325, 5);
-  circle(300, 375, 5);
-
   //head
   circle(600, 600, 200);
 
   //eyes
   circle(575, 575, 30);
   circle(625, 575, 30);
-  circle(568, 569, 5);
-  circle(618, 569, 5);
 
   //mouth
   arc(600,660,40,40,180,360);
@@ -53,4 +46,15 @@ function draw() {
   line(418,275,500,200);
   line(500,200,400,100);
   line(400,150,450,150);
+
+  //eye pupils
+  strokeWeight(10);
+  circle(568, 569, 5);
+  circle(618, 569, 5);
+
+  //buttons
+  circle(300, 275, 5);
+  circle(300, 325, 5);
+  circle(300, 375, 5);
 }
+
