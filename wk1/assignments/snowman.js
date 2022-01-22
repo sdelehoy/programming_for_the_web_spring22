@@ -37,6 +37,9 @@ function draw() {
   fill("orange");
   triangle(600, 600, 550, 610, 600, 625);
 
+  //bird beak
+  triangle(535, 410, 510, 415, 535, 425);
+
   //left arm
   line(183,275,100,200);
   line(100,200,200,100);
@@ -46,6 +49,10 @@ function draw() {
   line(418,275,500,200);
   line(500,200,400,100);
   line(400,150,450,150);
+
+  //bird legs
+  line(610,475,610,500);
+  line(600,475,600,500);
 
   //eye pupils
   strokeWeight(10);
@@ -60,10 +67,10 @@ function draw() {
   //bird
   fill(0);
 
-  //body
+  //bird body
   arc(610,450,130,60,0.5,PI+QUARTER_PI, CHORD);
   
-  //head
+  //bird head
   circle(555,415,40);
 }
 
