@@ -13,7 +13,7 @@ function draw() {
   fill(250);
   rect(3,532,994,265);
 
-  background(grid);
+  //background(grid);
   
   //snow creature
   fill(250);
