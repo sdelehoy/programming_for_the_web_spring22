@@ -5,7 +5,7 @@ let bird = window.prompt('What color would you like the bird to be? Please type 
 
 function setup() {
   createCanvas(1000,800);
-  grid = loadImage("images/100px_grid.png");
+  grid = loadImage("../images/100px_grid.png");
 }
 
 function draw() {
@@ -17,7 +17,7 @@ function draw() {
   fill(snow);
   rect(3,532,994,265);
 
-  background(grid);
+  //background(grid);
   
   //snow creature
   fill(snow);
