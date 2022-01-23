@@ -1,5 +1,5 @@
 let grid = undefined;
-//let snow = window.prompt('What color would you like the snow to be? Please type a basic color in lowercase', 'white');
+let snow = window.prompt('What color would you like the snow to be? Please type a basic color in lowercase', 'white');
 let sky = window.prompt('What color would you like the sky to be? Please type a basic color in lowercase', 'skyblue');
 let bird = window.prompt('What color would you like the bird to be? Please type a basic color in lowercase', 'red');
 
@@ -14,13 +14,13 @@ function draw() {
   strokeWeight(5);
   fill(sky);
   rect(3,3,994,535);
-  fill(250);
+  fill(snow);
   rect(3,532,994,265);
 
   background(grid);
   
   //snow creature
-  fill(250);
+  fill(snow);
 
   //body
   circle(300, 550, 300);
