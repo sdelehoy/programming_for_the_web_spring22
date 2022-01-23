@@ -1,7 +1,5 @@
 let grid = undefined;
 let snow = window.prompt('What color would you like the snow to be? Please type a basic color in lowercase', 'white');
-let sky = window.prompt('What color would you like the sky to be? Please type a basic color in lowercase', 'skyblue');
-let bird = window.prompt('What color would you like the bird to be? Please type a basic color in lowercase', 'red');
 
 function setup() {
   createCanvas(1000,800);
@@ -10,17 +8,14 @@ function setup() {
 
 function draw() {
   //background
-  stroke(0);
-  strokeWeight(5);
-  fill(sky);
-  rect(3,3,994,535);
-  fill(snow);
-  rect(3,532,994,265);
+  background(200);
 
   //background(grid);
   
   //snow creature
   fill(snow);
+  stroke(0);
+  strokeWeight(5);
 
   //body
   circle(300, 550, 300);
@@ -59,26 +54,5 @@ function draw() {
   circle(300, 275, 5);
   circle(300, 325, 5);
   circle(300, 375, 5);
-
-  //bird
-  fill(bird);
-  strokeWeight(5);
-
-  //bird body
-  arc(610,450,130,60,0.5,PI+QUARTER_PI, CHORD);
-  
-  //bird head
-  circle(555,415,40);
-
-  //bird eye
-  circle(549,411,4);
-
-  //bird legs
-  line(605,480,605,500);
-  line(595,480,595,500);
-
-  //bird beak
-  fill("orange");
-  triangle(535, 410, 510, 415, 535, 425);
 }
 
