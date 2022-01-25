@@ -26,4 +26,4 @@ const response = window.prompt('I have 3 games in my collection. Pick a number b
 
 const arrNum = response - 1;
 
-window.alert('You selected ' + games[arrNum].title + ' which is a ' + gmaes[arrNum].type + '. Up to ' + games[arrNum].numberOfPlayers + ' people can play. It is rated as ' + games[arrNum].rating + ' out of 10.' + games[arrNum].shortDescription);
+window.alert('You selected ' + games[arrNum].title + ' which is a ' + games[arrNum].type + '. Up to ' + games[arrNum].numberOfPlayers + ' people can play. It is rated as ' + games[arrNum].rating + ' out of 10. ' + games[arrNum].shortDescription);
