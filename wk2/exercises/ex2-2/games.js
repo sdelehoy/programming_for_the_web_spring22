@@ -21,3 +21,5 @@ const games = [
     shortDescription:
   }
 ];
+const num = window.prompt('I have 3 games in my collection. Pick a number between 1 and 3 and I will tell you about that game.');
+window.alert('You selected ' + ' which is a ' + '. Up to ' + ' people can play. It is rated as ' + ' out of 10.' + );
