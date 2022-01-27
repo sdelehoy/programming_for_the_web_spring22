@@ -1,4 +1,4 @@
-questions [
+let questArr = [
   {
     question: 'In what year was the War of 1812?',
     answer: '1812'
@@ -21,4 +21,6 @@ questions [
   }
 ];
 
-window.prompt();
+let randomNum = Math.round(Math.random() * (questArr.length - 1)); 
+
+let response = window.prompt(questArr[randomNum].question);
