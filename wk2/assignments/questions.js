@@ -1,4 +1,4 @@
-let questArr = [
+const questArr = [
   {
     question: 'In what year was the War of 1812?',
     answer: '1812'
@@ -21,6 +21,10 @@ let questArr = [
   }
 ];
 
-let randomNum = Math.round(Math.random() * (questArr.length - 1)); 
+const randomNum = Math.round(Math.random() * (questArr.length - 1)); 
 
-let response = window.prompt(questArr[randomNum].question);
+const promptResponse = window.prompt(questArr[randomNum].question);
+
+const alertString = ''.concat('You answered ', promptResponse, '. The correct answer was ', questArr[randomNum].answer, '.');
+
+window.alert(alertString);
