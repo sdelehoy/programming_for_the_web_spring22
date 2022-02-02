@@ -23,7 +23,7 @@ function createTile() {
   stroke('magenta');
   strokeWeight(2);
   line(42, 200, 100, 100);
-  line(100, 100, 1200, 100);
+  line(100, 100, 200, 100);
   line(59, 29, 100, 100);
   
   stroke('red');

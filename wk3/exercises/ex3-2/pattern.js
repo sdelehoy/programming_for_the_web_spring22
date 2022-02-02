@@ -1,5 +1,5 @@
 function setup() {
-  createCanvas(200, 200);
+  createCanvas(600, 600);
 }
 
 function polygon(x, y, radius, npoints) {
@@ -14,7 +14,7 @@ function polygon(x, y, radius, npoints) {
 }
 
 function createTile() {
-  translate(0, 0);
+  //translate(originX, originY);
   fill('purple');
   noStroke();
   rect(0, 0, 200, 200);
@@ -23,7 +23,7 @@ function createTile() {
   stroke('magenta');
   strokeWeight(2);
   line(42, 200, 100, 100);
-  line(100, 100, 1200, 100);
+  line(100, 100, 200, 100);
   line(59, 29, 100, 100);
   
   stroke('red');
