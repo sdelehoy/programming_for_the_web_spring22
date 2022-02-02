@@ -26,7 +26,7 @@ function createTile() {
   line(100, 100, 1200, 100);
   line(59, 29, 100, 100);
   
-  noStroke();
+  stroke('red');
   fill('orange');
   circle(100, 100, 100);
   
