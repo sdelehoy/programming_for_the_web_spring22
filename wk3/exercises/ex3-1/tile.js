@@ -20,12 +20,12 @@ function createTile() {
   rect(0, 0, 200, 200);
   
   noStroke();
-  fill('rgba(0, 255, 255, 0.4)');
+  fill('rgba(0, 255, 255, 0.3)');
   beginShape();
   vertex(59, 26);
   vertex(142, 26);
   vertex(185, 100);
-  vertex(142, 174);
+  vertex(100, 100);
   vertex(59, 174);
   vertex(16, 100);
   
@@ -44,12 +44,14 @@ function createTile() {
 
   noStroke();
   fill('rgba(0, 255, 255, 0.4)');
-  //beginShape();
+  beginShape();
   vertex(16, 100);
   vertex(100, 100);
+  vertex(142, 26);
+  vertex(185, 100);
   vertex(142, 174);
   vertex(59, 174);
-  //endShape();
+  endShape();
 
   noFill();
   stroke('magenta');
