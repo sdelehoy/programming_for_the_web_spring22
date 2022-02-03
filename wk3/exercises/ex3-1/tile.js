@@ -1,5 +1,6 @@
 function setup() {
   createCanvas(200, 200);
+  noLoop();
 }
 
 function polygon(x, y, radius, npoints) {
