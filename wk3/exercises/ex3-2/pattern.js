@@ -26,8 +26,8 @@ function polygon(x, y, radius, npoints) {
   endShape(CLOSE);
 }
 
-function createTile() {
-  fill('purple');
+function createTile(bgColor, lineColor, circleColor) {
+  fill(bgColor);
   noStroke();
   rect(0, 0, 200, 200);
   
@@ -44,14 +44,14 @@ function createTile() {
   endShape();
   
   noFill();
-  stroke('magenta');
+  stroke(lineColor);
   strokeWeight(2);
   line(42, 200, 100, 100);
   line(100, 100, 200, 100);
   line(42, 0, 100, 100);
   
   stroke('red');
-  fill('orange');
+  fill(circleColor);
   circle(100, 100, 100);
 
   noStroke();
@@ -66,7 +66,7 @@ function createTile() {
   endShape();
 
   noFill();
-  stroke('magenta');
+  stroke(lineColor);
   strokeWeight(2);
   polygon(100, 100, 85, 6);
   
@@ -78,6 +78,6 @@ function createTile() {
 function draw() {
   for (let i = 0; i < coordinates.length; i++) {
       translate(coordinates[i].offsetX, coordinates[i].offsetY);
-      createTile();
+      createTile('purple', 'magenta', 'orange');
   }
 }
