@@ -1,3 +1,15 @@
+let coordinates = [
+  {offsetX: 0, offsetY: 0},
+  {offsetX: 0, offsetY: 200},
+  {offsetX: 0, offsetY: 200},
+  {offsetX: 200, offsetY: 0},
+  {offsetX: 0, offsetY: -200},
+  {offsetX: 0, offsetY: -200},
+  {offsetX: 200, offsetY: 0},
+  {offsetX: 0, offsetY: 200},
+  {offsetX: 0, offsetY: 200},
+]
+
 function setup() {
   createCanvas(600, 600);
   noLoop();
@@ -15,7 +27,6 @@ function polygon(x, y, radius, npoints) {
 }
 
 function createTile() {
-  translate(0, 0);
   fill('purple');
   noStroke();
   rect(0, 0, 200, 200);
@@ -65,5 +76,8 @@ function createTile() {
 }
 
 function draw() {
-  createTile();
+  for (let i = 0; i < coordinates.length; i++) {
+      translate(coordinates[i].offsetX, coordinates[i].offsetY);
+      createTile();
+  }
 }
