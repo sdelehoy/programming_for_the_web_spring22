@@ -21,10 +21,16 @@ const questArr = [
   }
 ];
 
-const randomNum = Math.round(Math.random() * (questArr.length - 1)); 
+function setup() {
+  createCanvas(windowWidth, windowHeight);
+  background(240);
+  let h1 = createElement(h1, 'Bird Quiz');
+}
+
+/* const randomNum = Math.round(Math.random() * (questArr.length - 1)); 
 
 const promptResponse = window.prompt(questArr[randomNum].question);
 
 const alertString = ''.concat('You answered ', promptResponse, '. The correct answer is ', questArr[randomNum].answer, '.');
 
-window.alert(alertString);
+window.alert(alertString); */
