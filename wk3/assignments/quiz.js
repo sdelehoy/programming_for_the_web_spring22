@@ -24,7 +24,8 @@ const questArr = [
 function setup() {
   createCanvas(windowWidth, windowHeight);
   background(240);
-  let h1 = createElement(h1, 'Bird Quiz');
+  let h1 = createElement('h1', 'Backyard Bird Quiz');
+  h1.position(width/2 - 140, 200);
 }
 
 /* const randomNum = Math.round(Math.random() * (questArr.length - 1)); 
