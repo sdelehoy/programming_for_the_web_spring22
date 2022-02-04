@@ -7,32 +7,32 @@ const questArr = [
   {
     question: 'Is this an American Robin or an American Goldfinch',
     answer: 'American Goldfinch',
-    image: 'images/black-capped_chickadee-720px.jpg'
+    image: 'images/american_goldfinch-720px.jpg'
   },
   {
     question: 'Is this an American Robin or a House Sparrow?',
     answer: 'American Robin',
-    image: 'images/black-capped_chickadee-720px.jpg'
+    image: 'images/american_robin-720px.jpg'
   },
   {
     question: 'Is this a House Finch or a House Sparrow?',
     answer: 'House Sparrow',
-    image: 'images/black-capped_chickadee-720px.jpg'
+    image: 'images/house_sparrow-720px.jpg'
   },
   {
     question: 'Is this a House Finch or a Downy Woodpecker?',
     answer: 'House Finch',
-    image: 'images/black-capped_chickadee-720px.jpg'
+    image: 'images/house_finch-720px.jpg'
   },
   {
     question: 'Is this a Blue Jay or a Downy Woodpecker?',
     answer: 'Downy Woodpecker',
-    image: 'images/black-capped_chickadee-720px.jpg'
+    image: 'images/downy_woodpecker-720px.jpg'
   },
   {
     question: 'Is this a Blue Jay or a Black-capped Chickadee?',
     answer: 'Blue Jay',
-    image: 'images/black-capped_chickadee-720px.jpg'
+    image: 'images/blue_jay-720px.jpg'
   }
 ];
 
@@ -68,7 +68,7 @@ function setup() {
 
 function draw() {
   background(240);
-  image(img, 200, 325);
+  image(img, 200, 300);
   textSize(24);
   text(currentQuestion, 200, 175);
 }
