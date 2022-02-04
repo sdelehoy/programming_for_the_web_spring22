@@ -21,9 +21,19 @@ const questArr = [
   }
 ];
 
+let nextQuestion = function() {
+  if (questArr.length > 0) {
+    const randomIndex = Math.round(Math.random() * (questArr.length - 1));
+    return questArr[randomIndex];
+  }else {
+    alert('You won!');
+  }
+}
+
+let currentQuestion = nextQuestion().question;
+
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  background(240);
   let h1 = createElement('h1', 'Backyard Bird Quiz');
   h1.position(300, 100);
   let answerInput = createInput('');
@@ -35,13 +45,7 @@ function setup() {
 }
 
 function draw() {
-
+  background(240);
+  textSize(24);
+  text(currentQuestion, 300, 270);
 }
-
-/* const randomNum = Math.round(Math.random() * (questArr.length - 1)); 
-
-const promptResponse = window.prompt(questArr[randomNum].question);
-
-const alertString = ''.concat('You answered ', promptResponse, '. The correct answer is ', questArr[randomNum].answer, '.');
-
-window.alert(alertString); */
