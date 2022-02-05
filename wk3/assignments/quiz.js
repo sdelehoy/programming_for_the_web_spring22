@@ -1,37 +1,37 @@
 let questArr = [
   {
     question: 'Is this a Black-capped Chickadee or an American Goldfinch?',
-    answer: 'Black-capped Chickadee',
+    answer: 'black-capped chickadee',
     image: 'images/black-capped_chickadee-720px.jpg'
   },
   {
     question: 'Is this an American Robin or an American Goldfinch',
-    answer: 'American Goldfinch',
+    answer: 'american goldfinch',
     image: 'images/american_goldfinch-720px.jpg'
   },
   {
     question: 'Is this an American Robin or a House Sparrow?',
-    answer: 'American Robin',
+    answer: 'american robin',
     image: 'images/american_robin-720px.jpg'
   },
   {
     question: 'Is this a House Finch or a House Sparrow?',
-    answer: 'House Sparrow',
+    answer: 'house sparrow',
     image: 'images/house_sparrow-720px.jpg'
   },
   {
     question: 'Is this a House Finch or a Downy Woodpecker?',
-    answer: 'House Finch',
+    answer: 'house finch',
     image: 'images/house_finch-720px.jpg'
   },
   {
     question: 'Is this a Blue Jay or a Downy Woodpecker?',
-    answer: 'Downy Woodpecker',
+    answer: 'downy woodpecker',
     image: 'images/downy_woodpecker-720px.jpg'
   },
   {
     question: 'Is this a Blue Jay or a Black-capped Chickadee?',
-    answer: 'Blue Jay',
+    answer: 'blue jay',
     image: 'images/blue_jay-720px.jpg'
   }
 ];
@@ -57,7 +57,7 @@ function nextQuestion() {
 }
 
 function checkAnswer() {
-  if (currentAnswer === answerInput.value()) {
+  if (currentAnswer === answerInput.value().toLowerCase()) {
     questArr = questArr.filter(arr => { 
       return currentAnswer !== arr.answer
     });
