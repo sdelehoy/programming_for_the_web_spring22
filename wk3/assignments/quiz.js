@@ -46,6 +46,8 @@ let currentIndex = nextQuestion();
 let currentQuestion = currentIndex.question;
 let currentAnswer = currentIndex.answer;
 let currentImage = currentIndex.image;
+let numCorrect = 0;
+let numIncorrect = 0;
 
 function nextQuestion() {
   if (questArr.length > 0) {
@@ -63,9 +65,11 @@ function checkAnswer() {
     });
     response = 'Correct!';
     responseColor = 'green';
+    numCorrect++;
   } else {
       response = 'Sorry, that was not correct.';
       responseColor = 'red';
+      numIncorrect++;
   }
   answerInput.value('');
   currentIndex = nextQuestion();
@@ -106,4 +110,9 @@ function draw() {
   textSize(18);
   text(response, 465, 217);
   image(img, 175, 300);
+  fill('black');
+  textSize(12);
+  text('Pictures from wwww.allaboutbirds.org.', 200, 865);
+  textSize(18);
+  text('Correct: ' + numCorrect + '     Incorrect: ' + numIncorrect, 465, 265);
 }
