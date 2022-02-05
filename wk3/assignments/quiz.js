@@ -37,7 +37,7 @@ let questArr = [
 ];
 
 let response;
-let responseColor;
+let responseColor = 'green';
 let h1;
 let answerInput;
 let submitAnswerBtn;
@@ -67,6 +67,10 @@ function checkAnswer() {
       response = 'Sorry, that was not correct.';
       responseColor = 'red';
   }
+  answerInput.value('');
+  currentIndex = nextQuestion();
+  currentQuestion = currentIndex.question;
+  currentImage = currentIndex.image;
 }
 
 function preload() {
@@ -93,6 +97,6 @@ function draw() {
   text(currentQuestion, 200, 175);
   fill(responseColor);
   textSize(18);
-  text(response, 475, 217);
+  text(response, 465, 217);
   image(img, 200, 300);
 }
