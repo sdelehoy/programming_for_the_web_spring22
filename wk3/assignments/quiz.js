@@ -53,8 +53,6 @@ function nextQuestion() {
   if (questArr.length > 0) {
     const randomIndex = Math.round(Math.random() * (questArr.length - 1));
     return questArr[randomIndex];
-  } else {
-    alert('You won!');
   }
 }
 
@@ -77,6 +75,15 @@ function checkAnswer() {
   currentAnswer= currentIndex.answer
   currentImage = currentIndex.image;
   preload();
+  gameOver();
+}
+
+function gameOver() {
+  if (numCorrect === 5) {
+    alert('You won!');
+  } else if (numIncorrect === 5) {
+    alert('You lost');
+  }
 }
 
 function preload() {
@@ -88,10 +95,10 @@ function setup() {
   h1 = createElement('h1', 'Backyard Bird Quiz');
   h1.position(200, 20);
   answerInput = createInput('');
-  answerInput.position(200, 205);
+  answerInput.position(200, 190);
   answerInput.size(250, 30);
   submitAnswerBtn = createButton('Submit Answer');
-  submitAnswerBtn.position(200, 250);
+  submitAnswerBtn.position(200, 240);
   submitAnswerBtn.size(150, 30);
   submitAnswerBtn.mousePressed(checkAnswer);
 }
@@ -101,18 +108,18 @@ function draw() {
   noStroke();
   fill(240);
   rect(175, 0, 720, windowHeight);
-  fill(155);
+  fill(100);
   rect(175, 0, 720, 100);
   fill('black');
   textSize(24);
-  text(currentQuestion, 200, 175);
+  text(currentQuestion, 200, 165);
   fill(responseColor);
   textSize(18);
-  text(response, 465, 217);
+  text(response, 465, 212);
   image(img, 175, 300);
   fill('black');
   textSize(12);
   text('Pictures from wwww.allaboutbirds.org.', 200, 865);
   textSize(18);
-  text('Correct: ' + numCorrect + '     Incorrect: ' + numIncorrect, 465, 265);
+  text('Correct: ' + numCorrect + '     Incorrect: ' + numIncorrect, 465, 260);
 }
