@@ -94,15 +94,15 @@ function setup() {
 function draw() {
   background(50);
   noStroke();
-  fill(255);
-  rect(175, 0, 725, windowHeight);
+  fill(240);
+  rect(175, 0, 720, windowHeight);
   fill(155);
-  rect(175, 0, 725, 100);
+  rect(175, 0, 720, 100);
   fill('black');
   textSize(24);
   text(currentQuestion, 200, 175);
   fill(responseColor);
   textSize(18);
   text(response, 465, 217);
-  image(img, 181, 300);
+  image(img, 175, 300);
 }
