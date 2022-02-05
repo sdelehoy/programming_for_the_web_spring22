@@ -37,6 +37,7 @@ let questArr = [
 ];
 
 let response;
+let responseColor;
 let h1;
 let answerInput;
 let submitAnswerBtn;
@@ -61,8 +62,10 @@ function checkAnswer() {
       return currentAnswer !== arr.answer
     });
     response = 'Correct!';
+    responseColor = 'green';
   } else {
-      response = 'Sorry, that was not correct.'
+      response = 'Sorry, that was not correct.';
+      responseColor = 'red';
   }
 }
 
@@ -79,15 +82,17 @@ function setup() {
   answerInput.size(250, 30);
   submitAnswerBtn = createButton('Submit Answer');
   submitAnswerBtn.position(200, 250);
-  submitAnswerBtn.size(100, 30);
+  submitAnswerBtn.size(150, 30);
   submitAnswerBtn.mousePressed(checkAnswer);
 }
 
 function draw() {
   background(240);
-  image(img, 200, 300);
+  fill('black');
   textSize(24);
   text(currentQuestion, 200, 175);
+  fill(responseColor);
   textSize(18);
-  text(response, 475, 210);
+  text(response, 475, 217);
+  image(img, 200, 300);
 }
