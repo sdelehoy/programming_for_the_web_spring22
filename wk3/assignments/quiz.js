@@ -45,9 +45,22 @@ let nextQuestion = function() {
   }
 }
 
-let currentQuestion = nextQuestion().question;
-let currentAnswer = nextQuestion().answer;
-let currentImage = nextQuestion().image;
+let currentIndex = nextQuestion();
+let currentQuestion = currentIndex.question;
+let currentAnswer = currentIndex.answer;
+let currentImage = currentIndex.image;
+
+let capInput = answerInput.value().split('');
+for (let i = 0; i < capInput.length; i++) {
+  capInput[i] = capInput[i][0].toUpperCase() + capInput[i].substr(1);
+}
+capInput.join('');
+
+function checkAnswer() {
+  if (currentAnswer === capInput) {
+    questArr = questArr.filter()
+  }
+}
 
 let img;
 function preload() {
