@@ -81,8 +81,14 @@ function checkAnswer() {
 function gameOver() {
   if (numCorrect === 5) {
     alert('You won!');
+    numCorrect = 0;
+    numIncorrect = 0;
+    response = '';
   } else if (numIncorrect === 5) {
     alert('You lost');
+    numCorrect = 0;
+    numIncorrect = 0;
+    response = '';
   }
 }
 
