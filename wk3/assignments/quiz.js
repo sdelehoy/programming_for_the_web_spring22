@@ -70,6 +70,7 @@ function checkAnswer() {
   answerInput.value('');
   currentIndex = nextQuestion();
   currentQuestion = currentIndex.question;
+  currentAnswer= currentIndex.answer
   currentImage = currentIndex.image;
   preload();
 }
