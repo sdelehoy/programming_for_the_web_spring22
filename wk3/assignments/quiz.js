@@ -81,7 +81,7 @@ function preload() {
 function setup() {
   createCanvas(windowWidth, windowHeight);
   h1 = createElement('h1', 'Backyard Bird Quiz');
-  h1.position(200, 50);
+  h1.position(200, 20);
   answerInput = createInput('');
   answerInput.position(200, 205);
   answerInput.size(250, 30);
@@ -93,11 +93,14 @@ function setup() {
 
 function draw() {
   background(240);
+  noStroke();
+  fill(155);
+  rect(175, 0, 725, 100);
   fill('black');
   textSize(24);
   text(currentQuestion, 200, 175);
   fill(responseColor);
   textSize(18);
   text(response, 465, 217);
-  image(img, 200, 300);
+  image(img, 181, 300);
 }
