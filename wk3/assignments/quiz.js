@@ -117,6 +117,7 @@ function draw() {
   fill(100);
   rect(175, 0, 720, 100);
   fill('black');
+  textFont('Raleway');
   textSize(24);
   text(currentQuestion, 200, 165);
   fill(responseColor);
@@ -125,7 +126,7 @@ function draw() {
   image(img, 175, 300);
   fill('black');
   textSize(12);
-  text('Pictures from wwww.allaboutbirds.org.', 200, 865);
+  text('Pictures from allaboutbirds.org.', 200, 865);
   textSize(18);
   text('Correct: ' + numCorrect + '     Incorrect: ' + numIncorrect, 465, 260);
 }
