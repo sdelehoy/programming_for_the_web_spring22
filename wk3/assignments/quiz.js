@@ -71,6 +71,7 @@ function checkAnswer() {
   currentIndex = nextQuestion();
   currentQuestion = currentIndex.question;
   currentImage = currentIndex.image;
+  preload();
 }
 
 function preload() {
