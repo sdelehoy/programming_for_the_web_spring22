@@ -1,4 +1,4 @@
-const questArr = [
+let questArr = [
   {
     question: 'Is this a Black-capped Chickadee or an American Goldfinch?',
     answer: 'Black-capped Chickadee',
@@ -36,47 +36,51 @@ const questArr = [
   }
 ];
 
-let nextQuestion = function() {
-  if (questArr.length > 0) {
-    const randomIndex = Math.round(Math.random() * (questArr.length - 1));
-    return questArr[randomIndex];
-  }else {
-    alert('You won!');
-  }
-}
-
+let response;
+let h1;
+let answerInput;
+let submitAnswerBtn;
+let img;
 let currentIndex = nextQuestion();
 let currentQuestion = currentIndex.question;
 let currentAnswer = currentIndex.answer;
 let currentImage = currentIndex.image;
 
-let capInput = answerInput.value().split('');
-for (let i = 0; i < capInput.length; i++) {
-  capInput[i] = capInput[i][0].toUpperCase() + capInput[i].substr(1);
-}
-capInput.join('');
-
-function checkAnswer() {
-  if (currentAnswer === capInput) {
-    questArr = questArr.filter()
+function nextQuestion() {
+  if (questArr.length > 0) {
+    const randomIndex = Math.round(Math.random() * (questArr.length - 1));
+    return questArr[randomIndex];
+  } else {
+    alert('You won!');
   }
 }
 
-let img;
+function checkAnswer() {
+  if (currentAnswer === answerInput.value()) {
+    questArr = questArr.filter(arr => { 
+      return currentAnswer !== arr.answer
+    });
+    response = 'Correct!';
+  } else {
+      response = 'Sorry, that was not correct.'
+  }
+}
+
 function preload() {
   img = loadImage(currentImage);
 }
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  let h1 = createElement('h1', 'Backyard Bird Quiz');
+  h1 = createElement('h1', 'Backyard Bird Quiz');
   h1.position(200, 50);
-  let answerInput = createInput('');
-  answerInput.position(200, 200);
+  answerInput = createInput('');
+  answerInput.position(200, 205);
   answerInput.size(250, 30);
-  let submitAnswerBtn = createButton('Submit Answer');
+  submitAnswerBtn = createButton('Submit Answer');
   submitAnswerBtn.position(200, 250);
   submitAnswerBtn.size(100, 30);
+  submitAnswerBtn.mousePressed(checkAnswer);
 }
 
 function draw() {
@@ -84,4 +88,6 @@ function draw() {
   image(img, 200, 300);
   textSize(24);
   text(currentQuestion, 200, 175);
+  textSize(18);
+  text(response, 475, 210);
 }
