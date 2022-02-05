@@ -92,8 +92,10 @@ function setup() {
 }
 
 function draw() {
-  background(240);
+  background(50);
   noStroke();
+  fill(255);
+  rect(175, 0, 725, windowHeight);
   fill(155);
   rect(175, 0, 725, 100);
   fill('black');
