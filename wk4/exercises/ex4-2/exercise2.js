@@ -1,21 +1,23 @@
 let cirX = 0;
-let cirY = 50;
+let cirY;
 const cirWidth = 100;
 let clickCount = 0;
+let speed;
 
 function setup () {
   createCanvas(500, 500);
+  cirY = random(cirWidth / 2, height - cirWidth / 2);
+  speed = random(1, 3);
 }
 
 function draw () {
   background('olivedrab');
   drawShape();
-  cirX += 1.5;
-  cirY++;
+  cirX += speed;
   textSize(18);
-  if (cirX > width) {
+  if ((cirX - cirWidth / 2) > width) {
     noLoop;
-    text('You clicked ' + clickCount + ' times', 200, 100);
+    text('You clicked the circle ' + clickCount + ' times', 125, 100);
   }
 }
 
@@ -23,7 +25,6 @@ function mousePressed () {
   let distance = dist(mouseX, mouseY, cirX, cirY);
   if (distance < cirWidth / 2) {
     clickCount++;
-    console.log('hit');
   }
 }
 
