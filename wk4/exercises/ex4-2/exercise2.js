@@ -1,6 +1,6 @@
 let cirX = 0;
 let cirY;
-const cirWidth = 100;
+let cirWidth = 100;
 let clickCount = 0;
 let speed;
 
@@ -29,6 +29,12 @@ function mousePressed () {
 }
 
 function drawShape () {
-  fill('cyan');
+  if (mouseIsPressed === true) {
+    fill('darkcyan');
+    cirWidth = 105;
+  } else {
+    fill('cyan');
+    cirWidth = 100;
+  }
   circle(cirX, cirY, cirWidth);
 }
