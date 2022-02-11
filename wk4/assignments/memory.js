@@ -18,8 +18,14 @@ function setup () {
     cardY += 250;
     cardX = 100;
   }
+  mousePressed();
 }
 
 function mousePressed () {
-
+  for (let k = 0; k < cards.length; k++) {
+    if ((mouseX > cards[k].x) && (mouseX < cards[k].x + cardWidth) &&
+      (mouseY > cards[k].y) && (mouseY < cards[k].y + cardWidth)) {
+        console.log('hit');
+    }
+  }  
 }
