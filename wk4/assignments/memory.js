@@ -1,17 +1,25 @@
-let x = 100;
-let y = 100;
-const squareWidth = 200;
+let cardX = 100;
+let cardY = 100;
+const cardWidth = 200;
+let cards = [];
+let cardId = 0;
 
 function setup () {
   createCanvas (1150, 900);
   background('steelblue');
-  fill('lime');
+  fill('limegreen');
   for (let i = 0; i < 3; i++) {
     for (let j = 0; j < 4; j++) {
-      square(x, y, squareWidth);
-      x += 250;
+      square(cardX, cardY, cardWidth);
+      cards.push ({ x: cardX, y: cardY, id: cardId });
+      cardX += 250;
+      cardId++;
     }
-    y += 250;
-    x = 100;
+    cardY += 250;
+    cardX = 100;
   }
+}
+
+function mousePressed () {
+
 }
