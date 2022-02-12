@@ -6,8 +6,12 @@ let cardId = 0;
 
 function setup () {
   createCanvas (1150, 900);
-  background('steelblue');
-  fill('limegreen');
+  drawingContext.shadowOffsetX = 5;
+  drawingContext.shadowOffsetY = 5;
+  drawingContext.shadowBlur = 10;
+  drawingContext.shadowColor = 'black';
+  background(65);
+  fill(255);
   for (let i = 0; i < 3; i++) {
     for (let j = 0; j < 4; j++) {
       square(cardX, cardY, cardWidth);
