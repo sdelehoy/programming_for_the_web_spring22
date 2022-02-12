@@ -28,6 +28,7 @@ function setup () {
 }
 
 function draw () {
+  drawingContext.shadowColor = '#121C0B';
   fill(255);
   textSize(18)
   text('Score', 100, 45);
