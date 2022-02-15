@@ -18,7 +18,7 @@ function drawBlock(x, y, color) {
 function mouseMoved() {
   let r = map(mouseX, 0, width, 0, 255);
   let b = map(mouseY, 0, height, 0, 255);
-  let c = color('rgb(r, 0, b)');
+  let c = color(r, 0, b);
   blockColor = c;
   return false;
 }
