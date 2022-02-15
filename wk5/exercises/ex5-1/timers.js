@@ -2,7 +2,7 @@ let blockX = 0;
 let blockY = 0;
 let blockColor = 255;
 let drawTimer;
-const speed = 20;
+const speed = 5;
 const distance = 2;
 
 function setup () {
@@ -11,20 +11,27 @@ function setup () {
 }
 
 function drawBlock(x, y, color) {
-  fill(color || 255);
+  fill(color);
   square(x, y, 50);
+}
+
+function mouseMap() {
+  let r = map(mouseX, 0, width, 0, 255);
+  let b = map(mouseY, 0, width, 0, 255);
+  let c = color('rgb(r, 0, b)')
+  blockColor = c;
 }
 
 window.setTimeout(() => {
   drawTimer = window.setInterval(() => {
-    if(blockY - 50 <= height) {
+    if(blockY <= height) {
       drawBlock(blockX, blockY, blockColor);
       blockY += distance;
     } else {
       blockY = 0;
       blockX += 50;
     }
-    if(blockY - 50 > height && blockX - 50 > width) {
+    if(blockX + 50 >= width && blockY > height) {
       window.clearInterval(drawTimer);
       alert('done');
     }
