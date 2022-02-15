@@ -15,11 +15,12 @@ function drawBlock(x, y, color) {
   square(x, y, 50);
 }
 
-function mouseMap() {
+function mouseMoved() {
   let r = map(mouseX, 0, width, 0, 255);
-  let b = map(mouseY, 0, width, 0, 255);
-  let c = color('rgb(r, 0, b)')
+  let b = map(mouseY, 0, height, 0, 255);
+  let c = color('rgb(r, 0, b)');
   blockColor = c;
+  return false;
 }
 
 window.setTimeout(() => {
