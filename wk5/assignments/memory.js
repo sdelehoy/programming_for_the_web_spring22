@@ -1,6 +1,11 @@
 let cards = [];
 let startX = 100;
 let startY = 150;
+let cardback;
+
+function preload() {
+  cardback = loadImage(images/cardback.jpg);
+}
 
 function setup() {
   createCanvas(1150, 925);
@@ -11,7 +16,6 @@ function setup() {
     for (let j = 0; j < 4; j ++) {
       cards.push(new Card(startX, startY));
       startX += 250;
-      console.log(startX);
     }
     startY += 250;
     startX = 100;
@@ -37,6 +41,7 @@ class Card {
       fill('magenta');
       square(this.x, this.y, this.width);
       this.faceDown = false;
+      image(cardback, this.x, this.y);
     } else {
       fill('cyan');
       square(this.x, this.y, this.width);
