@@ -4,6 +4,7 @@ let blockColor = 255;
 let drawTimer;
 const speed = 5;
 const distance = 2;
+let colors = [255, 255, 255];
 
 function setup () {
   createCanvas(500, 500);
@@ -15,13 +16,21 @@ function drawBlock(x, y, color) {
   square(x, y, 50);
 }
 
-function mouseMoved() {
+function keyPressed() {
+  colors.unshift(keyCode);
+  colors.pop();
+  c = (colors[0], colors[1], colors[2]);
+  blockColor = c;
+  console.log(colors);
+}
+
+/* function mouseMoved() {
   let r = map(mouseX, 0, width, 0, 255);
   let b = map(mouseY, 0, height, 0, 255);
   let c = color(r, 0, b);
   blockColor = c;
   return false;
-}
+} */
 
 window.setTimeout(() => {
   drawTimer = window.setInterval(() => {
