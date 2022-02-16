@@ -2,8 +2,8 @@ let blockX = 0;
 let blockY = 0;
 let blockColor = 255;
 let drawTimer;
-const speed = 5;
-const distance = 2;
+const speed = 20;
+const distance = 3;
 let colors = [255, 255, 255];
 
 function setup () {
@@ -17,9 +17,10 @@ function drawBlock(x, y, color) {
 }
 
 function keyPressed() {
-  colors.unshift(keyCode);
+  let buttonCode = map(keyCode, 48, 111, 0, 255);
+  colors.unshift(buttonCode);
   colors.pop();
-  c = (colors[0], colors[1], colors[2]);
+  c = color(colors[0], colors[1], colors[2]);
   blockColor = c;
   console.log(colors);
 }
