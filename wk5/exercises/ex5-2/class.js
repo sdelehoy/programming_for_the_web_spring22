@@ -1,22 +1,25 @@
-let bubble1;
-let bubble2;
-let bubble3;
+let bubbles = [];
 
 function setup() {
   createCanvas(600, 400);
-  bubble1 = new Bubble(200, 200, 80, 'magenta');
-  bubble2 = new Bubble(400, 200, 40, 'cyan');
-  bubble3 = new Bubble(300, 300, 100, 'yellow');
+  for (let i = 0; i < 10; i++) {
+    let x = random(width);
+    let y = random(height);
+    let d = random(10, 100);
+    let r = random(0, 255);
+    let g = random(0, 255);
+    let b = random(0, 255);
+    let c = color(r, g, b);
+    bubbles[i] = new Bubble(x, y, d, c)
+  }
 }
 
 function draw() {
   background(0);
-  bubble1.move();
-  bubble1.show();
-  bubble2.move();
-  bubble2.show();
-  bubble3.move();
-  bubble3.show();
+  for (let i = 0; i < bubbles.length; i++) {
+    bubbles[i].move();
+    bubbles[i].show();
+  }
 }
 
 class Bubble {
@@ -27,7 +30,7 @@ class Bubble {
     this.c = c;
   }
   move() {
-    this.x = this.x + random(-7, 7);
+    this.x = this.x + random(-5, 5);
     this.y = this.y + random(-5, 5);
   }
   show() {
