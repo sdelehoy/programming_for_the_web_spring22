@@ -3,6 +3,12 @@ let startX = 100;
 let startY = 150;
 let cardback;
 let cardfaces = [];
+const gameState = {
+  pairs: 0,
+  flippedCards: [],
+  matches: 0,
+  attempts: 0
+}
 
 function preload() {
   cardback = loadImage('images/cardback.jpg');
@@ -19,10 +25,10 @@ function preload() {
 function setup() {
   createCanvas(1150, 925);
   background('#273C17');
-  drawingContext.shadowOffsetX = 5;
-  drawingContext.shadowOffsetY = 5;
-  drawingContext.shadowBlur = 10;
-  drawingContext.shadowColor = 'black';
+  drawingContext.shadowOffsetX = 3;
+  drawingContext.shadowOffsetY = 3;
+  drawingContext.shadowBlur = 20;
+  drawingContext.shadowColor = '#121C0B';
   fill('#121C0B');
   rect(0, 0, width, 75);
   let selectedFaces = [];
@@ -58,14 +64,15 @@ class Card {
     this.width = 200;
     this.faceDown = true;
     this.cardface = cardface;
+    this.match = false;
     this.show();
   }
   show() {
     if (this.faceDown === true) {
       fill('magenta');
       square(this.x, this.y, this.width);
-      this.faceDown = false;
       image(cardback, this.x, this.y);
+      this.faceDown = false;
     } else {
       fill('cyan');
       square(this.x, this.y, this.width);
