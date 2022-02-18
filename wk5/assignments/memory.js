@@ -8,7 +8,7 @@ const gameState = {
   flippedCards: [],
   matches: 0,
   attempts: 0
-}
+};
 
 function preload() {
   cardback = loadImage('images/cardback.jpg');
@@ -53,7 +53,9 @@ function setup() {
 
 function mousePressed() {
   for (i = 0; i < cards.length; i++) {
-    cards[i].clicked();
+    if (gameState.flippedCards.length < 2 && cards[i].clicked()) {
+      gameState.flippedCards.push(cards[i]);
+    }
   }
 }
 
@@ -62,28 +64,30 @@ class Card {
     this.x = x;
     this.y = y;
     this.width = 200;
-    this.faceDown = true;
+    this.faceUp = false;
     this.cardface = cardface;
     this.match = false;
     this.show();
   }
   show() {
-    if (this.faceDown === true) {
-      fill('magenta');
-      square(this.x, this.y, this.width);
-      image(cardback, this.x, this.y);
-      this.faceDown = false;
-    } else {
+    if (this.faceUp || this.match) {
       fill('cyan');
       square(this.x, this.y, this.width);
       image(this.cardface, this.x, this.y);
-      //this.faceDown = true;
+    } else {
+      fill('magenta');
+      square(this.x, this.y, this.width);
+      image(cardback, this.x, this.y);
+      this.faceUp = true;
     }
   }
   clicked() {
     if (mouseX >= this.x && mouseX <= this.x + this.width &&
         mouseY >= this.y && mouseY <= this.y + this.width) {
-          this.show();
+        this.show();
+        return true;
+    } else {
+        return false;
     }
   }
 /*   flip() {
