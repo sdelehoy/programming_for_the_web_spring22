@@ -4,10 +4,11 @@ let startY = 150;
 let cardback;
 let cardfaces = [];
 const gameState = {
-  pairs: 0,
+  totalPairs: 5,
   flippedCards: [],
   matches: 0,
-  attempts: 0
+  attempts: 0,
+  waiting: false
 };
 
 function preload() {
@@ -31,6 +32,7 @@ function setup() {
   drawingContext.shadowColor = '#121C0B';
   fill('#121C0B');
   rect(0, 0, width, 75);
+  
   let selectedFaces = [];
   for (let k = 0; k < 6; k++) {
     const randomIdx = floor(random(cardfaces.length));
@@ -51,18 +53,53 @@ function setup() {
   }
 }
 
+function draw() {
+  fill('#121C0B');
+  rect(0, 0, width, 75);
+  if (gameState.matches === gameState.totalPairs) {
+    fill(255);
+    textSize(24);
+    text('YOU WIN!', 400, 45);
+    noLoop();
+  }
+  for (let i = 0; i > cards.length; i++) {
+    if (!cards[i].match) {
+      cards[i].faceUp = false;
+    }
+    cards[i].show();
+  }
+  noLoop();
+  gameState.flippedCards.length = 0;
+  gameState.waiting = false;
+  fill(255);
+  textSize(24);
+  text('attempts:  ' + gameState.attempts, 100, 45);
+  text('matches:  ' + gameState.matches, 250, 45);
+}
+
 function mousePressed() {
+  if (gameState.waiting) {
+    return;
+  }
   for (i = 0; i < cards.length; i++) {
     if (gameState.flippedCards.length < 2 && cards[i].clicked()) {
       gameState.flippedCards.push(cards[i]);
     }
   }
   if (gameState.flippedCards.length === 2) {
-    if (gameState.flippedCards[0].faceImage === gameState.flippedCards[1].faceImage) {
+    gameState.attempts++;
+    if (gameState.flippedCards[0].cardface === gameState.flippedCards[1].cardface) {
       gameState.flippedCards[0].match = true;
       gameState.flippedCards[1].match = true;
       gameState.flippedCards.length = 0;
       gameState.matches++;
+      loop();
+    } else {
+      gameState.waiting = true;
+      const loopTimeout = window.setTimeout(() => {
+        loop();
+        window.clearTimeout(loopTimeout);
+      }, 1000)
     }
   }
 }
