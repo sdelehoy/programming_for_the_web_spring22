@@ -57,6 +57,14 @@ function mousePressed() {
       gameState.flippedCards.push(cards[i]);
     }
   }
+  if (gameState.flippedCards.length === 2) {
+    if (gameState.flippedCards[0].faceImage === gameState.flippedCards[1].faceImage) {
+      gameState.flippedCards[0].match = true;
+      gameState.flippedCards[1].match = true;
+      gameState.flippedCards.length = 0;
+      gameState.matches++;
+    }
+  }
 }
 
 class Card {
