@@ -1,10 +1,12 @@
+const down = 'down';
+const up = 'up';
 let cards = [];
 let startX = 100;
 let startY = 150;
 let cardback;
 let cardfaces = [];
 const gameState = {
-  totalPairs: 5,
+  totalPairs: 6,
   flippedCards: [],
   matches: 0,
   attempts: 0,
@@ -25,13 +27,6 @@ function preload() {
 
 function setup() {
   createCanvas(1150, 925);
-  background('#273C17');
-  drawingContext.shadowOffsetX = 3;
-  drawingContext.shadowOffsetY = 3;
-  drawingContext.shadowBlur = 20;
-  drawingContext.shadowColor = '#121C0B';
-  fill('#121C0B');
-  rect(0, 0, width, 75);
   
   let selectedFaces = [];
   for (let k = 0; k < 6; k++) {
@@ -54,27 +49,32 @@ function setup() {
 }
 
 function draw() {
+  background('#273C17');
+  drawingContext.shadowOffsetX = 3;
+  drawingContext.shadowOffsetY = 3;
+  drawingContext.shadowBlur = 20;
+  drawingContext.shadowColor = '#121C0B';
   fill('#121C0B');
   rect(0, 0, width, 75);
   if (gameState.matches === gameState.totalPairs) {
-    fill(255);
-    textSize(24);
-    text('YOU WIN!', 400, 45);
+    fill('deepskyblue');
+    textSize(36);
+    text('YOU WON!', 525, 55);
     noLoop();
   }
-  for (let i = 0; i > cards.length; i++) {
+  for (let i = 0; i < cards.length; i++) {
     if (!cards[i].match) {
-      cards[i].faceUp = false;
+      cards[i].face = down;
     }
     cards[i].show();
   }
   noLoop();
   gameState.flippedCards.length = 0;
   gameState.waiting = false;
-  fill(255);
+  fill('deepskyblue');
   textSize(24);
   text('attempts:  ' + gameState.attempts, 100, 45);
-  text('matches:  ' + gameState.matches, 250, 45);
+  text('matches:  ' + gameState.matches, 275, 45);
 }
 
 function mousePressed() {
@@ -99,7 +99,7 @@ function mousePressed() {
       const loopTimeout = window.setTimeout(() => {
         loop();
         window.clearTimeout(loopTimeout);
-      }, 1000)
+      }, 2000)
     }
   }
 }
@@ -109,38 +109,38 @@ class Card {
     this.x = x;
     this.y = y;
     this.width = 200;
-    this.faceUp = false;
+    this.face = down;
     this.cardface = cardface;
     this.match = false;
     this.show();
   }
   show() {
-    if (this.faceUp || this.match) {
-      fill('cyan');
+    if (this.face === up || this.match) {
       square(this.x, this.y, this.width);
       image(this.cardface, this.x, this.y);
     } else {
-      fill('magenta');
       square(this.x, this.y, this.width);
       image(cardback, this.x, this.y);
-      this.faceUp = true;
     }
   }
   clicked() {
     if (mouseX >= this.x && mouseX <= this.x + this.width &&
         mouseY >= this.y && mouseY <= this.y + this.width) {
-        this.show();
+        this.flip();
         return true;
     } else {
         return false;
     }
   }
-/*   flip() {
-    if (this.faceDown === true) {
-      this.faceDown = false;
+
+  flip() {
+    if (this.face === down) {
+      this.face = up;
+    } else {
+      this.face = down;
     }
     this.show();
-  } */
+  }
 }
 
 function shuffleArray (array) {
