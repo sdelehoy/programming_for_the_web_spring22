@@ -12,14 +12,14 @@ const gameState = {
 };
 
 function preload() {
-  cardback = loadImage('images/cardback.jpg');
+  cardback = loadImage('images/cardback.png');
   cardfaces = [
-    loadImage('images/bluejay.jpg'),
-    loadImage('images/chickadee.jpg'),
-    loadImage('images/goldfinch.jpg'),
-    loadImage('images/housefinch.jpg'),
-    loadImage('images/robin.jpg'),
-    loadImage('images/woodpecker.jpg')
+    loadImage('images/bluejay.png'),
+    loadImage('images/chickadee.png'),
+    loadImage('images/goldfinch.png'),
+    loadImage('images/housefinch.png'),
+    loadImage('images/robin.png'),
+    loadImage('images/woodpecker.png')
   ];
 }
 
@@ -117,10 +117,10 @@ class Card {
 
   show() {
     if (this.faceUp || this.match) {
-      square(this.x, this.y, this.width);
+      square(this.x, this.y, this.width, 10);
       image(this.cardface, this.x, this.y);
     } else {
-      square(this.x, this.y, this.width);
+      square(this.x, this.y, this.width, 10);
       image(cardback, this.x, this.y);
     }
   }
