@@ -1,5 +1,3 @@
-const down = 'down';
-const up = 'up';
 let cards = [];
 let startX = 100;
 let startY = 150;
@@ -22,7 +20,7 @@ function preload() {
     loadImage('images/housefinch.jpg'),
     loadImage('images/robin.jpg'),
     loadImage('images/woodpecker.jpg')
-  ]
+  ];
 }
 
 function setup() {
@@ -59,12 +57,13 @@ function draw() {
   if (gameState.matches === gameState.totalPairs) {
     fill('deepskyblue');
     textSize(36);
+    textFont('Quicksand');
     text('YOU WON!', 525, 55);
     noLoop();
   }
   for (let i = 0; i < cards.length; i++) {
     if (!cards[i].match) {
-      cards[i].face = down;
+      cards[i].faceUp = false;
     }
     cards[i].show();
   }
@@ -73,6 +72,7 @@ function draw() {
   gameState.waiting = false;
   fill('deepskyblue');
   textSize(24);
+  textFont('Quicksand');
   text('attempts:  ' + gameState.attempts, 100, 45);
   text('matches:  ' + gameState.matches, 275, 45);
 }
@@ -109,13 +109,14 @@ class Card {
     this.x = x;
     this.y = y;
     this.width = 200;
-    this.face = down;
+    this.faceUp = false;
     this.cardface = cardface;
     this.match = false;
     this.show();
   }
+
   show() {
-    if (this.face === up || this.match) {
+    if (this.faceUp || this.match) {
       square(this.x, this.y, this.width);
       image(this.cardface, this.x, this.y);
     } else {
@@ -134,10 +135,10 @@ class Card {
   }
 
   flip() {
-    if (this.face === down) {
-      this.face = up;
+    if (this.faceUp) {
+      this.faceUp = false;
     } else {
-      this.face = down;
+      this.faceUp = true;
     }
     this.show();
   }
