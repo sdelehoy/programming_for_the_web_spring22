@@ -4,21 +4,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Vue: Kicking the Tires</title>
-</head>
-<body>
   <script src="https://unpkg.com/vue@3"></script>
   <script src="script.js"></script>
+</head>
+<body>
 
-  <div id="app">{{ message }}</div>
-
-  <script>
-    Vue.createApp({
-      data() {
-        return {
-          message: 'Hello Vue!'
-        }
-      }
-    }).mount('#app')
-  </script> 
+  <div id="myApp">
+    <h1>{{message}}</h1>
+  </div>
+ 
 </body>
 </html>
