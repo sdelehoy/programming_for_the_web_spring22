@@ -4,6 +4,5 @@ new Vue({
     message: 'Hello World!',
     numPets: 0,
     petType: 'dogs'
-  },
-  methods: {}
+  }
 });
