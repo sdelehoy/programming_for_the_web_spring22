@@ -1,7 +1,6 @@
-Vue.createApp({
-  data() {
-    return {
-      message: 'Hello World!'
-    }
+new Vue({
+  el: '#myApp',
+  data: {
+    message: 'Hello World!'
   }
-}).mount('#myApp')
+});
