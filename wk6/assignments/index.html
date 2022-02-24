@@ -9,10 +9,9 @@
 </head>
 <body>
   <div></div>
-  <div>
-    <p>Llama Facts</p>
-    <button v-onclick="counter -= 1">Back</button>
-    <button v-onclick="counter += 1">Next</button>
+  <div id="app">
+    <p>{{facts}}</p>
+    <button v-onclick="counter +=1">Next</button>
   </div>
   <script src="script.js"></script>
 </body>
