@@ -10,6 +10,11 @@
 
   <div id="myApp">
     <h1>{{message}}</h1>
+    <p>What kind of pets do you have?</p>
+    <input v-model="petType" type="text">
+    <p>Click the button to enter how many {{petType}} you have</p>
+    <button v-on:click="numPets += 1">Add 1</button>
+    <p>I have {{numPets}} {{petType}}.</p>
   </div>
 
   <script src="script.js"></script>
