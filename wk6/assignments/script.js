@@ -12,6 +12,15 @@ new Vue({
       { fact: 'Herds of llamas have constantly shifting social structures. They have their own pecking order and males jostle for positions.' },
       { fact: 'Forget about guard dogs, you can have a guard llama. They make great guard animals for herds of sheep and alpaca.' },
       { fact: 'Llamas have now taken on the role of therapy animals.' }
-    ]
+    ],
+    status: false
+  },
+  methods: {
+    reveal: function() {
+      if (this.status) {
+        this.status = false
+      } else
+        this.status = true
+    }
   }
 })
