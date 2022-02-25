@@ -22,11 +22,6 @@ body {
   filter: saturate(130%) contrast(120%) opacity(80%);
 }
 
-/* .right-container {
-    display: flex;
-    flex-direction: column;
-  } */
-
 .header {
   background: linear-gradient(140deg, hsl(300, 86%, 25%), hsla(25, 86%, 48%, 0.9));
   height: auto;
