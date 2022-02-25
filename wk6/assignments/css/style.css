@@ -1,8 +1,14 @@
 body {
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: 'Ruda', sans-serif;
   font-size: 1.3rem;
-  line-height: 1.7;
+  line-height: 2;
+  color: hsl(300, 86%, 25%);
+}
+
+h1 {
+  font-family: 'Luckiest Guy', cursive;
+  line-height: 1;
 }
 
 .layout {
@@ -23,5 +29,5 @@ body {
 }
 
 article {
-  margin: 100px 50px 0 50px;
+  margin: 100px 75px 0 75px;
 }
