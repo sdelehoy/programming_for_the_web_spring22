@@ -19,13 +19,17 @@
     </div>
     <div class="right" id="app">
       <article>
-        <h1>Ten Fun Facts about Llamas</h1>
-        <ol>
-          <li v-for="item in llamaFacts">{{item.fact}}</li>
-        </ol>
-        <p>Click the button to see the hidden llama fact!</p>
+        <div class="header">
+          <h1>Ten Fun Facts about Llamas</h1>
+        </div>
+        <div class="content"> 
+          <ol>
+            <li v-for="item in llamaFacts">{{item.fact}}</li>
+          </ol>  
+        <p class="notice">Click the button to see the hidden llama fact!</p>
         <button v-on:click="reveal">Reveal fact</button>
         <p v-if="status">11. Llamas were in the US long before humans. The llama's ancestor lived in modern-day southern US over 25,000 years ago.</p>
+      </div>   
       </article>
     </div>
   </main>
