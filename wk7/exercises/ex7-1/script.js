@@ -3,8 +3,11 @@ Vue.createApp({
     return {
       message: 'Hello Vue!',
       wikiLlama: 'https://en.wikipedia.org/wiki/Llama',
+      llamaTitle: 'Wikipedia article on llamas',
       wikiAlpaca: 'https://en.wikipedia.org/wiki/Alpaca',
-      britannica: 'https://www.britannica.com/story/whats-the-difference-between-llamas-and-alpacas'
+      alpacaTitle: 'Wikipedia article on alpacas',
+      britannica: 'https://www.britannica.com/story/whats-the-difference-between-llamas-and-alpacas',
+      britannicaTitle: 'What\'s the Difference Between Llamas and Alpacas'
     }
   }
 }).mount('#app')
