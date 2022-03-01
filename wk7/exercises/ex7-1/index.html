@@ -4,10 +4,22 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Exercise 7.1</title>
+  <link rel="stylesheet" href="style.css">
   <script src="https://unpkg.com/vue@3"></script>
 </head>
 <body>
-  <div id="app">{{ message }}</div>
+  <div v-cloak id="app">
+    {{ message }}
+    <article>
+      <section>
+        <a :href="wikiLlama">Read more about llamas.</a>
+      </section>
+      <section>
+        <a :href="wikiAlpaca">Read more about alpacas.</a>
+      </section>
+    </article>
+  </div>
+  
   <script src="script.js"></script>
 </body>
 </html>
