@@ -12,15 +12,13 @@ h1, h2 {
   font-family: 'Patua One', serif;
 }
 
-h1 {
-  margin: auto;
-  max-width: 850px;
+.heading h1 {
+  margin: 0;
   padding: 5%;
+  max-width: 850px;
 }
 
 .heading {
-  height: auto;
-  width: 100%;
   background-color: hsl(183, 78%, 50%);
 }
 
