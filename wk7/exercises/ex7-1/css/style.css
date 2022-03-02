@@ -13,13 +13,14 @@ h1, h2 {
 }
 
 .heading h1 {
-  margin: 0;
+  margin: auto;
   padding: 5%;
   max-width: 850px;
 }
 
 .heading {
   background-color: hsl(183, 78%, 50%);
+  margin: 0;
 }
 
 .container {
