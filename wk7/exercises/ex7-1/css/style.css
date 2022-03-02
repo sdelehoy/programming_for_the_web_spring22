@@ -31,8 +31,6 @@ p {
   margin: auto;
   padding: 5%;
   max-width: 800px;
-/*   color: hsl(0, 0%, 100%);
-  text-shadow: 0px 0px 25px hsla(0, 0%, 0%, 0.2); */
 }
 
 .content {
@@ -43,4 +41,20 @@ p {
 
 .content__links {
   margin-top: 50px;
+}
+
+.content__links p {
+  margin-bottom: 30px;
+}
+
+a:link {
+  color: hsl(189, 78%, 40%);
+}
+
+a:visited {
+  color: hsl(313, 78%, 40%);
+}
+
+a:hover {
+  text-decoration: none;
 }
