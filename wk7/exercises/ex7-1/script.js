@@ -12,7 +12,8 @@ Vue.createApp({
       textOnBackground: {
         color: 'hsl(0, 0%, 100%)',
         'text-shadow': '0px 0px 25px hsla(0, 0%, 0%, 0.2)'
-      }
+      },
+      darkModeOn: false
     }
   }
 }).mount('#app')
