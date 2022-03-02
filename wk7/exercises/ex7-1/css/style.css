@@ -1,3 +1,19 @@
 [v-cloak] {
   display: none;
 }
+
+body {
+  font-size: clamp(1rem, 0.9rem + 0.5vw, 1.5rem);
+  line-height: 1.5;
+  font-family: 'Quicksand', sans-serif;
+}
+
+article {
+  margin: auto;
+  max-width: 850px;
+  padding: 5%;
+}
+
+h1, h2 {
+  font-family: 'Patua One', serif;
+}
