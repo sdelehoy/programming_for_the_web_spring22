@@ -8,12 +8,24 @@ body {
   font-family: 'Quicksand', sans-serif;
 }
 
-article {
+h1, h2 {
+  font-family: 'Patua One', serif;
+}
+
+h1 {
   margin: auto;
   max-width: 850px;
   padding: 5%;
 }
 
-h1, h2 {
-  font-family: 'Patua One', serif;
+.heading {
+  height: auto;
+  width: 100%;
+  background-color: hsl(183, 78%, 50%);
+}
+
+.container {
+  margin: auto;
+  max-width: 850px;
+  padding: 5%;
 }
