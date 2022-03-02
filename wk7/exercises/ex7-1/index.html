@@ -15,9 +15,9 @@
   <div v-cloak id="app">
     <article>
       <header class="heading">
-        <h1 class="heading__title">What Are the Differences Between Llamas and Alpacas?</h1>
+        <h1 class="heading__title" :style="textOnBackground">What Are the Differences Between Llamas and Alpacas?</h1>
       </header>
-      <div class="container">
+      <div class="content">
         <p>Both llamas and alpacas are part of the camel family. They are two of the four lamoid species the other two being vincuña and guanaco their wild cousins. Llamas and alpacas are from South America, primarily in Peru and Boliva, and have been bred by humans for thousands of years for transportation and fleece. While these two species are related they are different in many ways.</p>
         <section>
           <h2>Size</h2>
@@ -35,7 +35,7 @@
           <h2>Disposition</h2>
           <p>Humans usually use llamas as pack animals, since they can carry a generous amount of weight. The average llama can carry a load of 45 to 60 kg (99 to 132 pounds) for up to 30 km (18.6 miles) each day. Yet llamas get a bad reputation, since, when overloaded or maltreated, they react by spitting, kicking, lying down, or refusing to move. Usually, however, they are gentle creatures. Alpacas, on the other hand, are a bit more timid and like to stay with their herd. Llamas can be used as guard animals for livestock like alpacas and sheep.</p>
         </section>
-        <section>
+        <section class="content__links">
           <p><a :href="britannica" :title="britannicaTitle">Information from Britanica.</a></p>
           <p><a :href="wikiLlama" :title="llamaTitle">Read more about llamas.</a></p>
           <p><a :href="wikiAlpaca" :title="alpacaTitle">Read more about alpacas.</a></p>

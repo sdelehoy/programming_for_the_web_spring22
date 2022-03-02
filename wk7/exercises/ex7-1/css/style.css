@@ -12,6 +12,15 @@ h1, h2 {
   font-family: 'Patua One', serif;
 }
 
+h2 {
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+
+p {
+  margin: 0;
+}
+
 .heading {
   background: linear-gradient(135deg, 
     hsl(189, 78%, 40%),
@@ -22,14 +31,16 @@ h1, h2 {
   margin: auto;
   padding: 5%;
   max-width: 800px;
-  color: hsl(0, 0%, 100%);
-  text-shadow: 0px 0px 20px hsla(0, 0%, 0%, 0.3);
+/*   color: hsl(0, 0%, 100%);
+  text-shadow: 0px 0px 25px hsla(0, 0%, 0%, 0.2); */
 }
 
-.container {
+.content {
   margin: auto;
   max-width: 800px;
   padding: 5%;
 }
 
-/* background: repeating-linear-gradient(#e66465, #e66465 20px, #9198e5 20px, #9198e5 25px); */
+.content__links {
+  margin-top: 50px;
+}
