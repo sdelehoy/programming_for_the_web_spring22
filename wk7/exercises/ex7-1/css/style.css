@@ -12,19 +12,24 @@ h1, h2 {
   font-family: 'Patua One', serif;
 }
 
-.heading h1 {
-  margin: auto;
-  padding: 5%;
-  max-width: 850px;
+.heading {
+  background: linear-gradient(135deg, 
+    hsl(189, 78%, 40%),
+    hsl(313, 78%, 40%));
 }
 
-.heading {
-  background-color: hsl(183, 78%, 50%);
-  margin: 0;
+.heading__title {
+  margin: auto;
+  padding: 5%;
+  max-width: 800px;
+  color: hsl(0, 0%, 100%);
+  text-shadow: 0px 0px 20px hsla(0, 0%, 0%, 0.3);
 }
 
 .container {
   margin: auto;
-  max-width: 850px;
+  max-width: 800px;
   padding: 5%;
 }
+
+/* background: repeating-linear-gradient(#e66465, #e66465 20px, #9198e5 20px, #9198e5 25px); */
