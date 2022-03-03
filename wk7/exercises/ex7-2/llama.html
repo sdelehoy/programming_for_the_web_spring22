@@ -19,7 +19,11 @@
       </div>
 
     </div>
-    <p>{{llamas[0]}}</p>
+    
+    <div>
+      <p v-for="(llama, index) in llamas" :class="{ odd: index % 2 !== 0 }"><span class="list-rank">{{llama.rank}}</span> <span class="list-name">{{llama.name}}</span></p>
+    </div>
+  
   </div>
 
   <script src="llamas.js"></script>
