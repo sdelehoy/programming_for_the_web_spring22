@@ -21,7 +21,7 @@
     </div>
     
     <div>
-      <p v-for="(llama, index) in llamas" :class="{ odd: index % 2 !== 0 }"><span class="list-rank">{{llama.rank}}</span> <span class="list-name">{{llama.name}}</span></p>
+      <p v-for="(llama, index) in llamas" :class="{ odd: index % 2 === 0 }"><span class="list-rank">{{llama.rank}}</span> <span class="list-name" :class="{ includes: llama.name.toLowerCase().includes('llama') }">{{llama.name}}</span></p>
     </div>
   
   </div>
