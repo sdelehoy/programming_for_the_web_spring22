@@ -10,7 +10,26 @@
 <body>
 
   <h1>Bird Sightings</h1>
-  <div id="app"></div>
+  <div id="app">
+    <table>
+      <thead>
+        <th>Bird</th>
+        <th>Location</th>
+        <th>Date</th>
+        <th>Time</th>
+        <th>Image</th>
+      </thead>
+      <tbody>
+        <tr v-for="sighting in sightings">
+          <td>{{ sighting.bird }}</td>
+          <td>{{ sighting.location }}</td>
+          <td>{{ sighting.date }}</td>
+          <td>{{ sighting.time }}</td>
+          <td>image</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 
   <script src="collection.js"></script>
 </body>
