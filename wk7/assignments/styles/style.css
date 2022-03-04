@@ -3,14 +3,19 @@
 }
 body {
   font-family: 'Helvetica', 'Arial', sans-serif;
+  background: linear-gradient(hsl(0, 0%, 100%), hsl(0, 0%, 95%));
 }
 header {
-  background: linear-gradient(hsl(209 33% 50%), hsl(209 33% 38%));
-  padding: 5%;
+  background-color: hsl(209 33% 38%);
+  padding: 4%;
 }
 h1 {
   text-align: center;
+  font-size: 2.5rem;
   color: hsl(0, 0%, 100%);
+  letter-spacing: .2rem;
+  text-transform: uppercase;
+  font-weight: lighter;
   margin: 0;
 }
 table, thead, tbody, th, tr, td {
@@ -24,16 +29,26 @@ thead {
 }
 th {
   padding: 20px;
+  letter-spacing: .2rem;
+  text-transform: uppercase;
+  text-align: left;
+  font-weight: lighter;
 }
 td {
-  padding: 20px;
-  font-size: 1.2rem;
+  padding: 15px;
+  padding-right: 40px;
+  font-size: 1.3rem;
+  font-weight: lighter;
 }
 img {
   width: 150px;
 }
 .odd {
   background-color: hsl(0, 0%, 95%);
+}
+.bird {
+  font-weight: bold;
+  color: hsl(209 33% 38%);
 }
 .container {
   text-align: center;
@@ -44,4 +59,5 @@ img {
   border-radius: 20px;
   display: inline-block;
   margin: 5%;
+  background-color: hsl(0, 0%, 100%);
 }
