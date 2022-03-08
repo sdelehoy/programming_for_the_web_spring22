@@ -9,49 +9,56 @@
   <script src="https://unpkg.com/vue@3"></script>
 </head>
 <body>
-  <div id="formApp">{{ message }}
+  <div id="formApp">
     <form action="">
       <fieldset>
         <legend>Fan Club Registration</legend>
         <div>
-          <label>First Name
-            <input type="text">
-          </label>
+          <label for="firstName">First Name</label>
+          <input id="firstName" type="text" v-model="firstName">
         </div>
         <div>
-          <label>Last Name
-            <input type="text">
-          </label>
+          <label for="lastName">Last Name</label>
+          <input id="lastName" type="text" v-model="lastName">
         </div>
         <div>
-          <label>Street Address
-            <input type="text">
-          </label>
+          <label for="street">Street Address</label>
+          <input id="street" type="text" v-model="street">
         </div>
         <div>
-          <label>City
-            <input type="text">
-          </label>
+          <label for="city">City</label>
+          <input id="city" type="text" v-model="city">
         </div>
         <div>
-          <label>State
-
-          </label>
+          <label for="state">State</label>
+          <select name="" id="state"></select>
         </div>
         <div>
-          <label>Zip Code
-            <input type="number">
-          </label>
+          <label for="zipcode">Zip Code</label>
+          <input id="zipcode" type="text" v-model="zipcode">
         </div>
-        <div>
+        <div class="alpaca-color">
           <p>Favorite Alpaca Colors</p>
+          <div>
+            <label for="">Color
+              <input type="checkbox">
+            </label>
+          </div>
         </div>
-        <div>
-          <label>Alpaca Status
-            <textarea id="" cols="30" rows="10"></textarea>
-          </label>
+        <div class="alpaca-status">
+          <label for="status">Alpaca Status</label>
+          <textarea id="status" cols="30" rows="10" v-model="status"></textarea>
         </div>
       </fieldset>
+      <div>
+        <h3>Output</h3>
+        <p>First Name: {{firstName}}</p>
+        <p>Last Name: {{lastName}}</p>
+        <p>Street Address: {{street}}</p>
+        <p>City: {{city}}</p>
+        <p>Zip Code: {{zipcode}}</p>
+        
+      </div>
     </form>
   </div>
   <script src="script.js"></script>

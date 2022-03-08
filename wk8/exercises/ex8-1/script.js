@@ -1,7 +1,14 @@
 Vue.createApp({
   data() {
     return {
-      message: 'Hello Vue!'
+      firstName: '',
+      lastName: '',
+      street: '',
+      city: '',
+      state: '',
+      zipcode: '',
+      colors: [],
+      status: ''
     }
   }
 }).mount('#formApp')
