@@ -4,4 +4,4 @@ Vue.createApp({
       message: 'Hello Vue!'
     }
   }
-}).mount('#app')
+}).mount('#formApp')

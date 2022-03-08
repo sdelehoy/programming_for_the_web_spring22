@@ -9,7 +9,51 @@
   <script src="https://unpkg.com/vue@3"></script>
 </head>
 <body>
-  <div id="app">{{ message }}</div>
+  <div id="formApp">{{ message }}
+    <form action="">
+      <fieldset>
+        <legend>Fan Club Registration</legend>
+        <div>
+          <label>First Name
+            <input type="text">
+          </label>
+        </div>
+        <div>
+          <label>Last Name
+            <input type="text">
+          </label>
+        </div>
+        <div>
+          <label>Street Address
+            <input type="text">
+          </label>
+        </div>
+        <div>
+          <label>City
+            <input type="text">
+          </label>
+        </div>
+        <div>
+          <label>State
+
+          </label>
+        </div>
+        <div>
+          <label>Zip Code
+            <input type="number">
+          </label>
+        </div>
+        <div>
+          <p>Favorite Alpaca Colors</p>
+        </div>
+        <div>
+          <label>Alpaca Status
+            <textarea id="" cols="30" rows="10"></textarea>
+          </label>
+        </div>
+      </fieldset>
+    </form>
+  </div>
   <script src="script.js"></script>
 </body>
 </html>
