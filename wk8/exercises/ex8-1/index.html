@@ -40,9 +40,14 @@
         <div class="alpaca-color">
           <p>Favorite Alpaca Colors</p>
           <div>
-            <label for="">Color
-              <input type="checkbox">
-            </label>
+            <ul>
+              <li v-for="color in colors">
+                <label>
+                  <input type="checkbox" :value="color.value">
+                  {{ color.name }}
+                </label>
+              </li>
+            </ul>
           </div>
         </div>
         <div class="alpaca-status">
@@ -50,14 +55,16 @@
           <textarea id="status" cols="30" rows="10" v-model="status"></textarea>
         </div>
       </fieldset>
-      <div>
+      <div class="output">
         <h3>Output</h3>
-        <p>First Name: {{firstName}}</p>
-        <p>Last Name: {{lastName}}</p>
-        <p>Street Address: {{street}}</p>
-        <p>City: {{city}}</p>
-        <p>Zip Code: {{zipcode}}</p>
-        
+        <p>First Name: {{ firstName }}</p>
+        <p>Last Name: {{ lastName }}</p>
+        <p>Street Address: {{ street }}</p>
+        <p>City: {{ city }}</p>
+        <p>State: {{ state }}</p>
+        <p>Zip Code: {{ zipcode }}</p>
+        <p>Color: {{ selectedColors }}</p>
+        <p>Status: {{ status }}</p>
       </div>
     </form>
   </div>
