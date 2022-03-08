@@ -59,6 +59,7 @@ Vue.createApp({
         { value: 'WY', name: 'Wyoming' }
       ],
       zipcode: '',
+      country: '',
       selectedColors: [],
       colors: [
         { name: 'Beige', value: 'beige'},
