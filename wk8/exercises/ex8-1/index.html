@@ -31,7 +31,9 @@
         </div>
         <div>
           <label for="state">State</label>
-          <select name="" id="state"></select>
+          <select name="" id="state" v-model="state">
+            <option value=""></option>
+          </select>
         </div>
         <div>
           <label for="zipcode">Zip Code</label>
@@ -43,7 +45,7 @@
             <ul>
               <li v-for="color in colors">
                 <label>
-                  <input type="checkbox" :value="color.value">
+                  <input type="checkbox" :value="color.value" v-model="selectedColors">
                   {{ color.name }}
                 </label>
               </li>
@@ -63,7 +65,7 @@
         <p>City: {{ city }}</p>
         <p>State: {{ state }}</p>
         <p>Zip Code: {{ zipcode }}</p>
-        <p>Color: {{ selectedColors }}</p>
+        <p>Colors: {{ selectedColors }}</p>
         <p>Status: {{ status }}</p>
       </div>
     </form>
