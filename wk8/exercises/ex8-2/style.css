@@ -1,0 +1,28 @@
+ body {
+  box-sizing: border-box; 
+  background-color: hsl(0, 0%, 20%);
+  font-family: sans-serif;
+  font-size: 1.5rem;
+ }
+ div.container {
+  margin: auto;
+  width: 450px;
+  background-color: white;
+  padding: 30px;
+  margin-top: 10%;
+  border-radius: 15px;
+}
+input, select, button {
+  font-size: 1.1rem;
+  margin: 10px;
+}
+input[type='number']{
+  width: 150px;
+} 
+button {
+  background-color: hsl(135, 69%, 40%);
+  color: hsl(0, 0%, 100%);
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+}

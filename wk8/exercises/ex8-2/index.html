@@ -9,9 +9,9 @@
   <script src="https://unpkg.com/vue@3"></script>
 </head>
 <body>
-  <div id="calcApp">
+  <div id="calcApp" class="container">
     <form>
-      <input type="number" placeholder="first number" v-model.number="firstNum">
+      <input type="number" placeholder="first number" size="5" v-model.number="firstNum">
       <select v-model="operation">
         <option value="add">+</option>
         <option value="subtract">-</option>
