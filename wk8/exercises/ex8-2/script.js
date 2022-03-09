@@ -1,7 +1,15 @@
 Vue.createApp({
   data() {
     return {
-      message: 'Hello Vue!'
+      firstNum: null,
+      secondNum: null,
+      operation: 'add',
+      total: null
+    }
+  },
+  methods: {
+    calculate(num1, num2) {
+      this.firstNum = this.secondNum = null;
     }
   }
-}).mount('#app')
+}).mount('#calcApp')
