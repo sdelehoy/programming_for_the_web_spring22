@@ -10,33 +10,58 @@
   <script src="https://unpkg.com/vue@3"></script>
 </head>
 <body>
-
   <header>
     <h1>Bird Sightings</h1>
   </header>
   <div class="container">
-  <div id="app">
-    <table>
-      <thead>
-        <th>Image</th>
-        <th>Bird</th>
-        <th>Location</th>
-        <th>Date</th>
-        <th>Time</th>
-      </thead>
-      <tbody>
-        <tr v-for="(sighting, index) in sightings" :class="{ odd: index % 2 === 0 }">
-          <td><img :src="sighting.image" :alt="sighting.bird"></td>
-          <td><a class="bird" :href="sighting.info">{{ sighting.bird }}</a></td>
-          <td>{{ sighting.location }}</td>
-          <td>{{ sighting.date }}</td>
-          <td>{{ sighting.time }}</td>
-        </tr>
-      </tbody>
-    </table>
+    <div id="app">
+      <table>
+        <thead>
+          <th>Image</th>
+          <th>Bird</th>
+          <th>Location</th>
+          <th>Date</th>
+          <th>Time</th>
+        </thead>
+        <tbody>
+          <tr v-for="(sighting, index) in sightings" :class="{ odd: index % 2 === 0 }">
+            <td><img :src="sighting.image" :alt="sighting.bird"></td>
+            <td><a class="bird" :href="sighting.info">{{ sighting.bird }}</a></td>
+            <td>{{ sighting.location }}</td>
+            <td>{{ sighting.date }}</td>
+            <td>{{ sighting.time }}</td>
+          </tr>
+        </tbody>
+      </table>
+      <div>
+        <form @submit="addSighting">
+          <fieldset>
+            <legend>Add a bird sighting</legend>
+            <div>
+              <label for="bird">Bird</label>
+              <input id="bird" type="text" v-model="newSightingObj.bird">
+            </div>
+            <div>
+              <label for="location">Location</label>
+              <input id="location" type="text" v-model="newSightingObj.location">
+            </div>
+            <div>
+              <label for="date">Date</label>
+              <input id="date" type="datetime-local" v-model="newSightingObj.date">
+            </div>
+            <div>
+              <label for="time">Time</label>
+              <input id="time" type="time" v-model="newSightingObj.time">
+            </div>
+            <div>
+              <label for="image">Image</label>
+              <input id="image" type="text" v-model="newSightingObj.image">
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </div>
   </div>
-  </div>
-
   <script src="collection.js"></script>
 </body>
 </html>

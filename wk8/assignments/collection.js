@@ -42,7 +42,19 @@ Vue.createApp({
           image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Steller%27s_Jay_flagstaff_arizona.jpg/159px-Steller%27s_Jay_flagstaff_arizona.jpg',
           info: 'https://www.allaboutbirds.org/guide/Stellers_Jay'
         }
-      ]
+      ],
+      newSightingObj: {
+        bird: '',
+        location: '',
+        date: 'null',
+        time: '',
+        image: ''
+      }
+    }
+  },
+  methods: {
+    addSighting() {
+      console.log('submitted');
     }
   }
 }).mount('#app')
