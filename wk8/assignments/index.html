@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Show and Tell Collection</title>
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/style.css">
+  <script src="https://unpkg.com/vue@3"></script>
+</head>
+<body>
+
+  <header>
+    <h1>Bird Sightings</h1>
+  </header>
+  <div class="container">
+  <div id="app">
+    <table>
+      <thead>
+        <th>Image</th>
+        <th>Bird</th>
+        <th>Location</th>
+        <th>Date</th>
+        <th>Time</th>
+      </thead>
+      <tbody>
+        <tr v-for="(sighting, index) in sightings" :class="{ odd: index % 2 === 0 }">
+          <td><img :src="sighting.image" :alt="sighting.bird"></td>
+          <td><a class="bird" :href="sighting.info">{{ sighting.bird }}</a></td>
+          <td>{{ sighting.location }}</td>
+          <td>{{ sighting.date }}</td>
+          <td>{{ sighting.time }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  </div>
+
+  <script src="collection.js"></script>
+</body>
+</html>
