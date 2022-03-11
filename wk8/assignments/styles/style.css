@@ -5,11 +5,11 @@ body {
   font-family: 'Helvetica', 'Arial', sans-serif;
   background: linear-gradient(hsl(0, 0%, 100%), hsl(0, 0%, 95%));
 }
-header {
+.header {
   background-color: hsl(0 0% 20%);
   padding: 2.5%;
 }
-h1 {
+.header__title {
   text-align: center;
   font-size: 2.5rem;
   color: hsl(0, 0%, 100%);
@@ -17,6 +17,37 @@ h1 {
   text-transform: uppercase;
   font-weight: lighter;
   margin: 0;
+}
+.outer-container {
+  display: grid;
+  grid-template-rows: 2, auto;
+  grid-template-columns: 1fr;
+}
+.container {
+  padding: 2%;
+  box-shadow: 0px 7px 15px hsla(0 0% 0% / 0.5);
+  border-radius: 20px;
+  margin: 3% auto;
+  background-color: hsl(0, 0%, 100%);
+}
+fieldset {
+  border: none;
+}
+.form__title {
+  background-color: hsl(108, 38%, 41%);
+  color: hsl(0, 0%, 100%);
+  padding: 15px 30px;
+  width: 100%;
+}
+.form__title, .table__title {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+  font-weight: lighter;
+  text-align: center;
+}
+.form__content {
+  display: flex;
 }
 table, thead, tbody, th, tr, td {
   border: none;
@@ -50,17 +81,4 @@ img {
   font-weight: bold;
   color: hsl(108, 38%, 41%);
   text-transform: capitalize;
-}
-.container {
-  padding: 2%;
-  box-shadow: 0px 7px 15px hsla(0 0% 0% / 0.5);
-  border-radius: 20px;
-  display: inline-block;
-  margin: 3% auto;
-  background-color: hsl(0, 0%, 100%);
-  text-align: center;
-}
-#app {
-  display: flex;
-  flex-direction: column;
 }
