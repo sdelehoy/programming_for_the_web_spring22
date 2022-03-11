@@ -19,29 +19,30 @@
           <fieldset>
             <legend class="form__title">Add a new bird sighting</legend>
             <div class="form__content">
-              <div>
+              <div class="form__input">
                 <label for="bird">Bird</label>
-                <input id="bird" type="text" v-model="newSightingObj.bird" />
+                <input id="bird" type="text" placeholder="Northern Cardinal" v-model="newSightingObj.bird" />
               </div>
-              <div>
+              <div class="form__input">
                 <label for="location">Location</label>
                 <input
                   id="location"
                   type="text"
+                  placeholder="Lakeside Park"
                   v-model="newSightingObj.location"
                 />
               </div>
-              <div>
+              <div class="form__input">
                 <label for="date">Date</label>
                 <input id="date" type="date" v-model="newSightingObj.date" />
               </div>
-              <div>
+              <div class="form__input">
                 <label for="time">Time</label>
                 <input id="time" type="time" v-model="newSightingObj.time" />
               </div>
-              <div>
+              <div class="form__input">
                 <label for="image">Image</label>
-                <input id="image" type="text" v-model="newSightingObj.image" />
+                <input id="image" type="text" placeholder="https://..." v-model="newSightingObj.image" />
               </div>
             </div>
             <button type="submit">Submit</button>

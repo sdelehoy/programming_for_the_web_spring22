@@ -19,9 +19,8 @@ body {
   margin: 0;
 }
 .outer-container {
-  display: grid;
-  grid-template-rows: 2, auto;
-  grid-template-columns: 1fr;
+  display: flex;
+  flex-direction: column;
 }
 .container {
   padding: 2%;
@@ -29,6 +28,7 @@ body {
   border-radius: 20px;
   margin: 3% auto;
   background-color: hsl(0, 0%, 100%);
+
 }
 fieldset {
   border: none;
@@ -48,6 +48,21 @@ fieldset {
 }
 .form__content {
   display: flex;
+  gap: 25px;
+  margin: 20px 0;
+}
+button {
+  background-color: hsl(0 0% 20%);
+  color: hsl(0, 0%, 100%);
+  font-size: 1rem;
+  font-weight: lighter;
+  letter-spacing: .07rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+}
+button:hover {
+  background-color: hsl(0 0% 30%);
 }
 table, thead, tbody, th, tr, td {
   border: none;
