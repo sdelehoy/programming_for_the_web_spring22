@@ -53,7 +53,7 @@ fieldset {
   gap: 30px;
   margin: 20px 0;
 }
-button {
+.form__button, .table__button {
   background-color: hsl(0 0% 20%);
   color: hsl(0, 0%, 100%);
   font-size: 1rem;
@@ -63,6 +63,10 @@ button {
   border: none;
   border-radius: 5px;
   transition: all .3s;
+}
+.form__button {
+  float: right;
+  margin-right: 20px;
 }
 button:hover {
   background-color: hsl(0 0% 35%);

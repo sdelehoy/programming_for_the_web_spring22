@@ -45,7 +45,7 @@
                 <input id="image" type="text" placeholder="https://..." v-model="newSightingObj.image" />
               </div>
             </div>
-            <button type="submit">Submit</button>
+            <button type="submit" class="form__button">Submit</button>
           </fieldset>
         </form>
       </div>
@@ -73,7 +73,7 @@
               <td>{{ sighting.date }}</td>
               <td>{{ sighting.time }}</td>
               <td>
-                <button type="button" @click="deleteSighting(sighting)">
+                <button type="button" class="table__button" @click="deleteSighting(sighting)">
                   Delete
                 </button>
               </td>
