@@ -49,6 +49,7 @@ img {
 .bird {
   font-weight: bold;
   color: hsl(108, 38%, 41%);
+  text-transform: capitalize;
 }
 .container {
   text-align: center;

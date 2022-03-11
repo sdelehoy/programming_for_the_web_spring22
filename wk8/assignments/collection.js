@@ -54,7 +54,19 @@ Vue.createApp({
   },
   methods: {
     addSighting() {
-      console.log('submitted');
+      this.sightings = this.sightings.concat(this.newSightingObj);
+      this.newSightingObj = {
+        bird: '',
+        location: '',
+        date: 'null',
+        time: '',
+        image: ''
+      };
+    },
+    deleteSighting (item) {
+      this.sightings = this.sightings.filter(sighting => {
+        return sighting !== item;
+      });
     }
   }
 }).mount('#app')
