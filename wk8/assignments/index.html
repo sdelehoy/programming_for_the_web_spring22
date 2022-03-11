@@ -13,34 +13,11 @@
   <header>
     <h1>Bird Sightings</h1>
   </header>
-  <div class="container">
     <div id="app">
-      <table>
-        <thead>
-          <th>Image</th>
-          <th>Bird</th>
-          <th>Location</th>
-          <th>Date</th>
-          <th>Time</th>
-          <th>Delete</th>
-        </thead>
-        <tbody>
-          <tr v-for="(sighting, index) in sightings" :class="{ odd: index % 2 === 0 }">
-            <td><img :src="sighting.image" :alt="sighting.bird"></td>
-            <td><a class="bird" :href="sighting.info">{{ sighting.bird }}</a></td>
-            <td>{{ sighting.location }}</td>
-            <td>{{ sighting.date }}</td>
-            <td>{{ sighting.time }}</td>
-            <td>
-              <button type="button" @click="deleteSighting(sighting)">Delete</button>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      <div>
+      <div class="container">
         <form @submit.prevent="addSighting">
           <fieldset>
-            <legend>Add a bird sighting</legend>
+            <legend>Add a new bird sighting</legend>
             <div>
               <label for="bird">Bird</label>
               <input id="bird" type="text" v-model="newSightingObj.bird">
@@ -65,6 +42,29 @@
           </fieldset>
         </form>
       </div>
+      <div class="container">
+      <table>
+        <thead>
+          <th>Image</th>
+          <th>Bird</th>
+          <th>Location</th>
+          <th>Date</th>
+          <th>Time</th>
+          <th>Delete</th>
+        </thead>
+        <tbody>
+          <tr v-for="(sighting, index) in sightings" :class="{ odd: index % 2 === 0 }">
+            <td><img :src="sighting.image" :alt="sighting.bird"></td>
+            <td><a class="bird" :href="sighting.info">{{ sighting.bird }}</a></td>
+            <td>{{ sighting.location }}</td>
+            <td>{{ sighting.date }}</td>
+            <td>{{ sighting.time }}</td>
+            <td>
+              <button type="button" @click="deleteSighting(sighting)">Delete</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </div>
   <script src="collection.js"></script>

@@ -52,13 +52,15 @@ img {
   text-transform: capitalize;
 }
 .container {
-  text-align: center;
-}
-#app {
   padding: 2%;
   box-shadow: 0px 7px 15px hsla(0 0% 0% / 0.5);
   border-radius: 20px;
   display: inline-block;
-  margin: 4%;
+  margin: 3% auto;
   background-color: hsl(0, 0%, 100%);
+  text-align: center;
+}
+#app {
+  display: flex;
+  flex-direction: column;
 }
