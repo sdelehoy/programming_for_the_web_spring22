@@ -66,6 +66,9 @@ Vue.createApp({
         info: ''
       };
     },
+    isValid() {
+      return this.newSightingObj.bird && this.newSightingObj.location && this.newSightingObj.date && this.newSightingObj.time;
+    },
     deleteSighting (item) {
       this.sightings = this.sightings.filter(sighting => {
         return sighting !== item;

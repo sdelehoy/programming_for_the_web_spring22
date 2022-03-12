@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 body {
-  font-family: 'Helvetica', 'Arial', sans-serif;
+  font-family: "Helvetica", "Arial", sans-serif;
   background: linear-gradient(hsl(0, 0%, 100%), hsl(0, 0%, 95%));
 }
 .header {
@@ -13,7 +13,7 @@ body {
   text-align: center;
   font-size: 2.5rem;
   color: hsl(0, 0%, 100%);
-  letter-spacing: .3rem;
+  letter-spacing: 0.3rem;
   text-transform: uppercase;
   font-weight: lighter;
   margin: 0;
@@ -30,7 +30,6 @@ body {
   border-radius: 20px;
   margin: auto;
   background-color: hsl(0, 0%, 100%);
-
 }
 fieldset {
   border: none;
@@ -41,10 +40,11 @@ fieldset {
   padding: 15px 30px;
   width: 100%;
 }
-.form__title, .table__title {
+.form__title,
+.table__title {
   font-size: 1.5rem;
   text-transform: uppercase;
-  letter-spacing: .2rem;
+  letter-spacing: 0.2rem;
   font-weight: lighter;
   text-align: center;
 }
@@ -53,26 +53,33 @@ fieldset {
   gap: 30px;
   margin: 20px 0;
 }
-.form__button, .table__button {
+.form__button,
+.table__button {
   background-color: hsl(0 0% 20%);
   color: hsl(0, 0%, 100%);
   font-size: 1rem;
   font-weight: lighter;
-  letter-spacing: .07rem;
+  letter-spacing: 0.07rem;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
-  transition: all .3s;
-}
-.form__button {
-  float: right;
-  margin-right: 20px;
+  transition: all 0.3s;
 }
 button:hover {
-  background-color: hsl(0 0% 35%);
-  transform: scale(.95);
+  background-color: hsl(0 0% 40%);
+  transform: scale(0.95);
 }
-table, thead, tbody, th, tr, td {
+button[type='submit']:disabled {
+  background-color: hsl(0 0% 80%);
+  color: hsl(0 0% 60%);
+  transform: none;
+}
+table,
+thead,
+tbody,
+th,
+tr,
+td {
   border: none;
   border-collapse: collapse;
   border-spacing: 0;
@@ -83,7 +90,7 @@ thead {
 }
 th {
   padding: 20px;
-  letter-spacing: .2rem;
+  letter-spacing: 0.2rem;
   text-transform: uppercase;
   text-align: left;
   font-weight: lighter;
