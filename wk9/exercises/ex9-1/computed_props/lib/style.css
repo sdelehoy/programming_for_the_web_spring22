@@ -1,4 +1,19 @@
 /* Add your styles here */
+ body {
+  height: 100vh;
+  background: radial-gradient(circle at 35% 20%, hsl(0, 0%, 90%), hsl(0, 0%, 30%));
+  background-repeat: no-repeat;
+}
+.app-container {
+  margin: 20% auto;
+  width: 500px;
+  text-align: center;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 20px 30px 20px hsla(0, 0%, 0%, 0.3);
+  background-color: hsla(0, 0%, 100%, 0.8);
+}
+
 * {
   font-family: Verdana, Geneva, Tahoma, sans-serif
 }
