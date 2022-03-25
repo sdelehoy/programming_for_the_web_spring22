@@ -53,7 +53,7 @@ let sightings = [
     info: "https://www.allaboutbirds.org/guide/Stellers_Jay",
   },
 ];
-const newSightingObj = {
+let newSightingObj = {
   bird: "",
   location: "",
   date: "null",
@@ -61,11 +61,34 @@ const newSightingObj = {
   image: "",
   info: "",
 };
-const state = reactive({sightings});
+const state = reactive({ sightings });
+const newState = reactive({ newSightingObj });
 function deleteSighting(item) {
   state.sightings = state.sightings.filter((sighting) => {
     return sighting !== item;
   });
+}
+function addSighting() {
+  newState.newSightingObj.info =
+    "https://www.allaboutbirds.org/news/search/?q=" +
+    newState.newSightingObj.bird;
+  state.sightings = state.sightings.concat(newState.newSightingObj);
+  newState.newSightingObj = {
+    bird: "",
+    location: "",
+    date: "null",
+    time: "",
+    image: "",
+    info: "",
+  };
+}
+function isValid() {
+  return (
+    newState.newSightingObj.bird &&
+    newState.newSightingObj.location &&
+    newState.newSightingObj.date &&
+    newState.newSightingObj.time
+  );
 }
 </script>
 
@@ -86,7 +109,7 @@ function deleteSighting(item) {
                   id="bird"
                   type="text"
                   placeholder="Northern Cardinal"
-                  v-model="newSightingObj.bird"
+                  v-model="newState.newSightingObj.bird"
                 />
               </div>
               <div class="form__input">
@@ -95,16 +118,24 @@ function deleteSighting(item) {
                   id="location"
                   type="text"
                   placeholder="Lakeside Park"
-                  v-model="newSightingObj.location"
+                  v-model="newState.newSightingObj.location"
                 />
               </div>
               <div class="form__input">
                 <label for="date">Date</label>
-                <input id="date" type="date" v-model="newSightingObj.date" />
+                <input
+                  id="date"
+                  type="date"
+                  v-model="newState.newSightingObj.date"
+                />
               </div>
               <div class="form__input">
                 <label for="time">Time</label>
-                <input id="time" type="time" v-model="newSightingObj.time" />
+                <input
+                  id="time"
+                  type="time"
+                  v-model="newState.newSightingObj.time"
+                />
               </div>
               <div class="form__input">
                 <label for="image">Image</label>
@@ -112,13 +143,13 @@ function deleteSighting(item) {
                   id="image"
                   type="text"
                   placeholder="https://..."
-                  v-model="newSightingObj.image"
+                  v-model="newState.newSightingObj.image"
                 />
               </div>
             </div>
-            <!-- <button type="submit" class="form__button" :disabled="!isValid()">
+            <button type="submit" class="form__button" :disabled="!isValid()">
               Submit
-            </button> -->
+            </button>
           </fieldset>
         </form>
       </div>
@@ -154,7 +185,7 @@ function deleteSighting(item) {
 }
 body {
   font-family: "Helvetica", "Arial", sans-serif;
-  background-color: hsl(0, 0%, 90%);
+  background: linear-gradient(hsl(0, 0%, 100%), hsl(0, 0%, 95%));
   margin: 0;
 }
 .header {
@@ -202,11 +233,14 @@ fieldset {
 }
 .form__content {
   display: flex;
-  gap: 30px;
+  gap: 24px;
   margin: 20px 0;
 }
-.form__button,
-.table__button {
+label,
+input[type="text"] {
+  font-size: 1rem;
+}
+.form__button {
   background-color: hsl(0 0% 20%);
   color: hsl(0, 0%, 100%);
   font-size: 1rem;
@@ -225,5 +259,35 @@ button[type="submit"]:disabled {
   background-color: hsl(0 0% 80%);
   color: hsl(0 0% 60%);
   transform: none;
+}
+table,
+thead,
+tbody,
+th,
+tr,
+td {
+  border: none;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+thead {
+  background-color: hsl(108, 38%, 41%);
+  color: hsl(0, 0%, 100%);
+}
+th {
+  padding: 20px;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  text-align: left;
+  font-weight: lighter;
+}
+td {
+  padding: 15px;
+  padding-right: 40px;
+  font-size: 1.3rem;
+  font-weight: lighter;
+}
+.odd {
+  background-color: hsl(0, 0%, 95%);
 }
 </style>

@@ -18,7 +18,11 @@ const props = defineProps(["sighting"]);
     <td>{{ props.sighting.date }}</td>
     <td>{{ props.sighting.time }}</td>
     <td>
-      <button type="button" class="table__button" @click="$emit('deleteRow', props.sighting)">
+      <button
+        type="button"
+        class="table__button"
+        @click="$emit('deleteRow', props.sighting)"
+      >
         Delete
       </button>
     </td>
@@ -26,7 +30,6 @@ const props = defineProps(["sighting"]);
 </template>
 
 <style scoped>
-form__button,
 .table__button {
   background-color: hsl(0 0% 20%);
   color: hsl(0, 0%, 100%);
