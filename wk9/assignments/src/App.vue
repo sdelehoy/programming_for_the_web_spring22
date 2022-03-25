@@ -109,9 +109,9 @@ const newSightingObj = {
                 />
               </div>
             </div>
-            <button type="submit" class="form__button" :disabled="!isValid()">
+            <!-- <button type="submit" class="form__button" :disabled="!isValid()">
               Submit
-            </button>
+            </button> -->
           </fieldset>
         </form>
       </div>
@@ -147,6 +147,7 @@ const newSightingObj = {
 body {
   font-family: "Helvetica", "Arial", sans-serif;
   background-color: hsl(0, 0%, 90%);
+  margin: 0;
 }
 .header {
   background-color: hsl(0 0% 20%);
