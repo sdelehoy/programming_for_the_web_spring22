@@ -2,6 +2,7 @@
 import BirdRow from "./components/BirdRow.vue";
 const sightings = [
   {
+    id: 0,
     bird: "Cedar Waxwing",
     location: "Dixon Reservoir",
     date: "2018-08-24",
@@ -11,6 +12,7 @@ const sightings = [
     info: "https://www.allaboutbirds.org/guide/Cedar_Waxwing",
   },
   {
+    id: 1,
     bird: "Mourning Dove",
     location: "Dixon Reservoir",
     date: "2018-09-07",
@@ -20,6 +22,7 @@ const sightings = [
     info: "https://www.allaboutbirds.org/guide/Mourning_Dove",
   },
   {
+    id: 2,
     bird: "Blue Jay",
     location: "Horsetooth Reservoir",
     date: "2018-09-14",
@@ -29,6 +32,7 @@ const sightings = [
     info: "https://www.allaboutbirds.org/guide/Blue_Jay",
   },
   {
+    id: 3,
     bird: "Canyon Wren",
     location: "Horsetooth Reservoir",
     date: "2018-09-14",
@@ -38,6 +42,7 @@ const sightings = [
     info: "https://www.allaboutbirds.org/guide/Canyon_Wren",
   },
   {
+    id: 4,
     bird: "Steller's Jay",
     location: "Horsetooth Reservoir",
     date: "2018-11-17",
@@ -122,7 +127,12 @@ const newSightingObj = {
             <th>Delete</th>
           </thead>
           <tbody>
-            <BirdRow v-for="(sighting, index) in sightings" :key="bird" :class="{ odd: index % 2 === 0 }" />
+            <BirdRow
+              v-for="(sighting, index) in sightings"
+              :key="sighting.id"
+              :class="{ odd: index % 2 === 0 }"
+              :sighting="sighting"
+            />
           </tbody>
         </table>
       </div>
