@@ -110,6 +110,22 @@ const newSightingObj = {
           </fieldset>
         </form>
       </div>
+      <div class="container">
+        <h2 class="table__title">Your Recorded Sightings</h2>
+        <table>
+          <thead>
+            <th>Image</th>
+            <th>Bird</th>
+            <th>Location</th>
+            <th>Date</th>
+            <th>Time</th>
+            <th>Delete</th>
+          </thead>
+          <tbody>
+            <BirdRow v-for="(sighting, index) in sightings" :key="bird" :class="{ odd: index % 2 === 0 }" />
+          </tbody>
+        </table>
+      </div>
     </div>
   </div>
 </template>
