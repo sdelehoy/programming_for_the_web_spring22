@@ -3,7 +3,7 @@ const props = defineProps(["sighting"]);
 </script>
 
 <template>
-  <tr :class="{ odd: index % 2 === 0 }">
+  <tr>
     <td>
       <img
         :src="props.sighting.image"
@@ -18,11 +18,7 @@ const props = defineProps(["sighting"]);
     <td>{{ props.sighting.date }}</td>
     <td>{{ props.sighting.time }}</td>
     <td>
-      <button
-        type="button"
-        class="table__button"
-        @click="deleteSighting(sighting)"
-      >
+      <button type="button" class="table__button" @click="$emit('deleteRow', props.sighting)">
         Delete
       </button>
     </td>

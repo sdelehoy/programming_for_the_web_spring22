@@ -1,6 +1,7 @@
 <script setup>
+import { reactive } from "vue";
 import BirdRow from "./components/BirdRow.vue";
-const sightings = [
+let sightings = [
   {
     id: 0,
     bird: "Cedar Waxwing",
@@ -60,6 +61,12 @@ const newSightingObj = {
   image: "",
   info: "",
 };
+const state = reactive({sightings});
+function deleteSighting(item) {
+  state.sightings = state.sightings.filter((sighting) => {
+    return sighting !== item;
+  });
+}
 </script>
 
 <template>
@@ -128,10 +135,11 @@ const newSightingObj = {
           </thead>
           <tbody>
             <BirdRow
-              v-for="(sighting, index) in sightings"
+              v-for="(sighting, index) in state.sightings"
               :key="sighting.id"
               :class="{ odd: index % 2 === 0 }"
               :sighting="sighting"
+              @delete-row="deleteSighting"
             />
           </tbody>
         </table>
