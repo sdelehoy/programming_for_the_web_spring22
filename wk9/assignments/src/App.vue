@@ -3,7 +3,6 @@ import { reactive } from "vue";
 import BirdRow from "./components/BirdRow.vue";
 let sightings = [
   {
-    id: 0,
     bird: "Cedar Waxwing",
     location: "Dixon Reservoir",
     date: "2018-08-24",
@@ -13,7 +12,6 @@ let sightings = [
     info: "https://www.allaboutbirds.org/guide/Cedar_Waxwing",
   },
   {
-    id: 1,
     bird: "Mourning Dove",
     location: "Dixon Reservoir",
     date: "2018-09-07",
@@ -23,7 +21,6 @@ let sightings = [
     info: "https://www.allaboutbirds.org/guide/Mourning_Dove",
   },
   {
-    id: 2,
     bird: "Blue Jay",
     location: "Horsetooth Reservoir",
     date: "2018-09-14",
@@ -33,7 +30,6 @@ let sightings = [
     info: "https://www.allaboutbirds.org/guide/Blue_Jay",
   },
   {
-    id: 3,
     bird: "Canyon Wren",
     location: "Horsetooth Reservoir",
     date: "2018-09-14",
@@ -43,7 +39,6 @@ let sightings = [
     info: "https://www.allaboutbirds.org/guide/Canyon_Wren",
   },
   {
-    id: 4,
     bird: "Steller's Jay",
     location: "Horsetooth Reservoir",
     date: "2018-11-17",
@@ -61,22 +56,20 @@ let newSightingObj = {
   image: "",
   info: "",
 };
-const state = reactive({ sightings });
-const newState = reactive({ newSightingObj });
+const state = reactive({ sightings, newSightingObj });
 function deleteSighting(item) {
   state.sightings = state.sightings.filter((sighting) => {
     return sighting !== item;
   });
 }
 function addSighting() {
-  newState.newSightingObj.info =
-    "https://www.allaboutbirds.org/news/search/?q=" +
-    newState.newSightingObj.bird;
-  state.sightings = state.sightings.concat(newState.newSightingObj);
-  newState.newSightingObj = {
+  state.newSightingObj.info =
+    "https://www.allaboutbirds.org/news/search/?q=" + state.newSightingObj.bird;
+  state.sightings = state.sightings.concat(state.newSightingObj);
+  state.newSightingObj = {
     bird: "",
     location: "",
-    date: "null",
+    date: "",
     time: "",
     image: "",
     info: "",
@@ -84,10 +77,10 @@ function addSighting() {
 }
 function isValid() {
   return (
-    newState.newSightingObj.bird &&
-    newState.newSightingObj.location &&
-    newState.newSightingObj.date &&
-    newState.newSightingObj.time
+    state.newSightingObj.bird &&
+    state.newSightingObj.location &&
+    state.newSightingObj.date &&
+    state.newSightingObj.time
   );
 }
 </script>
@@ -109,7 +102,7 @@ function isValid() {
                   id="bird"
                   type="text"
                   placeholder="Northern Cardinal"
-                  v-model="newState.newSightingObj.bird"
+                  v-model="state.newSightingObj.bird"
                 />
               </div>
               <div class="form__input">
@@ -118,7 +111,7 @@ function isValid() {
                   id="location"
                   type="text"
                   placeholder="Lakeside Park"
-                  v-model="newState.newSightingObj.location"
+                  v-model="state.newSightingObj.location"
                 />
               </div>
               <div class="form__input">
@@ -126,7 +119,7 @@ function isValid() {
                 <input
                   id="date"
                   type="date"
-                  v-model="newState.newSightingObj.date"
+                  v-model="state.newSightingObj.date"
                 />
               </div>
               <div class="form__input">
@@ -134,7 +127,7 @@ function isValid() {
                 <input
                   id="time"
                   type="time"
-                  v-model="newState.newSightingObj.time"
+                  v-model="state.newSightingObj.time"
                 />
               </div>
               <div class="form__input">
@@ -143,7 +136,7 @@ function isValid() {
                   id="image"
                   type="text"
                   placeholder="https://..."
-                  v-model="newState.newSightingObj.image"
+                  v-model="state.newSightingObj.image"
                 />
               </div>
             </div>
@@ -167,7 +160,7 @@ function isValid() {
           <tbody>
             <BirdRow
               v-for="(sighting, index) in state.sightings"
-              :key="sighting.id"
+              :key="index"
               :class="{ odd: index % 2 === 0 }"
               :sighting="sighting"
               @delete-row="deleteSighting"
