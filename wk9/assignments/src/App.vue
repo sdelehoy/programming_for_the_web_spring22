@@ -3,6 +3,7 @@ import { reactive } from "vue";
 import BirdRow from "./components/BirdRow.vue";
 let sightings = [
   {
+    id: 1,
     bird: "Cedar Waxwing",
     location: "Dixon Reservoir",
     date: "2018-08-24",
@@ -12,6 +13,7 @@ let sightings = [
     info: "https://www.allaboutbirds.org/guide/Cedar_Waxwing",
   },
   {
+    id: 2,
     bird: "Mourning Dove",
     location: "Dixon Reservoir",
     date: "2018-09-07",
@@ -21,6 +23,7 @@ let sightings = [
     info: "https://www.allaboutbirds.org/guide/Mourning_Dove",
   },
   {
+    id: 3,
     bird: "Blue Jay",
     location: "Horsetooth Reservoir",
     date: "2018-09-14",
@@ -30,6 +33,7 @@ let sightings = [
     info: "https://www.allaboutbirds.org/guide/Blue_Jay",
   },
   {
+    id: 4,
     bird: "Canyon Wren",
     location: "Horsetooth Reservoir",
     date: "2018-09-14",
@@ -39,6 +43,7 @@ let sightings = [
     info: "https://www.allaboutbirds.org/guide/Canyon_Wren",
   },
   {
+    id: 5,
     bird: "Steller's Jay",
     location: "Horsetooth Reservoir",
     date: "2018-11-17",
@@ -63,17 +68,23 @@ function deleteSighting(item) {
   });
 }
 function addSighting() {
-  state.newSightingObj.info =
-    "https://www.allaboutbirds.org/news/search/?q=" + state.newSightingObj.bird;
-  state.sightings = state.sightings.concat(state.newSightingObj);
-  state.newSightingObj = {
-    bird: "",
-    location: "",
-    date: "",
-    time: "",
-    image: "",
-    info: "",
-  };
+  state.sightings.push({
+    id: state.sightings.length + 1,
+    bird: state.newSightingObj.bird,
+    location: state.newSightingObj.location,
+    date: state.newSightingObj.date,
+    time: state.newSightingObj.time,
+    image: state.newSightingObj.image,
+    info:
+      "https://www.allaboutbirds.org/news/search/?q=" +
+      state.newSightingObj.bird,
+  });
+  state.newSightingObj.bird = "";
+  state.newSightingObj.location = "";
+  state.newSightingObj.date = "";
+  state.newSightingObj.time = "";
+  state.newSightingObj.image = "";
+  state.newSightingObj.info = "";
 }
 function isValid() {
   return (
