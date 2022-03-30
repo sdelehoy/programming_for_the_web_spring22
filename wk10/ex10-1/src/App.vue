@@ -64,6 +64,6 @@ nav a.router-link-active {
   display: block;
   width: 100%;
   margin: 20px auto;
-  border-radius: 100px 0;
+  border-radius: 50px 50px 5px 5px;
 }
 </style>
