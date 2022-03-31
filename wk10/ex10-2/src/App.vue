@@ -3,7 +3,7 @@ import { RouterView, RouterLink } from "vue-router";
 </script>
 
 <template>
-  <div>
+  <div class="container">
     <nav>
       <RouterLink to="/">Home</RouterLink>
     </nav>
@@ -11,4 +11,13 @@ import { RouterView, RouterLink } from "vue-router";
   </div>
 </template>
 
-<style></style>
+<style>
+body {
+  margin: 0;
+  background: hsl(196, 12%, 18%);
+  font-family: Helvetica, Arial, sans-serif;
+}
+nav a {
+  display: none;
+}
+</style>
