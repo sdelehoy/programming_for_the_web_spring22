@@ -5,16 +5,27 @@ import SightingRow from "../components/SightingRow.vue";
 
 <template>
   <div>
-    <div class="title-container">
+    <header class="title-container">
       <h1>Bird Sightings</h1>
-    </div>
-    <div class="row-container">
+    </header>
+    <article class="row-container">
+      <div class="label-container">
+        <p class="label-image">Image</p>
+        <p class="label-bird">Bird</p>
+        <p class="label-location">Location</p>
+        <p class="label-date">Date</p>
+        <p class="label-time">Time</p>
+      </div>
       <SightingRow
         v-for="(sighting, index) in SightingsList"
         :key="index"
         :sighting="sighting"
+        :class="{
+          odd: index % 2 === 0,
+          last: SightingsList.length - index === 1,
+        }"
       />
-    </div>
+    </article>
   </div>
 </template>
 
@@ -34,9 +45,34 @@ import SightingRow from "../components/SightingRow.vue";
 }
 .row-container {
   background-color: hsl(0, 0%, 100%);
-  width: 800px;
+  width: 850px;
   margin: 30px auto;
-  padding: 20px;
+  padding: 30px;
   border-radius: 10px;
+  box-shadow: 5px 10px 10px hsla(0, 0%, 0%, 0.2);
+}
+.label-container {
+  display: flex;
+  gap: 30px;
+  text-transform: uppercase;
+  letter-spacing: 0.2ch;
+  font-weight: lighter;
+}
+.label-image {
+  width: 100px;
+}
+.label-bird,
+.label-location {
+  width: 200px;
+}
+.label-date,
+.label-time {
+  width: 150px;
+}
+.odd {
+  background: hsl(0, 0%, 95%);
+}
+.last {
+  margin-bottom: 0;
 }
 </style>

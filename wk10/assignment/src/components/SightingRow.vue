@@ -4,62 +4,56 @@ const props = defineProps(["sighting", "index"]);
 </script>
 
 <template>
-  <RouterLink :to="'/' + sighting.id">
-    <tr>
-      <td>
-        <img :src="props.sighting.image" :alt="props.sighting.bird" />
-      </td>
-      <td>
-        <a class="bird" :href="props.sighting.info">{{
-          props.sighting.bird
-        }}</a>
-      </td>
-      <td>{{ props.sighting.location }}</td>
-      <td>{{ props.sighting.date }}</td>
-      <td>{{ props.sighting.time }}</td>
-    </tr>
-  </RouterLink>
+  <section>
+    <RouterLink :to="'/' + sighting.id">
+      <div class="row-container">
+        <div>
+          <img :src="props.sighting.image" :alt="props.sighting.bird" />
+        </div>
+        <div class="cell-bird">{{ props.sighting.bird }}</div>
+        <div class="cell-location">{{ props.sighting.location }}</div>
+        <div class="cell-date">{{ props.sighting.date }}</div>
+        <div class="cell-time">{{ props.sighting.time }}</div>
+      </div>
+    </RouterLink>
+  </section>
 </template>
 
 <style scoped>
-.table__button {
-  background-color: hsl(0 0% 20%);
-  color: hsl(0, 0%, 100%);
-  font-size: 1rem;
-  font-weight: lighter;
-  letter-spacing: 0.07rem;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
+section {
+  margin-bottom: 10px;
+}
+.row-container {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  color: hsl(0, 0%, 0%);
+  font-size: 1.1rem;
   transition: all 0.3s;
 }
-button:hover {
-  background-color: hsl(0 0% 40%);
-  transform: scale(0.95);
+.row-container:hover {
+  filter: saturate(175%);
+  scale: 1.02;
 }
-button[type="submit"]:disabled {
-  background-color: hsl(0 0% 80%);
-  color: hsl(0 0% 60%);
-  transform: none;
-}
-tr,
-td {
-  border: none;
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-td {
-  padding: 15px;
-  padding-right: 40px;
-  font-size: 1.3rem;
-  font-weight: lighter;
+.row-container a {
+  text-decoration: none;
 }
 img {
-  width: 150px;
+  width: 100px;
+  display: block;
 }
-.bird {
+.cell-bird {
   font-weight: bold;
+  font-size: 1.3rem;
   color: hsl(108, 38%, 41%);
   text-transform: capitalize;
+}
+.cell-bird,
+.cell-location {
+  width: 200px;
+}
+.cell-date,
+.cell-time {
+  width: 150px;
 }
 </style>

@@ -40,6 +40,7 @@ article {
   background-color: hsl(0, 0%, 100%);
   border-radius: 10px;
   box-shadow: 5px 10px 10px hsla(0, 0%, 0%, 0.2);
+  font-size: 1.1rem;
 }
 a {
   color: hsl(108, 38%, 41%);
