@@ -1,4 +1,5 @@
-/* Inspired from The Coding Train video Coding Challenge #55: Mathmatical Rose Patterns */
+/* Inspired from The Coding Train video Coding Challenge #55: Mathmatical Rose Patterns
+https://www.youtube.com/watch?v=f5QBExMNB1I&t=437s */
 
 angle = 0;
 
