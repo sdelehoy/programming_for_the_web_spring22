@@ -1,3 +1,5 @@
+/* Inspired from The Coding Train video Coding Challenge #55: Mathmatical Rose Patterns */
+
 angle = 0;
 
 function setup() {
@@ -14,7 +16,6 @@ function draw() {
   const n = 13;
   const d = 14;
   const k = n / d;
-  beginShape();
   for (let a = 0; a < TWO_PI * d; a += 0.01) {
     const r = 400 * cos(k * a);
     const x = r * cos(a);
@@ -23,5 +24,4 @@ function draw() {
     fill(h, 100, 60);
     circle(x, y, 3);
   }
-  endShape(CLOSE);
 }
