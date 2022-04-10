@@ -12,8 +12,9 @@ function setup() {
   var canvas = createCanvas(1000, 700);
   canvas.parent('container');
   background(255);
-  createP(string);
-  let button = createButton('createString');
+  fill(0);
+  stroke(0);
+  let button = createButton('generate');
   button.mousePressed(createString);
 }
 
@@ -24,9 +25,9 @@ function draw() {
 //create new l-system string for next iteration
 function createString() {
   let newString = '';
-  for (let i = 0; i > string.length; i++) {
+  for (let i = 0; i < string.length; i++) {
     let match = false;
-    for (let j = 0; j > rules.length; j++) {
+    for (let j = 0; j < rules.length; j++) {
       if (string[i] === rules[j][0]) {
         newString += rules[j][1];
         match = true;
