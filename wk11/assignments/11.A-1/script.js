@@ -1,4 +1,4 @@
-//Turtle
+//Turtle graphics
 let angle = 25; //how much it turns with + or -
 
 //L-System
@@ -22,22 +22,29 @@ function draw() {
 
 }
 
-//create new l-system string for next iteration
+//create new l-system/turtle string for next iteration
 function createString() {
   let newString = '';
+  //see if character in string matches character in rules
   for (let i = 0; i < string.length; i++) {
     let match = false;
     for (let j = 0; j < rules.length; j++) {
       if (string[i] === rules[j][0]) {
+        //if they match add replacement from rules to newString
         newString += rules[j][1];
         match = true;
         break;
       }
     }
+    //if nothing matches rewrite same character
     if (match === false) {
       newString += string[i];
     }
   }
   string = newString;
   createP(string);
+}
+
+function translateCommands() {
+
 }
