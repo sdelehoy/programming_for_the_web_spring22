@@ -5,8 +5,8 @@ https://www.youtube.com/watch?v=E1B4UoSQMFw
 https://p5js.org/examples/simulate-l-systems.html */
 
 //Turtle graphics
-let x1 = width / 2; //starting x
-let y1 = height; //starting y
+let x1;
+let y1;
 let angle = 25; //how much it turns with + or -
 let length = 50; //length of each branch/node
 
@@ -22,12 +22,18 @@ function setup() {
   canvas.parent('container');
   background(255);
   stroke(0);
+  fill(0);
+  x1 = width / 2; //starting x
+  y1 = height; //starting y
+/*   for (i = 0; i < n; i++) {
+    createString();
+  } */
   let button = createButton('generate');
   button.mousePressed(createString);
 }
 
 function draw() {
-
+/*   createCommands(); */
 }
 
 //create new l-system/turtle string for next iteration
@@ -59,15 +65,15 @@ function createCommands() {
     if (string[i] === 'X') {
 
     } else if (string[i] === 'F') {
-      let x2 = x1 + length * cos(radians(angle));
-      let y2 = y1 + length * sin(radians(angle));
+      let x2 = x1 + length * cos(radians(newAngle));
+      let y2 = y1 - length * sin(radians(newAngle));
       line(x1, y1, x2, y2);
       x1 = x2;
       y1 = y2;
     } else if (string[i] === '+') {
-      rotate(radians(angle));
+      newAngle += angle;
     } else if (string[i] === '-') {
-      rotate(radians(-angle));
+      newAngle -= angle;
     } else if (string[i] === '[') {
       push();
     } else if (string[i] === ']') {
