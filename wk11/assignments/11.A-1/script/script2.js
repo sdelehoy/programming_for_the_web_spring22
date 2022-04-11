@@ -4,15 +4,14 @@ https://www.youtube.com/watch?v=E1B4UoSQMFw
 2. P5.js examples L-Systems
 https://p5js.org/examples/simulate-l-systems.html */
 
-let angle = 25; //how much it turns with + or -
+let angle = 80; //how much it turns with + or -
 let length = 4; //length of each branch/node
 
 //L-System
-let string = 'X'; //axiom or start of the string
+let string = 'F'; //axiom or start of the string
 let n = 6; //number of iterations
 let rules = [];
-rules[0] = ['X', 'F+[[X]-X]-F[-FX]+X'];
-rules[1] = ['F', 'FF'];
+rules[0] = ['F', 'F+F--F+F'];
 
 function setup() {
   var canvas = createCanvas(1000, 700);
@@ -20,8 +19,6 @@ function setup() {
   background(255);
   stroke(87, 156, 68);
   strokeWeight(2);
-  x = width / 2; //starting x
-  y = height; //starting y
   for (i = 0; i < n; i++) {
     createString();
   }
@@ -57,11 +54,9 @@ function createString() {
 //Translate turtle commands to draw branches
 function createDrawing() {
   resetMatrix();
-  translate(width /2, height);
+  translate(width / 2, height);
   for (let i = 0; i < string.length; i++) {
-    if (string[i] === 'X') {
-      continue;
-    } else if (string[i] === 'F') {
+    if (string[i] === 'F') {
       line(0, 0, 0, -length);
       translate(0, -length);
     } else if (string[i] === '+') {
@@ -72,6 +67,8 @@ function createDrawing() {
       push();
     } else if (string[i] === ']') {
       pop();
+    } else {
+      continue;
     }
   }
 }

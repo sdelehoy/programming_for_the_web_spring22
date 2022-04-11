@@ -20,8 +20,6 @@ function setup() {
   background(255);
   stroke(87, 156, 68);
   strokeWeight(2);
-  x = width / 2; //starting x
-  y = height; //starting y
   for (i = 0; i < n; i++) {
     createString();
   }
