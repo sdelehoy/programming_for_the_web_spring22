@@ -16,7 +16,7 @@ rules[1] = ['F', 'FF'];
 
 function setup() {
   var canvas = createCanvas(1000, 700);
-  canvas.parent('container');
+  canvas.parent('canvas-container');
   background(255);
   stroke(87, 156, 68);
   strokeWeight(2);

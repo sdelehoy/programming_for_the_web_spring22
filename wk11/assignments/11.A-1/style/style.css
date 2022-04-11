@@ -1,5 +1,13 @@
-#container {
+body {
+  font-family: sans-serif;
+}
+main {
+  text-align: center;
+}
+.home {
+  display: flex;
+}
+#canvas-container {
   margin: auto;
   width: 1000px;
-  text-align: center;
 }
