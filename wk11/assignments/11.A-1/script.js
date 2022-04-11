@@ -8,7 +8,8 @@ https://p5js.org/examples/simulate-l-systems.html */
 let x1;
 let y1;
 let angle = 25; //how much it turns with + or -
-let length = 50; //length of each branch/node
+let newAngle = 25;
+let length = 5; //length of each branch/node
 
 //L-System
 let string = 'X'; //axiom or start of the string
@@ -22,18 +23,18 @@ function setup() {
   canvas.parent('container');
   background(255);
   stroke(0);
-  fill(0);
-  x1 = width / 2; //starting x
-  y1 = height; //starting y
-/*   for (i = 0; i < n; i++) {
+  x1 = 30; //starting x
+  y1 = height - 10; //starting y
+  for (i = 0; i < n; i++) {
     createString();
-  } */
+  }
+  createDrawing();
   let button = createButton('generate');
   button.mousePressed(createString);
 }
 
 function draw() {
-/*   createCommands(); */
+  
 }
 
 //create new l-system/turtle string for next iteration
@@ -60,10 +61,10 @@ function createString() {
 }
 
 //Translate turtle commands to draw branches
-function createCommands() {
-  for (i = 0; i < string.length; i++) {
+function createDrawing() {
+  for (let i = 0; i < string.length; i++) {
     if (string[i] === 'X') {
-
+      continue;
     } else if (string[i] === 'F') {
       let x2 = x1 + length * cos(radians(newAngle));
       let y2 = y1 - length * sin(radians(newAngle));
