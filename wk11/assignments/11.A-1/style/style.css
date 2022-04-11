@@ -4,8 +4,46 @@ body {
 main {
   text-align: center;
 }
+ol {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+ol li a,
+.home a
+{
+ padding: 20px;
+ text-decoration: none;
+ color: hsl(0, 0%, 0%);
+ font-size: 1.3rem;
+ transition: all 0.3s;
+}
+ol li a:hover,
+.home a:hover
+{
+  color: hsl(107, 32%, 44%);
+}
+.active {
+  color: hsl(107, 32%, 44%);
+  text-decoration: underline;
+}
+h1 {
+  margin-top: 50px;
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: lighter;
+  letter-spacing: 0.2rem;
+}
+h2 {
+  font-weight: normal;
+  margin-top: 50px;
+}
+img {
+  max-width: 300px;
+}
 .home {
   display: flex;
+  justify-content: center;
 }
 #canvas-container {
   margin: auto;
