@@ -4,14 +4,13 @@ https://www.youtube.com/watch?v=E1B4UoSQMFw
 2. P5.js examples L-Systems
 https://p5js.org/examples/simulate-l-systems.html */
 
-let angle = 25; //how much it turns with + or -
-let length = 4; //length of each branch/node
+let length = 1.3; //length of each branch/node
 
 //L-System
 let string = 'X'; //axiom or start of the string
-let n = 6; //number of iterations
+let n = 8; //number of iterations
 let rules = [];
-rules[0] = ['X', 'F+[[X]-X]-F[-FX]+X'];
+rules[0] = ['X', 'F[+X][-X]FX'];
 rules[1] = ['F', 'FF'];
 
 function setup() {
@@ -20,8 +19,6 @@ function setup() {
   background(255);
   stroke(87, 156, 68);
   strokeWeight(2);
-  x = width / 2; //starting x
-  y = height; //starting y
   for (i = 0; i < n; i++) {
     createString();
   }
@@ -62,12 +59,12 @@ function createDrawing() {
     if (string[i] === 'X') {
       continue;
     } else if (string[i] === 'F') {
-      line(0, 0, 0, -length);
+      line(0, 0, 0, -random(10));
       translate(0, -length);
     } else if (string[i] === '+') {
-      rotate(radians(angle));
+      rotate(radians(random(25, 70)));
     } else if (string[i] === '-') {
-      rotate(radians(-angle));
+      rotate(radians(-random(25, 70)));
     } else if (string[i] === '[') {
       push();
     } else if (string[i] === ']') {

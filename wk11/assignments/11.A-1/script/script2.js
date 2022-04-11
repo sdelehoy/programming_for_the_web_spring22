@@ -54,7 +54,7 @@ function createString() {
 //Translate turtle commands to draw branches
 function createDrawing() {
   resetMatrix();
-  translate(width / 2, height);
+  translate(400, height);
   for (let i = 0; i < string.length; i++) {
     if (string[i] === 'F') {
       line(0, 0, 0, -length);
