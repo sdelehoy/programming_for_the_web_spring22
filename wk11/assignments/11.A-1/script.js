@@ -4,16 +4,12 @@ https://www.youtube.com/watch?v=E1B4UoSQMFw
 2. P5.js examples L-Systems
 https://p5js.org/examples/simulate-l-systems.html */
 
-//Turtle graphics
-let x1;
-let y1;
 let angle = 25; //how much it turns with + or -
-let newAngle = 25;
-let length = 5; //length of each branch/node
+let length = 4; //length of each branch/node
 
 //L-System
 let string = 'X'; //axiom or start of the string
-let n = 5; //number of iterations
+let n = 6; //number of iterations
 let rules = [];
 rules[0] = ['X', 'F+[[X]-X]-F[-FX]+X'];
 rules[1] = ['F', 'FF'];
@@ -22,15 +18,14 @@ function setup() {
   var canvas = createCanvas(1000, 700);
   canvas.parent('container');
   background(255);
-  stroke(0);
-  x1 = 30; //starting x
-  y1 = height - 10; //starting y
+  stroke(87, 156, 68);
+  strokeWeight(2);
+  x = width / 2; //starting x
+  y = height; //starting y
   for (i = 0; i < n; i++) {
     createString();
   }
   createDrawing();
-  let button = createButton('generate');
-  button.mousePressed(createString);
 }
 
 function draw() {
@@ -57,24 +52,22 @@ function createString() {
     }
   }
   string = newString;
-  createP(string);
 }
 
 //Translate turtle commands to draw branches
 function createDrawing() {
+  resetMatrix();
+  translate(width /2, height);
   for (let i = 0; i < string.length; i++) {
     if (string[i] === 'X') {
       continue;
     } else if (string[i] === 'F') {
-      let x2 = x1 + length * cos(radians(newAngle));
-      let y2 = y1 - length * sin(radians(newAngle));
-      line(x1, y1, x2, y2);
-      x1 = x2;
-      y1 = y2;
+      line(0, 0, 0, -length);
+      translate(0, -length);
     } else if (string[i] === '+') {
-      newAngle += angle;
+      rotate(radians(angle));
     } else if (string[i] === '-') {
-      newAngle -= angle;
+      rotate(radians(-angle));
     } else if (string[i] === '[') {
       push();
     } else if (string[i] === ']') {
