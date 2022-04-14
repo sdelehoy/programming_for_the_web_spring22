@@ -2,13 +2,16 @@ let song;
 let button;
 let slider;
 let fft;
+let sound;
 
 
 function setup() {
   let canvas = createCanvas(500, 500);
   canvas.parent('canvas');
+  canvas.mousePressed(canvasPressed);
   //load song with callback function
   song = loadSound('disco-funk-drums-loop_116bpm_E_minor.wav', loaded);
+  sound = loadSound();
   fft = new p5.FFT(0.93, 16);
   slider = createSlider(0, 1, 0.5, 0.01);
   slider.parent('slider');
@@ -31,6 +34,11 @@ function loaded() {
   button = createButton('play');
   button.parent('button');
   button.mousePressed(togglePlay);
+}
+
+function canvasPressed() {
+  random(sound).play();
+
 }
 
 function draw() {
