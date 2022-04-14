@@ -7,8 +7,68 @@
   <title>Samples</title>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/p5.js" integrity="sha512-4P0ZJ49OMXe3jXT+EsEaq82eNwFeyYL81LeHGzGcEhowFbTqeQ80q+NEkgsE8tHPs6aCqvi7U+XWliAjDmT5Lg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/addons/p5.sound.js" integrity="sha512-U2sgwrFhl+Tgx9iGH9h5Ba2WyIjyCes+D0prtIFw3a0V+/fkaeL5Cd/VjyPHno9kUPE1rnNhBGTyvtZsfJp0xg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <style>
+    body {
+      background-color: hsl(0, 0%, 0%);
+    }
+    button {
+      width: 100px;
+      height: 30px;
+      color: hsl(120, 100%, 25%);
+      text-transform: uppercase;
+      background-color: hsl(0, 0%, 0%);
+      border-radius: 30px;
+      border: 1px solid hsl(120, 100%, 25%);
+      transition: all 0.3s;
+    }
+    button:hover {
+      background-color: hsl(0, 0%, 15%);
+      color: hsl(120, 100%, 35%);
+      border: 1px solid hsl(120, 100%, 35%);
+      scale: 1.08;
+    }
+    .controls {
+      margin: auto;
+      width: 500px;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+    #slider input {
+      -webkit-appearance: none;
+      border-radius: 5px;
+      background: hsl(0, 0%, 0%);
+      border: 1px solid hsl(120, 100%, 25%);
+    }
+    #slider input:hover {
+      background:hsl(0, 0%, 15%);
+    }
+    #slider input::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      border-radius: 50%;
+      background: hsl(120, 100%, 25%);
+      cursor: pointer;
+    }
+    #slider input::-moz-range-thumb {
+      background: hsl(120, 100%, 25%);
+      border-radius: 50%;
+      cursor: pointer;
+    }
+    #canvas {
+      margin: auto;
+      width: 500px;
+    }
+  </style>
 </head>
 <body>
+  <main>
+    <div id="canvas"></div>
+    <div class="controls">
+      <div id="button"></div>
+      <div id="slider"></div>
+    </div>
+  </main>
   <script src="samples.js"></script>
 </body>
 

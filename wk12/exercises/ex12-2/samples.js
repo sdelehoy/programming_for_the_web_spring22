@@ -5,11 +5,13 @@ let fft;
 
 
 function setup() {
-  createCanvas(500, 500);
+  let canvas = createCanvas(500, 500);
+  canvas.parent('canvas');
   //load song with callback function
   song = loadSound('disco-funk-drums-loop_116bpm_E_minor.wav', loaded);
   fft = new p5.FFT(0.93, 16);
   slider = createSlider(0, 1, 0.5, 0.01);
+  slider.parent('slider');
   colorMode(HSB, 16);
 }
 
@@ -27,6 +29,7 @@ function togglePlay() {
 //callback to display button and slider after song has loaded
 function loaded() {
   button = createButton('play');
+  button.parent('button');
   button.mousePressed(togglePlay);
 }
 
