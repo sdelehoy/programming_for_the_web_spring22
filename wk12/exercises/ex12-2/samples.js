@@ -8,9 +8,9 @@ function setup() {
   createCanvas(500, 500);
   //load song with callback function
   song = loadSound('disco-funk-drums-loop_116bpm_E_minor.wav', loaded);
-  fft = new p5.FFT(0.9, 16);
+  fft = new p5.FFT(0.93, 16);
   slider = createSlider(0, 1, 0.5, 0.01);
-  colorMode(HSB);
+  colorMode(HSB, 16);
 }
 
 //button toggles between play and pause
@@ -37,8 +37,8 @@ function draw() {
   let spectrum = fft.analyze();
   for (let i = 0; i < spectrum.length; i++) {
     let amp = spectrum[i];
-    let y = map(amp, 0, 16, 0, 32);
-    stroke(100, 100);
-    circle(width / 2, height / 2, y);
+    stroke(i, 100, 70);
+    strokeWeight(1);
+    circle(width / 2, height / 2, amp * 1.5);
   }
 }
