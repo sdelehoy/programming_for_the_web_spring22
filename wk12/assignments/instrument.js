@@ -13,10 +13,7 @@ function draw() {
 
 function playSynth() {
   userStartAudio();
-  let note = 'G4';
-  let velocity = 1;
-  let time = 0;
-  let dur = 1;
+  let note = 'Fb4';
   polySynth.noteAttack(note);
 }
 
