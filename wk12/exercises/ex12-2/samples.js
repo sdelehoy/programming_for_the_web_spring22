@@ -11,7 +11,7 @@ function setup() {
   canvas.mousePressed(canvasPressed);
   //load song with callback function
   song = loadSound('disco-funk-drums-loop_116bpm_E_minor.wav', loaded);
-  sound = loadSound();
+  sound = loadSound('strat-riff_115bpm_E_minor.wav');
   fft = new p5.FFT(0.93, 16);
   slider = createSlider(0, 1, 0.5, 0.01);
   slider.parent('slider');
@@ -37,8 +37,7 @@ function loaded() {
 }
 
 function canvasPressed() {
-  random(sound).play();
-
+  sound.play();
 }
 
 function draw() {
