@@ -10,6 +10,11 @@
   <style>
     body {
       background-color: hsl(0, 0%, 0%);
+      font-family: sans-serif;
+    }
+    main {
+      width: 500px;
+      margin: auto;
     }
     button {
       width: 100px;
@@ -28,8 +33,6 @@
       scale: 1.08;
     }
     .controls {
-      margin: auto;
-      width: 500px;
       display: flex;
       justify-content: space-evenly;
       align-items: center;
@@ -55,10 +58,6 @@
       border-radius: 50%;
       cursor: pointer;
     }
-    #canvas {
-      margin: auto;
-      width: 500px;
-    }
   </style>
 </head>
 <body>
@@ -66,6 +65,7 @@
     <div id="canvas"></div>
     <div class="controls">
       <div id="button"></div>
+      <div id="add"></div>
       <div id="slider"></div>
     </div>
   </main>
