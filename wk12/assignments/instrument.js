@@ -22,7 +22,7 @@ function setup() {
   createCanvas(100, 100);
 
   kickSound1 = loadSound('sounds/Kick_V_10.wav');
-  kickButton1 = createButton('play kick 1');
+  kickButton1 = createButton('play');
   kickButton1.mousePressed(playKick1);
   kickSlider1 = createSlider(0.5, 2, 1, 0.25);
 
