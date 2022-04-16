@@ -14,6 +14,10 @@ let hihatSound;
 let hihatButton;
 let hihatSlider;
 
+let tomSound;
+let tomButton;
+let tomSlider;
+
 function setup() {
   createCanvas(100, 100);
 
@@ -36,14 +40,20 @@ function setup() {
   hihatButton = createButton('play hi hat');
   hihatButton.mousePressed(playHihat);
   hihatSlider = createSlider(0.25, 2, 1, 0.25);
+
+  tomSound = loadSound('sounds/Floor-Tom_V_10.wav');
+  tomButton = createButton('play tom');
+  tomButton.mousePressed(playTom);
+  tomSlider = createSlider(0.25, 2, 1, 0.25);
 }
 
 function draw() {
   background(255);
- text(kickSlider1.value(), 10, 10);
- text(kickSlider2.value(), 10, 30);
- text(snareSlider.value(), 10, 50);
- text(hihatSlider.value(), 10, 70);
+  text(kickSlider1.value(), 10, 10);
+  text(kickSlider2.value(), 10, 30);
+  text(snareSlider.value(), 10, 50);
+  text(hihatSlider.value(), 10, 70);
+  text(tomSlider.value(), 10, 90);
 }
 
 function playKick1() {
@@ -51,7 +61,7 @@ function playKick1() {
     kickSound1.stop();
     kickButton1.html('play kick 1');
   } else {
-    kickSound1.loop(0, 1, 1, 0, kickSlider.value());
+    kickSound1.loop(0, 1, 1, 0, kickSlider1.value());
     kickButton1.html('stop kick 1');
   }
 }
@@ -83,5 +93,15 @@ function playHihat() {
   } else {
     hihatSound.loop(0, 1, 1, 0, hihatSlider.value());
     hihatButton.html('stop hi hat');
+  }
+}
+
+function playTom() {
+  if (tomSound.isPlaying()) {
+    tomSound.stop();
+    tomButton.html('play tom');
+  } else {
+    tomSound.loop(0, 1, 1, 0, tomSlider.value());
+    tomButton.html('stop tom');
   }
 }
