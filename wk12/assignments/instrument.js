@@ -18,7 +18,11 @@ let tomSound;
 let tomButton;
 let tomSlider;
 
-let amp;
+let kickAmp1;
+let kickAmp2;
+let snareAmp;
+let hihatAmp;
+let tomAmp;
 
 function preload() {
   kickSound1 = loadSound('sounds/Kick_V_10.wav');
@@ -62,23 +66,54 @@ function setup() {
   tomSlider = createSlider(0.25, 2, 1, 0.25);
   tomSlider.parent('tom-slider');
 
-  amp = new p5.Amplitude(0.9);
-  amp.setInput(kickSound1);
+  kickAmp1 = new p5.Amplitude(0.9);
+  kickAmp1.setInput(kickSound1);
+
+  kickAmp2 = new p5.Amplitude(0.9);
+  kickAmp2.setInput(kickSound2);
+
+  snareAmp = new p5.Amplitude(0.9);
+  snareAmp.setInput(snareSound);
+
+  hihatAmp = new p5.Amplitude(0.9);
+  hihatAmp.setInput(hihatSound);
+
+  tomAmp = new p5.Amplitude(0.9);
+  tomAmp.setInput(tomSound);
 }
 
 function draw() {
   background(0);
 
-  let level = amp.getLevel();
-  let size = map(level, 0, 1, 0, 200);
-  fill('green');
-  circle(65, 100, size);
-
+  let kickLevel1 = kickAmp1.getLevel();
+  let kickSize1 = map(kickLevel1, 0, 1, 0, 200);
+  fill('red');
   text(kickSlider1.value(), 65, 190);
+  circle(65, 100, kickSize1);
+
+  let kickLevel2 = kickAmp2.getLevel();
+  let kickSize2 = map(kickLevel2, 0, 1, 0, 200);
+  fill('orange');
   text(kickSlider2.value(), 210, 190);
+  circle(210, 100, kickSize2);
+
+  let snareLevel = snareAmp.getLevel();
+  let snareSize = map(snareLevel, 0, 1, 0, 200);
+  fill('yellow');
   text(snareSlider.value(), 350, 190);
+  circle(350, 100, snareSize);
+
+  let hihatLevel = hihatAmp.getLevel();
+  let hihatSize = map(hihatLevel, 0, 1, 0, 200);
+  fill('green');
   text(hihatSlider.value(), 500, 190);
+  circle(500, 100, hihatSize);
+
+  let tomLevel = tomAmp.getLevel();
+  let tomSize = map(tomLevel, 0, 1, 0, 200);
+  fill('deepskyblue');
   text(tomSlider.value(), 640, 190);
+  circle(640, 100, tomSize);
 }
 
 function playKick1() {
@@ -86,7 +121,7 @@ function playKick1() {
     kickSound1.stop();
     kickButton1.html('play kick 1');
     kickButton1.style('border', '1px solid green');
-    kickButton1.style('color', 'green');
+    kickButton1.style('color', 'red');
   } else {
     kickSound1.loop(0, 1, 1, 0, kickSlider1.value());
     kickButton1.html('stop kick 1');
@@ -100,7 +135,7 @@ function playKick2() {
     kickSound2.stop();
     kickButton2.html('play kick 2');
     kickButton2.style('border', '1px solid green');
-    kickButton2.style('color', 'green');
+    kickButton2.style('color', 'orange');
   } else {
     kickSound2.loop(0, 1, 1, 0, kickSlider2.value());
     kickButton2.html('stop kick 2');
@@ -114,7 +149,7 @@ function playSnare() {
     snareSound.stop();
     snareButton.html('play snare');
     snareButton.style('border', '1px solid green');
-    snareButton.style('color', 'green');
+    snareButton.style('color', 'yellow');
   } else {
     snareSound.loop(0, 1, 1, 0, snareSlider.value());
     snareButton.html('stop snare');
@@ -142,7 +177,7 @@ function playTom() {
     tomSound.stop();
     tomButton.html('play tom');
     tomButton.style('border', '1px solid green');
-    tomButton.style('color', 'green');
+    tomButton.style('color', 'deepskyblue');
   } else {
     tomSound.loop(0, 1, 1, 0, tomSlider.value());
     tomButton.html('stop tom');

@@ -30,11 +30,25 @@
       gap: 10px;
       align-items: center;
     }
+    .kick-1, #kick-button-1 button {
+      color: hsl(0, 100%, 50%);
+    }
+    .kick-2, #kick-button-2 button {
+      color: hsl(39, 100%, 50%);
+    }
+    .snare, #snare-button button {
+      color: hsl(60, 100%, 50%);
+    }
+    .hihat, #hihat-button button {
+      color: hsl(120, 100%, 25%);
+    }
+    .tom, #tom-button button {
+      color: deepskyblue;
+    }
     .button button {
       width: 100px;
       height: 25px;
       background-color: hsl(0, 0%, 0%);
-      color: hsl(120, 100%, 25%);
       text-transform: uppercase;
       border: 1px solid hsl(120, 100%, 25%);
       border-radius: 30px;
@@ -71,30 +85,30 @@
   <main>
     <div id="canvas" class="canvas"></div>
     <div class="controls">
-      <div class="control-container">
+      <div class="control-container kick-1">
         <label for="kick-slider-1">tempo in sec.</label>
-        <div id="kick-slider-1" class="slider"></div>
-        <div id="kick-button-1" class="button"></div>
+        <div id="kick-slider-1" class="slider kick-slider-1"></div>
+        <div id="kick-button-1" class="button kick-button-1"></div>
       </div>
-      <div class="control-container">
+      <div class="control-container kick-2">
         <label for="kick-slider-2">tempo in sec.</label>
-        <div id="kick-slider-2" class="slider"></div>
-        <div id="kick-button-2" class="button"></div>
+        <div id="kick-slider-2" class="slider kick-slider-2"></div>
+        <div id="kick-button-2" class="button kick-button-2"></div>
       </div>
-      <div class="control-container">
+      <div class="control-container snare">
         <label for="snare-slider">tempo in sec.</label>
-        <div id="snare-slider" class="slider"></div>
-        <div id="snare-button" class="button"></div>
+        <div id="snare-slider" class="slider snare-slider"></div>
+        <div id="snare-button" class="button snare-button"></div>
       </div>
-      <div class="control-container">
+      <div class="control-container hihat">
         <label for="hihat-slider">tempo in sec.</label>
-        <div id="hihat-slider" class="slider"></div>
-        <div id="hihat-button" class="button"></div>
+        <div id="hihat-slider" class="slider hihat-slider"></div>
+        <div id="hihat-button" class="button hihat-button"></div>
       </div>
-      <div class="control-container">
+      <div class="control-container tom">
         <label for="tom-slider">tempo in sec.</label>
-        <div id="tom-slider" class="slider"></div>
-        <div id="tom-button" class="button"></div>
+        <div id="tom-slider" class="slider tom-slider"></div>
+        <div id="tom-button" class="button tom-button"></div>
       </div>
     </div>
   </main>
