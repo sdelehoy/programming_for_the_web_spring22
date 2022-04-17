@@ -84,33 +84,34 @@ function setup() {
 
 function draw() {
   background(0);
+  textSize(16);
 
   let kickLevel1 = kickAmp1.getLevel();
-  let kickSize1 = map(kickLevel1, 0, 1, 0, 200);
+  let kickSize1 = map(kickLevel1, 0, 1, 0, 300);
   fill('red');
   text(kickSlider1.value(), 65, 190);
   circle(65, 100, kickSize1);
 
   let kickLevel2 = kickAmp2.getLevel();
-  let kickSize2 = map(kickLevel2, 0, 1, 0, 200);
+  let kickSize2 = map(kickLevel2, 0, 1, 0, 300);
   fill('orange');
   text(kickSlider2.value(), 210, 190);
   circle(210, 100, kickSize2);
 
   let snareLevel = snareAmp.getLevel();
-  let snareSize = map(snareLevel, 0, 1, 0, 200);
+  let snareSize = map(snareLevel, 0, 1, 0, 300);
   fill('yellow');
   text(snareSlider.value(), 350, 190);
   circle(350, 100, snareSize);
 
   let hihatLevel = hihatAmp.getLevel();
-  let hihatSize = map(hihatLevel, 0, 1, 0, 200);
+  let hihatSize = map(hihatLevel, 0, 1, 0, 300);
   fill('green');
   text(hihatSlider.value(), 500, 190);
   circle(500, 100, hihatSize);
 
   let tomLevel = tomAmp.getLevel();
-  let tomSize = map(tomLevel, 0, 1, 0, 200);
+  let tomSize = map(tomLevel, 0, 1, 0, 300);
   fill('deepskyblue');
   text(tomSlider.value(), 640, 190);
   circle(640, 100, tomSize);
