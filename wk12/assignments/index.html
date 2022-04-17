@@ -7,8 +7,46 @@
   <title>Digital Instrument</title>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/p5.js" integrity="sha512-4P0ZJ49OMXe3jXT+EsEaq82eNwFeyYL81LeHGzGcEhowFbTqeQ80q+NEkgsE8tHPs6aCqvi7U+XWliAjDmT5Lg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/addons/p5.sound.js" integrity="sha512-U2sgwrFhl+Tgx9iGH9h5Ba2WyIjyCes+D0prtIFw3a0V+/fkaeL5Cd/VjyPHno9kUPE1rnNhBGTyvtZsfJp0xg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <style>
+    .canvas {
+      margin: auto;
+      width: 100px;
+    }
+    .controls {
+      margin: auto;
+      width: 250px;
+    }
+    .control-container {
+      display: flex;
+    }
+  </style>
 </head>
 <body>
+  <main>
+    <div id="canvas" class="canvas"></div>
+    <div class="controls">
+      <div class="control-container">
+        <div id="kick-button-1" class="button"></div>
+        <div id="kick-slider-1" class="slider"></div>
+      </div>
+      <div class="control-container">
+        <div id="kick-button-2" class="button"></div>
+        <div id="kick-slider-2" class="slider"></div>
+      </div>
+      <div class="control-container">
+        <div id="snare-button" class="button"></div>
+        <div id="snare-slider" class="slider"></div>
+      </div>
+      <div class="control-container">
+        <div id="hihat-button" class="button"></div>
+        <div id="hihat-slider" class="slider"></div>
+      </div>
+      <div class="control-container">
+        <div id="tom-button" class="button"></div>
+        <div id="tom-slider" class="slider"></div>
+      </div>
+    </div>
+  </main>
   <script src="instrument.js"></script>
 </body>
 </html>
