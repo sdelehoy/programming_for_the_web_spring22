@@ -74,9 +74,13 @@ function playKick1() {
   if (kickSound1.isPlaying()) {
     kickSound1.stop();
     kickButton1.html('play kick 1');
+    kickButton1.style('border', '1px solid green');
+    kickButton1.style('color', 'green');
   } else {
     kickSound1.loop(0, 1, 1, 0, kickSlider1.value());
     kickButton1.html('stop kick 1');
+    kickButton1.style('border', '1px solid red');
+    kickButton1.style('color', 'red');
   }
 }
 
@@ -84,9 +88,13 @@ function playKick2() {
   if (kickSound2.isPlaying()) {
     kickSound2.stop();
     kickButton2.html('play kick 2');
+    kickButton2.style('border', '1px solid green');
+    kickButton2.style('color', 'green');
   } else {
     kickSound2.loop(0, 1, 1, 0, kickSlider2.value());
     kickButton2.html('stop kick 2');
+    kickButton2.style('border', '1px solid red');
+    kickButton2.style('color', 'red');
   }
 }
 
@@ -94,9 +102,13 @@ function playSnare() {
   if (snareSound.isPlaying()) {
     snareSound.stop();
     snareButton.html('play snare');
+    snareButton.style('border', '1px solid green');
+    snareButton.style('color', 'green');
   } else {
     snareSound.loop(0, 1, 1, 0, snareSlider.value());
     snareButton.html('stop snare');
+    snareButton.style('border', '1px solid red');
+    snareButton.style('color', 'red');
   }
 }
 
@@ -104,9 +116,13 @@ function playHihat() {
   if (hihatSound.isPlaying()) {
     hihatSound.stop();
     hihatButton.html('play hi hat');
+    hihatButton.style('border', '1px solid green');
+    hihatButton.style('color', 'green');
   } else {
     hihatSound.loop(0, 1, 1, 0, hihatSlider.value());
     hihatButton.html('stop hi hat');
+    hihatButton.style('border', '1px solid red');
+    hihatButton.style('color', 'red');
   }
 }
 
@@ -114,8 +130,12 @@ function playTom() {
   if (tomSound.isPlaying()) {
     tomSound.stop();
     tomButton.html('play tom');
+    tomButton.style('border', '1px solid green');
+    tomButton.style('color', 'green');
   } else {
     tomSound.loop(0, 1, 1, 0, tomSlider.value());
     tomButton.html('stop tom');
+    tomButton.style('border', '1px solid red');
+    tomButton.style('color', 'red');
   }
 }

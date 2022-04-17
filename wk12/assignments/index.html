@@ -8,16 +8,61 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/p5.js" integrity="sha512-4P0ZJ49OMXe3jXT+EsEaq82eNwFeyYL81LeHGzGcEhowFbTqeQ80q+NEkgsE8tHPs6aCqvi7U+XWliAjDmT5Lg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/addons/p5.sound.js" integrity="sha512-U2sgwrFhl+Tgx9iGH9h5Ba2WyIjyCes+D0prtIFw3a0V+/fkaeL5Cd/VjyPHno9kUPE1rnNhBGTyvtZsfJp0xg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <style>
+    body {
+      background-color: hsl(0, 0%, 0%);
+      color: hsl(120, 100%, 25%);
+      font-family: sans-serif;
+    }
     .canvas {
       margin: auto;
       width: 100px;
     }
     .controls {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
       margin: auto;
       width: 250px;
     }
     .control-container {
       display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+    .button button {
+      width: 100px;
+      height: 25px;
+      background-color: hsl(0, 0%, 0%);
+      color: hsl(120, 100%, 25%);
+      text-transform: uppercase;
+      border: 1px solid hsl(120, 100%, 25%);
+      border-radius: 30px;
+      transition: all 0.3s;
+    }
+    .button button:hover {
+      background-color: hsl(0, 0%, 15%);
+      color: hsl(120, 100%, 35%);
+      border: 1px solid hsl(120, 100%, 35%);
+      scale: 1.08;
+    }
+    .slider input[type="range"] {
+      -webkit-appearance: none;
+      border-radius: 5px;
+      background: hsl(0, 0%, 0%);
+      border: 1px solid hsl(120, 100%, 25%);
+    }
+    .slider input[type="range"]:hover {
+      background:hsl(0, 0%, 15%);
+    }
+    .slider input[type="range"]::-webkit-slider-thumb {
+      border-radius: 50%;
+      background: hsl(120, 100%, 25%);
+      cursor: pointer;
+    }
+    .slider input[type="range"]::-moz-range-thumb {
+      background: hsl(120, 100%, 25%);
+      border-radius: 50%;
+      cursor: pointer;
     }
   </style>
 </head>
@@ -27,23 +72,33 @@
     <div class="controls">
       <div class="control-container">
         <div id="kick-button-1" class="button"></div>
-        <div id="kick-slider-1" class="slider"></div>
+        <div id="kick-slider-1" class="slider">
+          <label for="kick-slider-1">tempo</label>
+        </div>
       </div>
       <div class="control-container">
         <div id="kick-button-2" class="button"></div>
-        <div id="kick-slider-2" class="slider"></div>
+        <div id="kick-slider-2" class="slider">
+          <label for="kick-slider-2">tempo</label>
+        </div>
       </div>
       <div class="control-container">
         <div id="snare-button" class="button"></div>
-        <div id="snare-slider" class="slider"></div>
+        <div id="snare-slider" class="slider">
+          <label for="snare-slider">tempo</label>
+        </div>
       </div>
       <div class="control-container">
         <div id="hihat-button" class="button"></div>
-        <div id="hihat-slider" class="slider"></div>
+        <div id="hihat-slider" class="slider">
+          <label for="hihat-slider">tempo</label>
+        </div>
       </div>
       <div class="control-container">
         <div id="tom-button" class="button"></div>
-        <div id="tom-slider" class="slider"></div>
+        <div id="tom-slider" class="slider">
+          <label for="tom-slider">tempo</label>
+        </div>
       </div>
     </div>
   </main>
