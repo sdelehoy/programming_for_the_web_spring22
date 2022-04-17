@@ -14,18 +14,19 @@
       font-family: sans-serif;
     }
     .canvas {
-      margin: auto;
-      width: 100px;
+      margin: 50px auto 0 auto;
+      width: 700px;
     }
     .controls {
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
       gap: 10px;
       margin: auto;
-      width: 250px;
+      width: 700px;
     }
     .control-container {
       display: flex;
+      flex-direction: column;
       gap: 10px;
       align-items: center;
     }
@@ -71,34 +72,29 @@
     <div id="canvas" class="canvas"></div>
     <div class="controls">
       <div class="control-container">
+        <label for="kick-slider-1">tempo in sec.</label>
+        <div id="kick-slider-1" class="slider"></div>
         <div id="kick-button-1" class="button"></div>
-        <div id="kick-slider-1" class="slider">
-          <label for="kick-slider-1">tempo</label>
-        </div>
       </div>
       <div class="control-container">
+        <label for="kick-slider-2">tempo in sec.</label>
+        <div id="kick-slider-2" class="slider"></div>
         <div id="kick-button-2" class="button"></div>
-        <div id="kick-slider-2" class="slider">
-          <label for="kick-slider-2">tempo</label>
-        </div>
       </div>
       <div class="control-container">
+        <label for="snare-slider">tempo in sec.</label>
+        <div id="snare-slider" class="slider"></div>
         <div id="snare-button" class="button"></div>
-        <div id="snare-slider" class="slider">
-          <label for="snare-slider">tempo</label>
-        </div>
       </div>
       <div class="control-container">
+        <label for="hihat-slider">tempo in sec.</label>
+        <div id="hihat-slider" class="slider"></div>
         <div id="hihat-button" class="button"></div>
-        <div id="hihat-slider" class="slider">
-          <label for="hihat-slider">tempo</label>
-        </div>
       </div>
       <div class="control-container">
+        <label for="tom-slider">tempo in sec.</label>
+        <div id="tom-slider" class="slider"></div>
         <div id="tom-button" class="button"></div>
-        <div id="tom-slider" class="slider">
-          <label for="tom-slider">tempo</label>
-        </div>
       </div>
     </div>
   </main>

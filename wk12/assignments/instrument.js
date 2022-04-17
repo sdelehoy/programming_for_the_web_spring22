@@ -18,6 +18,8 @@ let tomSound;
 let tomButton;
 let tomSlider;
 
+let amp;
+
 function preload() {
   kickSound1 = loadSound('sounds/Kick_V_10.wav');
   kickSound2 = loadSound('sounds/Kick_V_10.wav');
@@ -27,7 +29,7 @@ function preload() {
 }
 
 function setup() {
-  let cnv = createCanvas(100, 100);
+  let cnv = createCanvas(700, 200);
   cnv.parent('canvas');
 
   kickButton1 = createButton('play kick 1');
@@ -59,15 +61,24 @@ function setup() {
   tomButton.mousePressed(playTom);
   tomSlider = createSlider(0.25, 2, 1, 0.25);
   tomSlider.parent('tom-slider');
+
+  amp = new p5.Amplitude(0.9);
+  amp.setInput(kickSound1);
 }
 
 function draw() {
-  background(255);
-  text('kick slider 1: ' + kickSlider1.value(), 10, 10);
-  text('kick slider 2: ' + kickSlider2.value(), 10, 30);
-  text('snare slider: ' + snareSlider.value(), 10, 50);
-  text('hi hat slider: ' + hihatSlider.value(), 10, 70);
-  text('tom slider: ' + tomSlider.value(), 10, 90);
+  background(0);
+
+  let level = amp.getLevel();
+  let size = map(level, 0, 1, 0, 200);
+  fill('green');
+  circle(65, 100, size);
+
+  text(kickSlider1.value(), 65, 190);
+  text(kickSlider2.value(), 210, 190);
+  text(snareSlider.value(), 350, 190);
+  text(hihatSlider.value(), 500, 190);
+  text(tomSlider.value(), 640, 190);
 }
 
 function playKick1() {
