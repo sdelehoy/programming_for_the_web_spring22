@@ -13,6 +13,9 @@
       color: hsl(120, 100%, 25%);
       font-family: sans-serif;
     }
+    h1 {
+      text-align: center;
+    }
     .canvas {
       margin: 50px auto 0 auto;
       width: 700px;
@@ -79,37 +82,48 @@
       border-radius: 50%;
       cursor: pointer;
     }
+    .instructions {
+      width: 700px;
+      margin: 30px auto;
+    }
+    .instructions p {
+      line-height: 1.5;
+    }
   </style>
 </head>
 <body>
   <main>
+    <h1>Digital Drummer</h1>
     <div id="canvas" class="canvas"></div>
     <div class="controls">
       <div class="control-container kick-1">
-        <label for="kick-slider-1">tempo in sec.</label>
+        <label for="kick-slider-1">beat interval</label>
         <div id="kick-slider-1" class="slider kick-slider-1"></div>
         <div id="kick-button-1" class="button kick-button-1"></div>
       </div>
       <div class="control-container kick-2">
-        <label for="kick-slider-2">tempo in sec.</label>
+        <label for="kick-slider-2">beat interval</label>
         <div id="kick-slider-2" class="slider kick-slider-2"></div>
         <div id="kick-button-2" class="button kick-button-2"></div>
       </div>
       <div class="control-container snare">
-        <label for="snare-slider">tempo in sec.</label>
+        <label for="snare-slider">beat interval</label>
         <div id="snare-slider" class="slider snare-slider"></div>
         <div id="snare-button" class="button snare-button"></div>
       </div>
       <div class="control-container hihat">
-        <label for="hihat-slider">tempo in sec.</label>
+        <label for="hihat-slider">beat interval</label>
         <div id="hihat-slider" class="slider hihat-slider"></div>
         <div id="hihat-button" class="button hihat-button"></div>
       </div>
       <div class="control-container tom">
-        <label for="tom-slider">tempo in sec.</label>
+        <label for="tom-slider">beat interval</label>
         <div id="tom-slider" class="slider tom-slider"></div>
         <div id="tom-button" class="button tom-button"></div>
       </div>
+    </div>
+    <div class="instructions">
+      <p>Instructions: Set the beat interval which is the amount of seconds between beats. Then click play to loop the beat. Restart the drum after an interval change. Mix drums and intervals to see what exciting beats you come up with!</p>
     </div>
   </main>
   <script src="instrument.js"></script>
