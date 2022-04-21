@@ -12,7 +12,7 @@ function setup() {
   cnv.parent('canvas');
   colorMode(HSB);
   // loop to create new instances of circles
-  for (let i = 0; i < 10; i++) {
+  for (let i = 0; i < 8; i++) {
     // value that will increment
     let angle = createVector();
     // amount of incrementation
