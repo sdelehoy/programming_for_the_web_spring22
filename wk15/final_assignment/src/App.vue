@@ -75,8 +75,8 @@ h1 {
   border-radius: 0 0 10px 10px;
 }
 .footer {
-  background-color: var(--green);
-  color: var(--white);
+  background-color: var(--white);
+  color: var(--green);
   margin-top: 40px;
 }
 .footer__container {
