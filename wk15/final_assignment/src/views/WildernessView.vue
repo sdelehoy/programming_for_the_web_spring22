@@ -9,7 +9,7 @@ const wilderness = CoWildernessList.find((wilderness) => {
 
 <template>
   <div>
-    <header>
+    <header class="header">
       <img :src="wilderness.image" :alt="wilderness.name" />
       <h1>{{ wilderness.name }}</h1>
     </header>
