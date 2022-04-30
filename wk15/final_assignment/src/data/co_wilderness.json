@@ -6,8 +6,8 @@
     "about": "Black Ridge Canyons Wilderness, on the northwest flank of the Uncompahgre Plateau, is characterized by the high, east-west trending Black Ridge which is dissected by seven major red rock canyon systems that drain into the Colorado River. Canyons vary in length from several miles to twelve miles in length and may contain interesting side canyons. Elevations range form 4,700 to 6,800 feet. Geological features in these canyons include spires, windows, giant alcoves and desert patina. Canyons may reach a depth of almost 1,000 feet, forming spectacular redrock cliffs. Spring runoff and summer thunderstorms create glistening waterfalls and plunge pools. The area contains the second largest concentration of natural arches in the world. Vegetation in the meandering canyon bottoms include pinyon-juniper, grasses, and cottonwoods, willow and box elder. The upland mesas contain a dense stands of pinyon-juniper with some sagebrush parks. Cryptobiotic soils are well developed in the upland area. Wildlife viewing may include deer, mountain lion, desert bighorn sheep, along with golden and bald eagles.",
     "towns": "Fruita, Grand Junction",
     "permit": "Not Required",
-    "map": "https://caltopo.com/map.html#ll=39.10848,-108.93305&z=11&b=mbt",
-    "image": ""
+    "map": "https://caltopo.com/map.html#ll=39.10526,-108.93066&z=11&b=mbt",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Knowles_Canyon%2C_MCNCA.jpg/1280px-Knowles_Canyon%2C_MCNCA.jpg"
   },
   {
     "name": "Buffalo Peaks Wilderness",
@@ -15,9 +15,9 @@
     "acres": "41,281",
     "about": "Beaver, elk, mule deer, black bears, mountain lions and one of Colorado's largest herds of bighorn sheep call the Buffalo Peaks Wilderness home, but human visitors are relatively few, preferring the nearby and more glamorous Collegiate Peaks Wilderness. From most of South Park and much of the Arkansas River Valley, the twin Buffalo Peaks--East Buffalo and West Buffalo--are visible as high, rounded domes. You won't find deep glacial valleys or secluded lakes here. You will find a serene forest of Engelmann spruce, Douglas fir, lodgepole and limber pine, and aspen, as well as several lovely stands of bristlecone pines on some of the south-facing slopes. The forest is laced with large meadows and impressive beaver ponds held in place by elaborate dams. The peace and quiet is seldom broken.",
     "towns": "Fairplay, Buena Vista, Granite, Leadville",
-    "permit": "Not required for groups of less than 15",
+    "permit": "Not required",
     "map": "https://caltopo.com/map.html#ll=39.0361,-106.16057&z=11&b=mbt",
-    "image": ""
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Buffalo_Peaks_Wilderness_2020.JPG/1280px-Buffalo_Peaks_Wilderness_2020.JPG"
   },
   {
     "name": "Byers Peak Wilderness",
@@ -27,7 +27,7 @@
     "towns": "Fraser, Empire, Silverthorne",
     "permit": "Not required",
     "map": "https://caltopo.com/map.html#ll=39.85249,-105.97557&z=11&b=mbt",
-    "image": ""
+    "image": "https://winapps.umt.edu/winapps/media2/wilderness/images/NWPS/lib/small/Dan-Worth-Byers-Peak-Wilderness.jpg"
   },
   {
     "name": "Cache La Poudre Wilderness",
@@ -35,9 +35,9 @@
     "acres": "9,482",
     "about": "Nine miles of the Little South Fork of the Cache la Poudre River, a part of Colorado's only designated Wild and Scenic River drainage, flow through Cache la Poudre Wilderness. The water has cut a deep and tortured canyon into granitic bedrock, typical of the Front Range of Colorado, to join the Main Fork of the Cache la Poudre River, which forms the northern boundary of the Wilderness. Elevations range from about 6,100 to 8,700 feet, and a dry climate keeps this area snow-free for much of the year, especially on south-facing slopes. Douglas fir and ponderosa and lodgepole pine dominate the forest. Celebrated for their trout, the rivers draw the most human visitors, but lack of trail access and rugged topography make this small Wilderness one of the state's least explored areas. State Highway 14 along the Main Fork of the Cache la Poudre River sees many campers and even more fly-casting anglers. Once inside the boundary, you'll find the ground marked by only two short maintained paths. The Kreutzer Nature trail is about 2 miles. The Mount McConnel Trail, which loops off of the Kreutzer Nature Trail is about 3 miles. In 2012 the High Park fire burned 95% of the Cache la Poudre Wilderness. In 2013 floods have impacted the backcountry areas of this Wilderness and changed the landscape. Please be careful when traveling through this Wilderness.",
     "towns": "Fort Collins",
-    "permit": "Not required for less than 12 people",
+    "permit": "Not required",
     "map": "https://caltopo.com/map.html#ll=40.65998,-105.44944&z=11&b=mbt",
-    "image": ""
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/aa/Cache_La_Poudre_Wilderness.png"
   },
   {
     "name": "Collegiate Peaks Wilderness",
@@ -46,18 +46,18 @@
     "about": "With eight \"fourteeners\" (peaks exceeding 14,000 feet in elevation), Collegiate Peaks Wilderness probably possesses the highest average elevation of any Wilderness in the Lower 48. You can climb Mounts Yale, Oxford, Columbia, and Harvard (the state's third highest point), as well as Huron Peak, Missouri Mountain, Mount Belford, and La Plata Peak (the state's fifth highest point).Climbing these peaks is a very popular activity, making opportunities for solitude very elusive. Expect to be inundated by people and their dogs on any \"fourteener\" trail. As you travel through the area, you might notice unusual and deep indentations in the boundary line. These are a legacy of man's hunt for gold and other valuable metals that are still sought just outside. More than a dozen trailheads create a situation in which no one ever stands more than five miles from a road. About 40 miles of the serpentine Continental Divide snake across the area, and this expansive Wilderness lies in parts of three national forests. The beauty of this place and its ease of access ensure torrents of visitors, especially on weekends. Please help keep Wilderness wild by following Leave No Trace practices. In particular, please refrain from having camp fires near treeline. The dwarfed Krummholtz trees that grow there are taking a beating from insensitive campers.",
     "towns": "Leadville, Granite, Buena Vista, Aspen",
     "permit": "Not required",
-    "map": "https://trails.colorado.gov/places/na~1935963",
-    "image": ""
+    "map": "https://caltopo.com/map.html#ll=38.92499,-106.32002&z=11&b=mbt",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Colorado_Collegiate_Peaks_%285976304707%29.jpg/1280px-Colorado_Collegiate_Peaks_%285976304707%29.jpg"
   },
   {
-    "name": "Comanche Peak Wilderness Wilderness",
+    "name": "Comanche Peak Wilderness",
     "designated": "1980",
     "acres": "68,025",
     "about": "The 70 miles of trails that wind through this Wilderness begin flanked in ponderosa pine and aspen, and then pass through a thick forest of lodgepole and limber pine. From the trails, the Wilderness appears to be nothing but trees until the forest gives way to abundant alpine tundra along the southern boundary near Comanche Peak. Beyond Comanche to the south, lies Rocky Mountain National Park. The Cache la Poudre River tumbles over cascades or runs quietly in pools for over 10 miles to the north and west. The rugged Mummy Range (of which Comanche Peak is a part), combined with the river, forms one of the state's most serpentine Wilderness boundaries. The Big South Fork of the Cache la Poudre River is largely responsible for draining Comanche Peak, and it joins forces with the Little South Fork to form Colorado's only Wild and Scenic River drainage. This Wilderness receives heavy human use.",
     "towns": "Fort Collins",
-    "permit": "Not required for groups under 12 people. Camping must be in designated campsites within specified areas ",
-    "map": "https://trails.colorado.gov/places/na~1935966",
-    "image": ""
+    "permit": "Not required. Camping must be in designated campsites within specified areas ",
+    "map": "https://caltopo.com/map.html#ll=40.58445,-105.66909&z=11&b=mbt",
+    "image": "https://www.fs.usda.gov/Internet/FSE_MEDIA/stelprd3799693.jpg"
   },
   {
     "name": "Dominguez Canyon Wilderness",
@@ -66,8 +66,8 @@
     "about": "The Dominguez Canyon Wilderness displays an array of ecosystems, ranging from upper Sonoran piñon-juniper desert along the Gunnison River, to Douglas-fir and ponderosa pine to aspen at higher elevations. Dominguez Canyon Wilderness consists of two major canyon systems, Big Dominguez and Little Dominguez. The canyons drain the northeastern corner of the Uncompahgre Plateau. Little Dominguez is the longer of the two at approximately 12 miles in length. It joins the larger Big Dominguez Canyon a little over a mile before their confluence with the Gunnison River. The area possesses outstanding geological features, spectacular scenery, ecological diversity, two cascading mountain streams and opportunities for solitude and primitive unconfined recreation. The terrain is characterized by large mesas dissected by deep red slick-rock canyons and arroyos. The area provides valuable wildlife habitat for desert bighorn sheep, deer, elk, mountain lion, black bear, wild turkey and chukar. Fishing is year round in Big Dominguez Creek. Plenty of other recreational opportunities are available for your enjoyment such as, camping, hiking, horseback riding and don't forget your camera!",
     "towns": "Grand Junction, Delta, Montrose",
     "permit": "Not required. No camping allowed in specified area.",
-    "map": "https://trails.colorado.gov/places/na~2100931",
-    "image": ""
+    "map": "https://caltopo.com/map.html#ll=38.74016,-108.35266&z=11&b=mbt",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Dominguez_Canyon_Wilderness_%2815101215816%29.jpg/1280px-Dominguez_Canyon_Wilderness_%2815101215816%29.jpg"
   },
   {
     "name": "Eagles Nest Wilderness",
@@ -76,8 +76,8 @@
     "about": "Heavy snow accumulates on the heights of Eagles Nest Wilderness in the Gore Range, providing a major contribution to the waters of the Colorado River. Melting snow in spring plunges from the heights to create marshy meadows and sloughs, as well as turbulent thundering creeks when temperatures soar abruptly. This is an area more vertical than horizontal, with sheer rock faces, keen-edged ridges, deep valleys, jagged peaks, and dense forests lower down, and foot travel can be strenuous. Approximately 180 miles of trail provide access to Eagles Nest, most of them dead-ending at a radiant gem of an alpine lake. Two trails, at the northern and southern extremes, cross entirely from one side of the Wilderness to the other side: Upper Cataract Lake to Piney Lake across the north, a distance of 15 miles; and Gore Creek to Red Buffalo Pass to Uneva Pass across the south, a distance of about 19 miles. Off-trail hiking can be difficult, but several informal routes climb the steep passes of the area's craggy core.",
     "towns": "Silverthorne, Dillon, Frisco, Vail",
     "permit": "Required self-registration form available at trailheads",
-    "map": "https://trails.colorado.gov/places/na~1935830",
-    "image": ""
+    "map": "https://caltopo.com/map.html#ll=39.71137,-106.2503&z=11&b=mbt",
+    "image": "https://winapps.umt.edu/winapps/media2/wilderness/images/NWPS/lib/small/2EaglesNest_CynthiaEbbert.jpg"
   },
   {
     "name": "Flat Tops Wilderness",
@@ -86,8 +86,8 @@
     "about": "Arthur Carhart's 1919 visit to Trappers Lake in the verdant embrace of the Flat Tops prompted him to be the first U.S. Forest Service official to initiate a plea for Wilderness preservation. No wonder he found the area so entrancing: behind Trappers Lake loom majestic volcanic cliffs, and beyond them a vast subalpine terrain reluctantly yields to alpine tundra (part of the White River Plateau with an average elevation of about 10,000 feet). Approximately 110 lakes and ponds, often unnamed, dot the country above and below numerous flat-topped cliffs. Roughly 100 miles of fishable streams are in the Flat Tops Wilderness. The valleys and relatively gentle land above the cliffs offers over 160 miles of trails. This is ideal country for stock-users and traveling cross-country. The hiking is inviting and limitless. Elk, deer and moose find the area quite pleasant in the summer. A skeletal forest of dead spruce and fir stretches across the higher slopes below the tundra, the eerie legacy of a 1940s bark beetle epidemic. In 2002 more than 17,000 acres burned around Trappers Lake and over 5,500 in the vicinity of Lost Lakes in the East Fork of the Williams Fork drainage amounting to almost 10% of the area of the Flat Tops Wilderness. The Flat Tops is Colorado's second largest Wilderness, a precious expanse of breathtakingly beautiful open land.",
     "towns": "Yampa, Dotsero, Glenwood Springs, Meeker",
     "permit": "Not required",
-    "map": "https://trails.colorado.gov/places/na~1935839",
-    "image": ""
+    "map": "https://caltopo.com/map.html#ll=39.96492,-107.27869&z=11&b=mbt",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Ripple_Creek_Overlook-5.JPG/1280px-Ripple_Creek_Overlook-5.JPG"
   },
   {
     "name": "Fossil Ridge Wilderness",
@@ -96,8 +96,8 @@
     "about": "Here is a small but almost perfect mountain kingdom, with raw granite towering above several beautiful shallow lakes and long valleys carved by ancient glaciers and replete with pine, spruce, fir, and aspen. The limestone ridge rises above 13,000 feet, climbing well beyond the tree line, and contains the fossilized remains of numerous prehistoric sea creatures. Above Lamphier Lake, a slim cut in the bare rock called Gunsight Pass (barely shoulder-width!) opens the ridge for foot travel from South Lottis Creek's drainage to Crystal Creek's drainage. Searching for gold, miners dug at several sites still scarred by their efforts. Square Top Mountain, approximately 12,500 feet high and about an hour's worth of climbing above Lamphier Lake, allows a virtually unparalleled view of almost half of Colorado's fourteeners. Elk and deer abound, but the truly fortunate catch glimpses of a small group of mountain goats or a larger herd of bighorn sheep. The lakes are stocked with trout. There are about 22 miles of maintained trails.",
     "towns": "Gunnison, Pitkin",
     "permit": "Not required",
-    "map": "https://trails.colorado.gov/places/na~1935841",
-    "image": ""
+    "map": "https://caltopo.com/map.html#ll=38.69416,-106.64559&z=11&b=mbt",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Henry_Mountain_and_Square_Top_Mountain%2C_Fossil_Ridge_Wilderness%2C_Gunnison_County%2C_Colorado%2C_USA.jpg/1280px-Henry_Mountain_and_Square_Top_Mountain%2C_Fossil_Ridge_Wilderness%2C_Gunnison_County%2C_Colorado%2C_USA.jpg"
   },
   {
     "name": "Greenhorn Mountain Wilderness",
@@ -106,8 +106,8 @@
     "about": "Soaring dramatically from the plains of Colorado, Greenhorn Mountain rises from 7,600 to 12,347 feet in the center of the northern section. Its summit is the highest point in the Wilderness, and nowhere else in the state provides such a vivid and dramatic change from plains to mountains. About two-thirds of the area is forested, and as you hike along, you'll pass quickly from dry oakbrush and ponderosa pine country (or pinion-juniper in some places) through aspen, fir, and spruce, and on to alpine tundra. Most of the east-facing slopes are steep, rocky, and generally bare. Unusual for Colorado, Greenhorn Mountain Wilderness has no lakes and no towering alpine peaks--and, consequently, few human visitors. Numerous small canyons and sharp ridges are the dominant geological features. A few streams descending from the mountain furnish a habitat for threatened greenback cutthroat trout. With relatively little snow, the area attracts bighorn sheep, elk, and mule deer. Only 11 miles of trail cross the Wilderness, all in the northern half. The southern half, remote and rugged and waterless, probably has fewer human visitors than any other area of the state. If you're willing to brave the dense woodlands and rough topography, you'll find few places with as much solitude.",
     "towns": "Colorado City, Gardner, Pueblo, Canon City, Rye",
     "permit": "Not required",
-    "map": "https://trails.colorado.gov/places/na~1935866",
-    "image": ""
+    "map": "https://caltopo.com/map.html#ll=37.8589,-105.02249&z=11&b=mbt",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/San_Isabel_View_of_Greenhorn_Mountain.jpg/1280px-San_Isabel_View_of_Greenhorn_Mountain.jpg"
   },
   {
     "name": "Gunnison Gorge Wilderness",
@@ -116,8 +116,8 @@
     "about": "The Gunnison Gorge Wilderness is located in the heart of the Gunnison Gorge National Conservation Area (NCA) within the double canyon of the Gunnison River. Central to this area is the Gunnison River, which enters the Wilderness at the northwestern boundary of the Black Canyon of the Gunnison National Park and extends north to a point approximately one mile downstream from the river's confluence with the Smith Fork, where it leaves the Wilderness. Like all BLM Conservation Lands, the Gunnison Gorge is managed to conserve, protect, and enhance public lands for the benefit and enjoyment of present and future generations. Elevations within the Wilderness boundaries range from 5,100 to 8,100 feet. Winters are usually mild in temperature ranging from 30 to 50 degrees F. Days are generally sunny and bright. Spring and summer time temperatures can be very hot - over 100 degrees. Gunnison Gorge Wilderness receives 10 to 15 inches of precipitation, annually. The legislation establishing the Gunnison Gorge Wilderness provides protection for and mandates BLM's continued management of the area's outstanding wilderness qualities, which include scenic, historic, geologic, and wildlife resources in addition to \"unsurpassed\" recreational activities including whitewater boating, Gold Medal trout fishing, hiking, and horseback riding. Common wildlife in the Wilderness include mule deer, elk, mountain lion, coyote, ringtail cats, small mammals, neo-tropical birds, raptors, chukar, river otter as weel as rainbow, brown, and cutthroat trout. Sensitive species in the Wilderness include: clay-loving buckwheat, Montrose penstemon, Rocky Mountain thistle, Delta lomatium, Unita Basin hookless cactus, wintering bald eagles, spotted bats, river otters, and kit foxes. There are 17 miles of trail to explore in this wilderness. ",
     "towns": "Delta, Montrose",
     "permit": "Day use fee of $3 per person. Overnight fee of $10 per person for one night and $15 for two nights. Two night maximum stay. Camping is in designated sites only. Hikers must register at trailhead.",
-    "map": "https://trails.colorado.gov/places/na~2100859",
-    "image": ""
+    "map": "https://caltopo.com/map.html#ll=38.62653,-107.79922&z=11&b=mbt",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Gunnison_Gorge_NCA_%289312490805%29.jpg/1280px-Gunnison_Gorge_NCA_%289312490805%29.jpg"
   },
   {
     "name": "Hermosa Creek Wilderness",
@@ -126,8 +126,8 @@
     "about": "Hermosa's crimson-colored red shale and sandstone formation define the landscape as well as it being home to the Colorado cutthroat trout, peregrine falcon and large herds of elk. The mid-elevation wilderness ranges from 7,000 feet to almost 12,000 feet with a diverse forest of old-growth ponderosa pine, Douglas fir, white fir, aspen, blue spruce and Gambel oak. As one of the largest unprotected roadless areas left in the entire Southern Rocky Mountains, the area's spectacular beauty and remoteness attributed to its inclusion into the National Wilderness Preservation System. Thanks to local support from organizations in the four corner region and from citizens all across America, Hermosa Creek Wilderness is now protected for future generations to enjoy as an enduring resource of wilderness.",
     "towns": "Durango",
     "permit": "Not required",
-    "map": "https://trails.colorado.gov/places/na~1935875",
-    "image": ""
+    "map": "https://caltopo.com/map.html#ll=37.48957,-107.96471&z=11&b=mbt",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Indian_Trail_Ridge%2C_La_Plata_and_Montezuma_counties%2C_Colorado%2C_USA_01.jpg/1280px-Indian_Trail_Ridge%2C_La_Plata_and_Montezuma_counties%2C_Colorado%2C_USA_01.jpg"
   },
   {
     "name": "Holy Cross Wilderness",
@@ -136,8 +136,8 @@
     "about": "The Holy Cross Wilderness is characterized by rugged ridgelines and glacier-carved valleys complete with spruce-fir forests, cascading streams and dozens of lakes. The wilderness is named after Mount of the Holy Cross, which became famous in 1873 when William Henry Jackson first photographed the cross of snow on the northeast face of the mountain. Over 150 miles of trail traverse the area, providing excellent opportunities for day hiking and backpacking trips.",
     "towns": "Vail, Aspen",
     "permit": "Required self-registration permit available at trailheads. Camping in designated campsites in specified area.",
-    "map": "https://trails.colorado.gov/places/na~1935878",
-    "image": ""
+    "map": "https://caltopo.com/map.html#ll=39.46916,-106.483&z=11&b=mbt",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Mount_of_the_Holy_Cross%2C_2009.jpg/1280px-Mount_of_the_Holy_Cross%2C_2009.jpg"
   },
   {
     "name": "Hunter-Fryingpan Wilderness",
@@ -146,8 +146,8 @@
     "about": "Snuggled in between the more spectacular Colorado Wildernesses of Holy Cross on the north, Maroon Bells-Snowmass on the west, and Collegiate Peaks on the south, Hunter-Fryingpan lies all but forgotten. It rises to the Continental Divide, sharing its eastern border and the divide with Mount Massive Wilderness. The two are one geographically speaking, and almost became one legislatively. Holding the headwaters of Hunter Creek and the Fryingpan River, many streams in this area provide excellent habitats for large numbers of trout. Here you'll find many of the unnamed and tortured peaks of the Williams Mountains. Forests of aspen in the lower elevations, as well as spruce and fir higher up, are thick and dark, and open on alpine tundra dappled colorfully with summer wildflowers. In the silence of this Wilderness, you'll probably see wildlife that includes elk, mule deer, and secretive smaller, fur-bearing animals. A rich forest of 8,300 acres along Spruce Creek on the northwest side was added to the original Wilderness in 1993. About 65 miles of trail cross the area, climbing up drainages into the Williams Mountains. The Lost Man Trail up Lost Man Creek crosses South Fork Pass and continues down the South Fork of the Fryingpan River (about 10 miles distance), providing access to the heart of the Wilderness. Many opportunities for solitude exist here.",
     "towns": "Leadville, Aspen",
     "permit": "Not required",
-    "map": "https://trails.colorado.gov/places/na~1935881",
-    "image": ""
+    "map": "https://caltopo.com/map.html#ll=39.20443,-106.6267&z=11&b=mbt",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Linkins_Lake.JPG/1280px-Linkins_Lake.JPG"
   },
   {
     "name": "Indian Peaks Wilderness",
@@ -156,8 +156,8 @@
     "about": "The Indian Peaks Wilderness is located primarily within the Arapaho and Roosevelt National Forest. Many of the peaks within the area were named for American Indian tribes of the west. Managed primarily by the Forest Service, a small sliver along the northernmost boundary lies within Rocky Mountain National Park. All of this sliver is above treeline where no camping is allowed, and contains only one trail, a Forest Service trail that loops into the park for about a mile due to the terrain. Overall, the wilderness stretches approximately 18 miles north/south and 15 miles east/west at its widest point. Elevations range from 8,300 to just over 13,500 feet. There are a total of seven peaks over 13,000 feet, and approximately 35% of the land area is above treeline. There are 28 maintained trails covering about 133 miles, and over 50 lakes. The icy remains of the last glacial period sculpted out the rugged terrain of the Indian Peaks. Chill winds off perpetual snowfields have created an environment near treeline of stunted trees and alpine plants unusual for this part of the state. The Indian Peaks is one of the most popular and heavily used wilderness areas in the country due to its close proximity to the Denver/Boulder metro area. Camping permits for the Forest Service portion of the wilderness are required for all individuals during the peak seasons, June 1 - Sept. 15. In addition, permits are required for all organized groups (scouts, hiking clubs etc.) for day use or camping any time of year. Campfires are prohibited on the east side of the Continental Divide and around most lakes on the west side. Rocky Mountain National Park to the north, also requires backcountry camping permits. There is a $20 administrative fee for park permits during peak season periods (non-refundable and non-exchangeable). ",
     "towns": "Boulder, Nederland, Ward, Winter Park, Grand Lake, Tabernash, Fraser",
     "permit": "Required for camping from June 1 to September 15. Designated campsites in specified areas and prohibited in another specified area.",
-    "map": "https://trails.colorado.gov/places/na~1935886",
-    "image": ""
+    "map": "https://caltopo.com/map.html#ll=40.06966,-105.63766&z=11&b=mbt",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Lake_Isabelle%2C_Indian_Peaks_Wilderness%2C_Colorado%2C_USA%2C_August_2015.jpg/1280px-Lake_Isabelle%2C_Indian_Peaks_Wilderness%2C_Colorado%2C_USA%2C_August_2015.jpg"
   },
   {
     "name": "James Peak Wilderness",
@@ -166,8 +166,8 @@
     "about": "The James Peak Wilderness encompasses 14,000 acres on the east side of the Continental Divide in Boulder, Gilpin, and Clear Creek Counties of Colorado. The area is named after its most prominent peak, 13,294 foot \"James Peak,\" in honor of Dr. Edwin James, an early explorer, historian, and botanist who was a member of the famous Stephen H. Long expedition to Colorado in 1820. There is approximately 20 miles of trail. The area's elevation ranges from 9,200 to 13,391 feet at the summit of Parry Peak, which includes upper montane, sub-alpine, and alpine ecosystems of the Rocky Mountains adjacent to the Continental Divide.",
     "towns": "Boulder, Winter Park, Lawson, Empire",
     "permit": "Not required",
-    "map": "https://trails.colorado.gov/places/na~1936208",
-    "image": ""
+    "map": "https://caltopo.com/map.html#ll=39.87128,-105.69603&z=11&b=mbt",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/James_Peak_at_dawn.jpg/1024px-James_Peak_at_dawn.jpg"
   },
   {
     "name": "La Garita Wilderness",
@@ -176,8 +176,8 @@
     "about": "La Garita means \"the lookout\" in Spanish, and this Wilderness amply deserves the name. From the summit of this Wilderness's single fourteener (14,014-foot San Luis Peak), climbers can gaze across the upper Rio Grande Valley and down the long stretch of the San Luis Valley. About 35 miles of the Continental Divide lie well above a sprawling forestland that provides ideal habitats for huge numbers of elk and mule deer, though the animals may winter on the northern slopes when hard winds scour off the snow cover. On the southern slopes in Wason Park and Silver Park, added in 1993, you'll find a surprising ancient forest of towering spruce and fir. This is a land of rushing streams, broad and gentle alpine meadows, fascinating beaver ponds, long talus slopes, and tremendous mountain beauty. The Wheeler Geologic Area hides in the southeast corner of the Wilderness. It once claimed to be Colorado's most visited site and is probably the state's most unusual geological formation: fine, light-gray volcanic ash compressed into rock and wildly eroded into a striking series of domes, spires, caves, ledges, pinnacles, ravines, and balanced rocks. The bumpy old road leading to the edge of Wheeler was left out of Wilderness designation, allowing motorized access deep into the area. Many trailheads open onto approximately 175 miles of pathways, almost all especially well suited for horsepacking. About 27 miles of the Colorado Trail and Continental Divide National Scenic Trail follow the divide through La Garita Wilderness.",
     "towns": "Creede, Lake City, Saguache, Del Norte, South Fork",
     "permit": "Not required. Camping prohibited in specifed areas.",
-    "map": "https://trails.colorado.gov/places/na~1935977",
-    "image": ""
+    "map": "https://caltopo.com/map.html#ll=37.97235,-106.93542&z=11&b=mbt",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Wheeler_Geologic_Area_%2836249616404%29.jpg/1280px-Wheeler_Geologic_Area_%2836249616404%29.jpg"
   },
   {
     "name": "Lizard Head Wilderness",
@@ -186,8 +186,8 @@
     "about": "Lizard Head Peak (13,113 feet), stands spire-like on the eastern side of the Lizard Head Wilderness shadowed by 14,000-foot peaks, Mount Wilson and Wilson Peak. Not far to the west, you'll find El Diente (or the tooth, in English), the westernmost of the state's \"fourteeners.\" The province of more experienced climbers, Mount Wilson and El Diente are connected by a famous knife-edged ridge and considered difficult ascents. The summit of Lizard Head Peak, a 400-foot-tall tower of rotten rock, has been voted as one of Colorado's most dangerous and difficult climbs. Dolores Peak (13,290 feet) stands in the most western portion of the Wilderness. On a clear day you can stand in snow on any of the area's high peaks and see the red rock canyon lands of southern Utah to the west. Lizard Head Wilderness is a land of ragged mountain splendor, with lovely cirque lakes, swift mountain streams that often plunge over dramatic waterfalls, and a spruce-fir forest opened by expanses of alpine vegetation. Magnificent golden aspen blanket the lower slopes in vast unbroken reaches every fall. Human use is moderate to light on the 37 miles of trails.",
     "towns": "Telluride, Cortez, Ophir, Rico",
     "permit": "Not required",
-    "map": "https://trails.colorado.gov/places/na~1935994",
-    "image": ""
+    "map": "https://caltopo.com/map.html#ll=37.84027,-108.03396&z=11&b=mbt",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Lizard_Head_2019.JPG/1280px-Lizard_Head_2019.JPG"
   },
   {
     "name": "Lost Creek Wilderness",
@@ -196,8 +196,8 @@
     "about": "Lost Creek Wilderness is located approximately 60 miles southwest of Denver. Unlike most of Colorado's jagged Wilderness profiles, Lost Creek is a land of fascinating rounded granite domes and knobs, split boulders, rare granite arches, and tree-lined mountain parks. Its rock formations are among the most spectacular in the entire Rocky Mountains. Wilderness elevations range from 8,000 feet to 12,400 feet. Lost Creek got its name from its habit of repeatedly disappearing underground, later to reappear farther down the valley. Black bear, deer, elk, bighorn sheep, and bobcats share the region. The northern section contains most of the Platte River Mountains and the Kenosha Mountains. In 1963, the 15,120 acre Lost Creek Scenic Area was created under the precursor of the Wilderness Act, the \"U-Regulations\" of 1939. In 1966, the Scenic Area was also designated a National Natural Landmark. During the first U.S. Forest Service RARE process, Lost Creek received more comments recommending its wilderness designation than any other Colorado area. In 1980 the 105,000 acre Lost Creek Wilderness was created under the Colorado Wilderness Act of 1980. Approximately 14,700 additional acres were later added to the west end of the Wilderness under the Colorado Wilderness Act of 1993. Lost Creek is accessed by a 136 mile trail network, 105 miles of which are within the Wilderness boundary. The cross-state Colorado Trail passes through the Wilderness.",
     "towns": "Bailey, Deckers, Fairplay, Lake George",
     "permit": "Required self-registration at trailheads.",
-    "map": "https://trails.colorado.gov/places/na~1935996",
-    "image": ""
+    "map": "https://caltopo.com/map.html#ll=39.27638,-105.42824&z=11&b=mbt",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Lost_Creek_Wilderness_in_August_2013.jpg/1280px-Lost_Creek_Wilderness_in_August_2013.jpg"
   },
   {
     "name": "Maroon Bells-Snowmass Wilderness",
@@ -206,8 +206,8 @@
     "about": "Colorado's fourth largest Wilderness exemplifies Rocky Mountain splendor: 100 miles of trail lead over nine passes above 12,000 feet, vast regions lie above the tree line, and long glacial valleys point the way to glistening alpine lakes. Six peaks rising above 14,000 feet draw mountaineers to challenge themselves on the rugged terrain. These peaks are among the most difficult to scale in the state. Caution and skill are advised. In midsummer, the wildflowers are abundant. Native Bighorn Sheep make their home in the rocky terrain. Elk and deer currently thrive in the Elk Mountains, but development threatens their habitat. Historically what is now the Maroon Bells-Snowmass Wilderness was the territory of the Paranuche and Tabeguache bands of the Ute Tribe. The Maroon Bells Scenic Area, which lies outside of the Maroon Bells-Snowmass Wilderness, provides access to some of the popular Wilderness trailheads. Due to the popularity of recreation in the Maroon Bells Scenic Area, shuttle buses operate during the summer months (approximate mid-June through Labor Day, plus weekends in September) to Maroon Lake. The Maroon-Bells Snowmass Wilderness draws over 100,000 visitors (day hikers and backpackers) each year. The Conundrum Hot Springs lie within the Maroon Bells-Snowmass Wilderness. Starting in April 2018, a permit is required for overnight stays within the Conundrum Hot Springs Zone. This zone includes all of Conundrum Creek Valley from Silver Dollar Pond to Triangle Pass, and includes the popular hot springs. This permit must be acquired in advance at recreation.gov. All other overnight visitors to the Maroon Bells - Snowmass Wilderness are required to self-register at trailhead registration boxes.",
     "towns": "Aspen, Snowmass, Crested Butte",
     "permit": "Required self-registration available at trailheads. Specified area must register online to camp. Camp at designated campsites in specified areas.",
-    "map": "https://trails.colorado.gov/places/na~1936008",
-    "image": ""
+    "map": "https://caltopo.com/map.html#ll=39.111,-107.01823&z=11&b=mbt",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Maroon_Bells%2C_Colorado.jpg/1280px-Maroon_Bells%2C_Colorado.jpg"
   },
   {
     "name": "Mount Evans Wilderness",
@@ -216,8 +216,8 @@
     "about": "Mount Evans Wilderness is located approximately 40 miles west of Denver. The Mt. Evans Scenic Byway ascends a non-wilderness corridor into the center of the Wilderness. The road, two 14,000 foot peaks (14,264' Mt. Evans and 14,060' Mt. Bierstadt), and the close proximity to Denver have contributed to very heavy use. Despite the likelihood of encountering other users, the area offers several unique features worthy of a visit. Evidence of past glaciers can be seen in the steep granite cirques and glacial moraines surrounding the high peaks. The Wilderness contains small regions of arctic tundra, rare south of the Arctic Circle. Unlike typical Colorado alpine tundra, which is dry and brittle once the snow recedes, arctic tundra holds numerous small pools of water. Vegetation ranges from lower spruce-fir and lodgepole forests, through 2,000-year-old Bristlecone pines and krummholz near treeline, to delicate alpine vegetation reaching all the way to the highest peaks. Deer and elk inhabit the sub-alpine areas, and bighorn sheep and mountain goats are common above treeline. Special protection for the Mount Evans area began 1956 with the designation of the approximately 5,880 acre Abyss Lake Scenic Area under the precursor of the Wilderness Act, the \"U-Regulations\" of 1939. This was followed in 1980 by the creation of the Mount Evans Wilderness under the Colorado Wilderness Act. Mount Evans is accessed by a 110 mile trail network, 84 miles of which are within the Wilderness boundary.",
     "towns": "Idaho Springs, Bailey, Conifer, Evergreen, Georgetown",
     "permit": "Required self-registration available at trailheads",
-    "map": "https://trails.colorado.gov/places/na~1936024",
-    "image": ""
+    "map": "https://caltopo.com/map.html#ll=39.5883,-105.64383&z=11&b=mbt",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Mt_Evans.JPG/1280px-Mt_Evans.JPG"
   },
   {
     "name": "Mount Massive Wilderness",
@@ -226,8 +226,8 @@
     "about": "Mount Massive (14,421 feet), Colorado's second highest peak, and other mountains of the Sawatch Range have two distinctive characteristics: great height, and a huge, sloping bulk that makes them relatively easy to climb. Nowhere along the Continental Divide does the ground rise higher than the Sawatch Range, the crest of this continent. Just south of the Wilderness stands Mount Elbert at 14,443 feet, Colorado's highest summit. The divide marks the western boundary of this area, with the Hunter-Fryingpan Wilderness immediately to the other side. Dry lodgepole pine forests, typical of the eastern slopes of the divide, cover much of the lower elevations and give way to spruce and fir higher up before all trees yield to alpine tundra. The majority of the Leadville National Fish Hatchery lies within the boundary of the Mount Massive Wilderness. The hatchery land inside the Wilderness boundary is co-managed by the Forest Service and Fish hand Wildlife Service. The Forest Service is the principal land manager, while the Fish hand Wildlife Service manages the fishery and water resources to protect and perpetuate native fish species. The Colorado Trail crosses 10 miles of the eastern region, and about 10 more miles of trails exist in the Wilderness.",
     "towns": "Leadville",
     "permit": "Not required",
-    "map": "https://trails.colorado.gov/places/na~1936027",
-    "image": ""
+    "map": "https://caltopo.com/map.html#ll=39.19528,-106.4534&z=11&b=mbt",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Mount_Massive.jpg/1280px-Mount_Massive.jpg"
   },
   {
     "name": "Mount Sneffels Wilderness",
@@ -236,8 +236,8 @@
     "about": "The United States Congress designated the Mount Sneffels Wilderness in 1980 and it now has a total of 16,566 acres. Mount Sneffels, a 14,150-foot intrusion of igneous rock on the eastern verge of this area, stands higher than any other point in the Wilderness. Members of the Hayden Survey purportedly named the peak after the Icelandic mountain in Jules Verne's \"Journey to the Center of the Earth.\" Sneffels is the Nordic word for snowfield. Westward stretches a sheer vertical world of sharp ridges, icy slopes, and ragged peaks. It makes for dangerous climbing typical of the San Juan Mountains, sometimes called America's Switzerland, a land of unsurpassed mountain drama. Technical climbers are still discovering new routes here, but loose volcanic rock often moves the rating from \"dangerous\" to \"very dangerous.\" In early fall, when light dustings of snow highlight the jagged terrain and the aspens have turned gold, you'll encounter an absolutely indescribable world of wonder. Fifteen miles of trail, in the eastern and western portions, access some of the finest midsummer wildflower spectacles on the planet, especially in Yankee Boy Basin just outside the eastern boundary, where you'll find the Blue Lakes Trail leading into the area for about 3.5 miles. The only lakes around, Blue Lakes huddle below the western flank of Mount Sneffels in a deep basin. The forbidding central region of the area is rugged beyond words and relatively seldom explored.",
     "towns": "Telluride, Ridgway, Ouray",
     "permit": "Not required. Designated campsites in specified area.",
-    "map": "https://trails.colorado.gov/places/na~1936031",
-    "image": ""
+    "map": "https://caltopo.com/map.html#ll=38.00999,-107.87784&z=11&b=mbt",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/View_from_the_top_of_Mount_Sneffels.jpg/1280px-View_from_the_top_of_Mount_Sneffels.jpg"
   },
   {
     "name": "Mount Zirkel Wilderness",
@@ -246,8 +246,8 @@
     "about": "The Mount Zirkel Wilderness lies within the Routt National Forest in northwestern Colorado. It was one of the original areas protected under the 1964 Wilderness Act and has since been expanded twice to its present size of 160,648 acres. The wilderness straddles the Continental Divide in the Park Range and the Sierra Madre and offers a diversity of ecosystems from sagebrush meadows in the lower areas, through pine and spruce/fir forests and on up to alpine tundra. It contains the rugged peaks of the Sawtooth Range and the headwaters of the Elk, Encampment and North Platte rivers. There are over 70 lakes within the wilderness as well as 15 peaks over 12,000 feet, the highest being 12,180 foot Mount Zirkel, named in 1874 to honor Ferdinand Zirkel's contributions to the science of geology. Glaciation has left its distinctive mark of high valleys ending in precipitous cirques. Over 150 miles of trails provide access and the wilderness offers a variety of recreational opportunities. Some areas, notably several of the lakes and areas along the Continental Divide, are very popular and receive a high level of use but visitors looking for solitude can find it if they come during the week and/or visit less-popular areas. Ample opportunity exists to view nature's dynamic cycle of disturbance and rebirth. The Routt Divide Blowdown in 1997 toppled millions of trees over a 150 square mile area, most of it within the wilderness, with beetle epidemics and wildfires following in its wake. These natural forces have temporarily altered the landscape without permanently eroding its wilderness character.",
     "towns": "Walden, Craig, Steamboat Springs",
     "permit": "Not required. Camping prohibited in specified areas.",
-    "map": "https://trails.colorado.gov/places/na~1936035",
-    "image": ""
+    "map": "https://caltopo.com/map.html#ll=40.64991,-106.71776&z=11&b=mbt",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/View_from_Red_Dirt_Pass.JPG/1280px-View_from_Red_Dirt_Pass.JPG"
   },
   {
     "name": "Neota Wilderness",
@@ -256,8 +256,8 @@
     "about": "Bordering Rocky Mountain National Park on the south and surrounded by other Wilderness areas, little Neota actually stands in a huge expanse of virtually roadless country. With elevations ranging between 10,000 and 11,896 feet, snow enjoys a long life here. Neota protects flattened ridges of granite atypical of the steep-sided Rockies. Just outside the southwestern boundary, Iron Mountain at 12,265 feet looks down on three main drainages within the area: Trap, Corral, and Neota Creeks. Along the summer-wet valleys of these streams, willows and sedges grow thick and occasionally hide a moose or two. You'll find spruce and fir on the lower slopes, home to deer and elk. You won't find a lot of maintained trails, but you will have ample opportunities to be alone.",
     "towns": "Fort Collins",
     "permit": "Not required",
-    "map": "https://trails.colorado.gov/places/na~1936044",
-    "image": ""
+    "map": "https://caltopo.com/map.html#ll=40.52267,-105.83267&z=11&b=mbt",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Speciment_Mountain_-_panoramio.jpg/1280px-Speciment_Mountain_-_panoramio.jpg"
   },
   {
     "name": "Never Summer Wilderness",
@@ -266,8 +266,8 @@
     "about": "As its name suggests, Never Summer Wilderness gets hit with large amounts of rain and snow that collect on its storm-wracked peaks, which offer relatively gentle terrain and bear names that hint at their cloud-kissed heights: Cirrus, Cumulus, Stratus, and Nimbus. Seventeen summits rise above 12,000 feet, with Howard Mountain towering over all at 12,810 feet. Never Summer supplies water to three main rivers: the Colorado, the North Platte, and the Cache la Poudre. In damp gulches above 10,000 feet trees absorb the abundant moisture and grow old and exceptionally large. Spruce and fir in Bowen Gulch have been measured at four feet in diameter and estimated at 600 years in age, and the Bowen Gulch Trail will take you about five miles into the oldest of the old growth. In the northern section, a series of ponds and bogs provide rare habitats for species seldom seen so far from north-country muskegs: wood frogs, bog bean, pygmy shrew, perhaps even a wolverine or two. Moose have been reintroduced and are faring well. Several lakes and streams shelter trout. Straddling the Continental Divide, Never Summer has about 20 miles of trails that lead up gulches and cross the divide on two high passes.",
     "towns": "Walden, Granby, Grand Lake",
     "permit": "Not required",
-    "map": "https://trails.colorado.gov/places/na~1936045",
-    "image": ""
+    "map": "https://caltopo.com/map.html#ll=40.40252,-105.91164&z=11&b=mbt",
+    "image": "https://winapps.umt.edu/winapps/media2/wilderness/images/NWPS/lib/small/2johnmyers%5b100108%5d.jpg"
   },
   {
     "name": "Platte River Wilderness",
@@ -276,8 +276,8 @@
     "about": "About 36 square miles of forested land lying primarily north and east of the North Platte River is included in this Wyoming Wilderness, with a small segment in Colorado's Routt National Forest. On the Colorado side, no Wilderness covers less acreage. The North Platte River enters Routt National Forest about four miles south of the Wyoming state line and flows north through a portion of the Wilderness and North Gate Canyon, a popular white-water rafting section of water. Elevations average 7,700 feet with the wide and relatively flat Platte Ridge rising in the middle of the area between the river and Douglas Creek. Elk and deer winter here. Both the creek and the river are noted for their excellent trout fishing opportunities. The Platte River Trail gently parallels the river on the west bank after a steep descent from the Platte River Trailhead. During high water, the trail dead-ends after five miles. During low water (usually in late July and August), you can ford the river and continue on the east bank. The Douglas Creek Trail follows the creek for 9.5 miles through an open canyon with trailheads at both ends. You can hike a loop from the Pelton Creek Trailhead by exiting the Douglas Creek Trail to return via the Platte River Trail.",
     "towns": "Walden",
     "permit": "Not required",
-    "map": "https://trails.colorado.gov/places/na~1936068",
-    "image": ""
+    "map": "https://caltopo.com/map.html#ll=41.06434,-106.36276&z=11&b=mbt",
+    "image": "https://winapps.umt.edu/winapps/media2/wilderness/images/NWPS/lib/small/Jordan-Brummel-Platte-River-Wilderness.jpg"
   },
   {
     "name": "Powderhorn Wilderness",
@@ -286,8 +286,8 @@
     "about": "In this Wilderness, the northern verge of the San Juan Mountains reaches out into the Gunnison Basin, a dry land of sagebrush meadows dotted with fish-filled lakes, including Powderhorn Lakes. Scoured by glaciation, the Calf Creek and Cannibal Plateaus are said to be the largest unbroken expanses of alpine tundra in the Lower 48, and the feeling of sheer vastness unparalleled in Colorado. You'll discover terrain rolling along at around 12,000 feet with views of even higher mountains in the Elk, Sawatch, and San Juan Ranges, broken only by several escarpments that stand especially lovely in the light of the setting sun. Cannibal Plateau was named for Colorado's famous man-eater, Alferd Packer, who supposedly dined on five friends while lost near here during the winter of 1874. Elk and mule deer roam the plateaus and pass through the stands of aspen, pine, spruce, and fir that blanket the lower elevations. The southern one-fourth of Powderhorn is managed by Gunnison National Forest, and the northern three-fourths by the Bureau of Land Management. About 45 miles of trails access this seldom-visited area. For an easily accessible hike into the backcountry, take the Devil's Lake Trail for 6.5 miles and find a jewel of water set in a treeless alpine meadow high on the plateau.",
     "towns": "Lake City",
     "permit": "Not required",
-    "map": "https://trails.colorado.gov/places/na~1936076",
-    "image": ""
+    "map": "https://caltopo.com/map.html#ll=38.12055,-107.1495&z=11&b=mbt",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Powderhorn_Wilderness_%289470187153%29.jpg/1280px-Powderhorn_Wilderness_%289470187153%29.jpg"
   },
   {
     "name": "Ptarmigan Peak Wilderness",
@@ -296,8 +296,8 @@
     "about": "The Williams Fork Mountains leap up and away into Ptarmigan Peak Wilderness from just below the western entrance to the Eisenhower Tunnel on Interstate 70, virtually unnoticed in winter as skiers rush to many nearby developed ski areas. The south slope of the mountains, dominated by Ptarmigan Peak at 12,458 feet, is where you'll find the designated land. A typical lodgepole-pine forest rises to Engelmann spruce and subalpine fir and then on to alpine tundra at the highest elevations. From the boundary along the top of the mountain ridgeline, the terrain drops into the wet, lush, and lovely drainages of the South and Middle Forks of the Williams Fork Rivers. You will not find many miles of trails in this Wilderness. The Ptarmigan Peak Trail just outside Silverthorne crosses Ptarmigan Pass into the drainages to the northeast, a one-way journey of seven miles. The Ute Pass Trail follows the ridgeline boundary from Ptarmigan Pass north to Ute Peak (12,303 feet) and on to Ute Pass, a total distance of about 10 miles.",
     "towns": "Dillon, Silverthorne",
     "permit": "Not required",
-    "map": "https://trails.colorado.gov/places/na~1936079",
-    "image": ""
+    "map": "https://caltopo.com/map.html#ll=39.70638,-106.04363&z=11&b=mbt",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Ptarmigan_Peak%2C_Colorado.jpg/1280px-Ptarmigan_Peak%2C_Colorado.jpg"
   },
   {
     "name": "Raggeds Wilderness",
@@ -306,8 +306,8 @@
     "about": "Prominent rocky slopes striking skyward to a serrated ridge give Raggeds Wilderness its well-deserved name. Ragged Mountain in the northern half rises to 12,094 feet. Anthracite Creek passes through the deep Dark Canyon in the heart of a wilderness that contains numerous other creeks and small lakes. Oh-Be-Joyful Pass (11,740 feet), with the long sweep of Oh-Be-Joyful Creek Valley below it, was added to the wilderness area in 1993. You'll have to ford the Slate River to access the seven miles of the Oh-Be-Joyful Pass Trail. A dense coniferous forest covers the creek bottoms. Every fall, you'll see great unbroken expanses of aspens ablaze in shimmering yellow and rock bands of red, gray, and black rising above a patchwork quilt of gold and green. About 50 miles of trail are located in this wilderness.",
     "towns": "Paonia, Crested Butte, Aspen",
     "permit": "Not required",
-    "map": "https://trails.colorado.gov/places/na~1936083",
-    "image": ""
+    "map": "https://caltopo.com/map.html#ll=38.99221,-107.15755&z=11&b=mbt",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Chairmtn.JPG/1280px-Chairmtn.JPG"
   },
   {
     "name": "Rawah Wilderness",
@@ -316,8 +316,8 @@
     "about": "Just before the Front Range of the Colorado Rockies fades into Wyoming's Medicine Bow Mountains, the Rawah Wilderness protects a scenic high country of U-shaped glacier-carved valleys and peaks reaching 12,951 feet. To the south and west of the area lies an almost roadless Colorado State Forest, an unofficial extension of the Wilderness. Melting snow fills 26 lakes within the area. On the upper forested slopes of the mountains, especially in the southern section, clusters of old-growth spruce and fir abound. You can expend energy on more than 75 miles of trails. Take the Link Trail in the north for nine miles to join the Rawah Trail. Take the Rawah Trail across Grassy Pass and continue on down to the West Branch Trail. Take the West Branch Trail up, then turn south on the Blue Lake Trail and continue to the trailhead. You will have accomplished a cross-Wilderness hike of 24 miles that presents a taste of everything this area has to offer. Fall attracts many deer and elk hunters. Bighorn sheep are occasionally spotted, and moose that were reintroduced in the 1970s are now doing well.",
     "towns": "Walden, Northgate",
     "permit": "Not required. Camping prohibited in specified areas.",
-    "map": "https://trails.colorado.gov/places/na~1936089",
-    "image": ""
+    "map": "https://caltopo.com/map.html#ll=40.76942,-105.98946&z=11&b=mbt",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Rawah_Wilderness.jpg/1280px-Rawah_Wilderness.jpg"
   },
   {
     "name": "Sangre de Cristo Wilderness",
@@ -326,8 +326,8 @@
     "about": "Sangre de Cristo is Spanish for \"Blood of Christ,\" but no one is quite sure why the region was given this name. Was it because of the bloody hues washing the slopes at sunset, or the cry of the dying priest, \"sangre de Cristo,\" as his martyred blood flowed onto the ground near here? Of the long and colorful Spanish influence in these mountains and in the San Luis Valley below there is no doubt. Two four-wheel-drive roads over Medano Pass and Hayden Pass, as well as access to Lily Lake, were slim exclusions from Wilderness designation and split the area into four distinct sections. Unlike most of Colorado's mountains, the high and magnificently rugged Sangres were uplifted suddenly in massive blocks, creating a range of dramatic vertical proportions. Four fourteeners are clumped together in the midsection of the Wilderness, including Crestone Needle (14,197 feet). Many climbers, consider the Needle to be Colorado's most challenging 14,000-foot peak. Three more fourteeners stand together just south of the boundary. Melting snow feeds many creeks and small lakes, and nourishes a forest of oak, aspen, and spruce. Black bears and a few mountain lions live here, along with elk, deer, and bighorn sheep. Long (about 70 miles) and narrow describes the area, the state's third largest, and the going is rough for the hiker. Most of the 180 miles of trails end at alpine lakes set against virtually unclimbable walls. Great Sand Dunes National Preserve in now part of the Sangre de Cristo Wilderness.",
     "towns": "Pueblo, Westcliffe, Salida, Cotopaxi, Crestone",
     "permit": "Not required. Camping prohibited in specified areas.",
-    "map": "https://trails.colorado.gov/places/na~1936120",
-    "image": ""
+    "map": "https://caltopo.com/map.html#ll=37.98833,-105.60556&z=11&b=mbt",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Mount_Adams_and_the_northern_Sangre_de_Cristos.jpg/1280px-Mount_Adams_and_the_northern_Sangre_de_Cristos.jpg"
   },
   {
     "name": "Sarvis Creek Wilderness",
@@ -336,8 +336,8 @@
     "about": "Old-timers sometimes pronounced \"sarvis\" as \"service,\" and the Sarvis Timber Company once logged near here, lending its name to this Wilderness. Opening occasionally at islands of rock or in meadows of wet mushy ground, the Sarvis Creek Wilderness is foremost an unusually thick forest of lodgepole pine at lower elevations and Engelmann spruce-subalpine fir higher up. Unlike most Colorado Wilderness areas, Sarvis contains no alpine tundra. Sarvis Creek and Silver Creek, the two primary drainages, run westerly through the dense forestland, past small gravel bars and under many dead trees lying across the water, emptying into the Yampa River. At times virtually impenetrable, the tree cover provides homes for large mammals: black bears, mountain lions, elk, and deer. Over 20 miles of trails follow both of the creeks: 12 miles along the Sarvis Creek Trail, and 11 miles along the Silver Creek Trail. This area was hit hard by a mountain pine beetle epidemic in recent years. Falling trees can pose a great safety risk to campers and hikers.",
     "towns": "Yampa, Kremmling, Steamboat Springs",
     "permit": "Not required",
-    "map": "https://trails.colorado.gov/places/na~1936126",
-    "image": ""
+    "map": "https://caltopo.com/map.html#ll=40.25304,-106.69949&z=11&b=mbt",
+    "image": "https://winapps.umt.edu/winapps/media2/wilderness/images/NWPS/lib/small/1scottlivingston%5b100108%5d.jpg"
   },
   {
     "name": "South San Juan Wilderness",
@@ -346,8 +346,8 @@
     "about": "Ages of volcanic activity followed by the infinitely patient carving of glaciers left the rough, imposing terrain of the remote South San Juan Wilderness, an area typified by steep slopes above broad U-shaped valleys cut sharply deeper by eroding streams. You'll find high peaks and cliffs, as well as jagged pinnacles and ragged ridges, making travel difficult. Elevations rise as high as 13,300 feet. Thirty-two lakes, most of them formed by glacial activity, hold much of the area's moisture and drain into turbulent creeks. The Conejos, San Juan, and Blanco Rivers have their headwaters here, and about 25 miles of the Conejos River has been recommended for Wild and Scenic designation. Erosion of rich volcanic rock in combination with heavy snowfall has produced ideal forestland, certainly among the best in the state. Forest ecosystems rise from the shadowy cover of magnificent lodgepole pine to aspen, then through Engelmann spruce and subalpine fir to alpine tundra. Much of the forestland has a peaceful, park-like quality under the trees where sun-starved undergrowth grows thin and low.. You'll find about 180 miles of trails, and some of the most exemplary backpacking in the state. The Continental Divide crosses the heart of the Wilderness for 42 miles. The South Fork of the Conejos River Trail will lead you to the Conejos Peak Trail, which climbs north to the summit of Conejos Peak and offers a fantastic view into the heart of the area. You can continue down to beautiful Blue Lake and return down the creek to where you started, a total distance of 22 miles. A great bear was killed here in 1979, the last known Colorado grizzly. But rumor, extrapolation, and scientific evidence all join hands to suggest strongly that more grizzlies, if they still live anywhere in Colorado, inhabit the recesses of this rugged Wilderness, which many claim as the wildest left in the state.",
     "towns": "La Jara, Pagosa Springs",
     "permit": "Not required. Camping not permitted in specified areas.",
-    "map": "https://trails.colorado.gov/places/na~1936145",
-    "image": ""
+    "map": "https://caltopo.com/map.html#ll=37.27569,-106.67793&z=11&b=mbt",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/South_San_Juan_Wilderness.JPG/1280px-South_San_Juan_Wilderness.JPG"
   },
   {
     "name": "Spanish Peaks Wilderness",
@@ -356,8 +356,8 @@
     "about": "Los Cumbres Espanolos, the Spanish Peaks, are prominent landmarks along the eastern front of the southern Rockies. Their snow-capped summits, rising 7000 feet above the arid plains, made the \"Double Mountain\" an easily recognizable reference point to travelers of all cultures. The Peaks have traditional and religious significance to American Indian tribes including the Comanche and Ute. Summer thunderstorms, which often form near the summits, were evidence the rain gods worked their magic on the peaks. The common Indian name appears in at least three different spellings in various accounts, reflecting different renditions of oral expression. These are \"Wahatoya\", \"Huajatolla\" or \"Guajatoyah\", roughly interpreted as \"breasts of the earth\". West Spanish Peak with an elevation of 13,623 feet, overtops the East Peak which only has an elevation of 12,708 feet. However, this difference is not readily discernible from a distance. The Spanish Peaks are geologically distinct from the faulted and uplifted mountains of the Sangre de Cristo range to the west. To the geologist the Spanish Peaks are prime examples of \"stocks\" which are defined as large masses of igneous (molten) rock which intruded layers of sedimentary rock and were later exposed by erosion. When mapped by geologists the Peaks were found to be masses of granite, granodiorite and syenodiorite. Among the most unusual features of the Spanish Peaks are the great dikes which radiate out from the mountains like spokes of a wheel. These walls of rock are often spectacular.",
     "towns": "Trinidad, Walsenburg",
     "permit": "Not required. Camping prohibited in specified areas.",
-    "map": "https://trails.colorado.gov/places/na~1936149",
-    "image": ""
+    "map": "https://caltopo.com/map.html#ll=37.38251,-104.97861&z=11&b=mbt",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/West-spanish-peak02.jpg/1024px-West-spanish-peak02.jpg"
   },
   {
     "name": "Uncompahgre Wilderness",
@@ -366,8 +366,8 @@
     "about": "Uncompahgre Wilderness gets its name from a Ute Indian word meaning, in one translation, \"dirty water\". This Wilderness is located in the north-central region of the San Juan Mountains in Colorado. There are two fourteeners and at least twenty-five thirteen thousand foot peaks in the Uncompahgre Wilderness. Big Blue Creek flows off Uncompahgre Peak (14,309 feet) in this rough and majestic section of the San Juan Mountains, which was formerly known as Big Blue Wilderness Area. The name changed came along with the addition of BLM land, including the rolling gentle tundra of American Flats, to the south. Uncompahgre Peak's unusually broad, flat, and tilted summit falls away almost vertically on three sides for as much as 1,500 feet, a landmark visible from far away. Its fourth side lies gentle and inviting to many climbers. Below Uncompahgre Peak, the Wilderness is a mountainous land of towering rock castles and sweeping ridges that some claim form the most splendid scenery in the state. Technical climbers find endless routes to challenge their skills. Wetterhorn Peak (14,015 feet) stands not far southwest of Uncompahgre Peak. Water off Wildhorse Peak near the southwest corner combines to create the turbulent and deep Cow Creek Canyon, which is ragged and densely forested enough to prevent any trails being carved in its depths. American Flats lies south of Wildhorse Peak. Numerous forks of the Cimarron River rush out of the central section of this Wilderness, flowing north to eventually become one. You'll find a few small lakes with trout, and many trout in the many streams. About 110 miles of trails reach up numerous waterways into this beautiful Wilderness. The trail up Matterhorn Creek provides access to Wetterhorn Peak after three miles of hiking. Most climbers approach Uncompahgre Peak on three miles of trail up the Nellie Creek.",
     "towns": "Ouray, Ridgway, Lake City",
     "permit": "Not required",
-    "map": "https://trails.colorado.gov/places/na~1936172",
-    "image": ""
+    "map": "https://caltopo.com/map.html#ll=38.09242,-107.42226&z=11&b=mbt",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Uncompahgre_Wilderness_%289503485072%29.jpg/1280px-Uncompahgre_Wilderness_%289503485072%29.jpg"
   },
   {
     "name": "Vasquez Peak Wilderness",
@@ -376,8 +376,8 @@
     "about": "Along the southern boundary of the relatively small Vasquez Peak Wilderness and over Vasquez Peak itself, you'll find that seven miles of the Continental Divide National Scenic Trail offer two distinct and worthy opportunities. First, you'll encounter less crowded conditions than most Colorado Wildernesses, and second, you'll be blessed with extravagant views over a dramatic area, two-thirds of which lie above timberline. Below timberline sits a region of krummholz (or twisted wood), the result of icy temperatures and fierce winds that keep the spruce and fir dwarfed and confined into low-lying mats. Healthy spruce, fir, and pine cloak the lower mountainsides. Vasquez Creek flows heavily off Vasquez Peak to form the main drainage of the area. A deep indentation in the Wilderness boundary from the north maintains Vasquez Creek as non-Wilderness to allow for a collection system that sends much of the water toward Denver. With much of the 17-mile-long trail system above timberline, sudden summer thunderstorms can make exposure to lightning in the Vasquez Mountains a dangerous risk. Vasquez Pass on the Divide can be reached after three miles of hiking on the Vasquez Peak Trail off Vasquez Creek. You should plan on hiking early and dropping into the trees before afternoon storms break. In winter, avalanches are common. Vasquez lies near Byers Peak, Ptarmigan Peak, and Eagles Nest Wildernesses to form a vast, largely roadless region.",
     "towns": "Winter Park, Silverthorne, Fraser, Empire, Georgetown",
     "permit": "Not required",
-    "map": "https://trails.colorado.gov/places/na~1936176",
-    "image": ""
+    "map": "https://caltopo.com/map.html#ll=39.81999,-105.84251&z=11&b=mbt",
+    "image": "https://wilderness.net/images/NWPS/lib/small/Randall-Douty-Vasquez-Peak.jpg"
   },
   {
     "name": "Weminuche Wilderness",
@@ -386,8 +386,8 @@
     "about": "The Weminuche Wilderness was designated in 1975, and was expanded to its current size by the Colorado Wilderness Acts of 1980 and 1993. It is the largest designated Wilderness in Colorado. The Weminuche lies in the San Juan and Rio Grande National Forests of southwestern Colorado. Its average elevation is 10,000 feet. Eolus, Sunlight, and Windom Peaks rise above 14,000 feet in elevation, while many others reach above 13,000. Fifty miles of the Continental Divide, the geological backbone of North America, dissect the Weminuche, diverting its headwaters to either the Pacific or Atlantic oceans.",
     "towns": "Silverton, South Fork, Durango, Bayfield, Pagosa Springs, Creede",
     "permit": "Not required. Camping not permitted in specified areas.",
-    "map": "https://trails.colorado.gov/places/na~1936184",
-    "image": ""
+    "map": "https://caltopo.com/map.html#ll=37.59574,-107.3687&z=11&b=mbt",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Stony_Pass_road_%28better%29%2C_Colo.jpg/1280px-Stony_Pass_road_%28better%29%2C_Colo.jpg"
   },
   {
     "name": "West Elk Wilderness",
@@ -396,7 +396,7 @@
     "about": "The West Elk's most attractive offering may be a large and untamed area. You'll find many mountain passes leading to secluded and seldom-seen valleys filled with beaver ponds and lined with trembling aspen that turn a fantastic and indescribable gold in September. Ridges were crumbled and carved by wind and water into fantastic turrets, pinnacles, and crenellated bulwarks. The topography is reflected in many of the area's geographic names: Castle Pass, Castle View, Castle Creek, and the Castles. About two hundred miles of trails offer opportunities for extended loop hikes through the West Elk. The Mill Castle Trail travels up to Storm Pass at 12,460 feet offering extravagant vistas and the best look at the castle like formations of this area.",
     "towns": "Paonia, Gunnison",
     "permit": "Not required. Camping prohibited in specified area.",
-    "map": "https://trails.colorado.gov/places/na~1936187",
-    "image": ""
+    "map": "https://caltopo.com/map.html#ll=38.70748,-107.22656&z=11&b=mbt",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Anthracite_Range%2C_West_Elk_Mountains%2C_Gunnison_County%2C_Colorado%2C_USA_02.jpg/1024px-Anthracite_Range%2C_West_Elk_Mountains%2C_Gunnison_County%2C_Colorado%2C_USA_02.jpg"
   }
 ]

@@ -12,7 +12,8 @@ import { RouterLink, RouterView } from "vue-router";
     <RouterView />
     <footer class="footer">
       <div class="footer__container">
-        <p>2022 ExploreOutdoor</p>
+        <p>2022 ExploreOutdoor.</p>
+        <p>Get out more!</p>
       </div>
     </footer>
   </div>
@@ -40,6 +41,7 @@ body {
 h1 {
   color: var(--white);
   letter-spacing: 0.1rem;
+  text-align: center;
   text-shadow: 0 0 10px hsla(0, 0%, 0%, 1);
   z-index: 1;
   position: absolute;
@@ -54,8 +56,9 @@ h1 {
   display: flex;
   align-items: center;
   height: 75px;
-  max-width: 1250px;
+  max-width: 1350px;
   margin: auto;
+  padding: 0 50px 0 50px;
 }
 .nav a {
   font-weight: bold;
@@ -64,9 +67,10 @@ h1 {
 }
 .header {
   height: 300px;
-  max-width: 1250px;
+  max-width: 1350px;
   margin: 0 auto 40px auto;
   position: relative;
+  padding: 0 50px 0 50px;
 }
 .header img {
   object-fit: cover;
@@ -80,11 +84,13 @@ h1 {
   margin-top: 40px;
 }
 .footer__container {
-  max-width: 1250px;
+  max-width: 1350px;
   margin: auto;
   display: flex;
-  height: 75px;
   align-items: center;
+  gap: 20px;
+  height: 75px;
+  padding: 0 50px 0 50px;
 
 }
 </style>

@@ -42,14 +42,20 @@ a {
   grid-auto-rows: 225px;
   grid-column-gap: 25px;
   grid-row-gap: 40px;
-  max-width: 1250px;
+  max-width: 1350px;
   margin: auto;
+  padding: 0 50px 0 50px;
 }
 .list__item {
   text-align: center;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
+  transition: all 0.3s;
+}
+.list__item:hover {
+  filter: saturate(1.4);
+  scale: 1.02;
 }
 .list__item-image {
   height: 150px;
