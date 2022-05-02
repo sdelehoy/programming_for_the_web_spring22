@@ -4,12 +4,16 @@ import { RouterLink, RouterView } from "vue-router";
 
 <template>
   <div>
-    <div class="nav__container">
-      <nav class="nav">
+    <nav class="nav">
+      <div class="nav__container">
         <RouterLink to="/">ExploreOutdoor</RouterLink>
-      </nav>
-    </div>
-    <RouterView />
+      </div>
+    </nav>
+    <main>
+      <div class="main__container">
+        <RouterView />
+      </div>
+    </main>
     <footer class="footer">
       <div class="footer__container">
         <p>2022 ExploreOutdoor.</p>
@@ -38,6 +42,46 @@ body {
   background-color: var(--gray);
   font-family: sans-serif;
 }
+.nav__container,
+.main__container,
+.footer__container {
+  margin: auto;
+  padding: 0 calc(10px + 3vw);
+  max-width: 1250px;
+}
+/* nav and footer */
+.nav,
+.footer {
+  background-color: var(--white);
+}
+.nav__container,
+.footer__container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  height: 75px;
+}
+.nav__container a {
+  font-weight: bold;
+  color: var(--green);
+  text-decoration: none;
+}
+.footer {
+  color: var(--green);
+  margin-top: 40px;
+}
+/* main */
+.header {
+  margin-bottom: 40px;
+  height: 300px;
+  position: relative;
+}
+.header img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 0 0 10px 10px;
+}
 h1 {
   color: var(--white);
   letter-spacing: 0.1rem;
@@ -48,48 +92,5 @@ h1 {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-.nav__container {
-  background-color: var(--white);
-}
-.nav {
-  display: flex;
-  align-items: center;
-  height: 75px;
-  max-width: 1350px;
-  margin: auto;
-  padding: 0 50px 0 50px;
-}
-.nav a {
-  font-weight: bold;
-  color: var(--green);
-  text-decoration: none;
-}
-.header {
-  height: 300px;
-  max-width: 1350px;
-  margin: 0 auto 40px auto;
-  position: relative;
-  padding: 0 50px 0 50px;
-}
-.header img {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-  border-radius: 0 0 10px 10px;
-}
-.footer {
-  background-color: var(--white);
-  color: var(--green);
-  margin-top: 40px;
-}
-.footer__container {
-  max-width: 1350px;
-  margin: auto;
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  height: 75px;
-  padding: 0 50px 0 50px;
 }
 </style>

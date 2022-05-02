@@ -3,7 +3,7 @@ import CoWildernessList from "../data/co_wilderness.json";
 </script>
 
 <template>
-  <div>
+  <article>
     <header class="header">
       <img
         src="https://winapps.umt.edu/winapps/media2/wilderness/images/NWPS/lib/small/Jennifer-Stagner-Raggeds.jpg"
@@ -11,25 +11,23 @@ import CoWildernessList from "../data/co_wilderness.json";
       />
       <h1>Colorado Wilderness Areas</h1>
     </header>
-    <main>
-      <div class="list__container">
-        <div
-          class="list__item"
-          v-for="(wilderness, index) in CoWildernessList"
-          :key="index"
-        >
-          <RouterLink :to="'/wilderness/' + wilderness.name">
-            <div class="list__item-image">
-              <img :src="wilderness.image" :alt="wilderness.name" />
-            </div>
-            <div class="list__item-title">
-              <h2>{{ wilderness.name }}</h2>
-            </div>
-          </RouterLink>
-        </div>
-      </div>
-    </main>
-  </div>
+    <div class="list__container">
+      <section
+        class="list__item"
+        v-for="(wilderness, index) in CoWildernessList"
+        :key="index"
+      >
+        <RouterLink :to="'/wilderness/' + wilderness.name">
+          <div class="list__item-image">
+            <img :src="wilderness.image" :alt="wilderness.name" />
+          </div>
+          <div class="list__item-title">
+            <h2>{{ wilderness.name }}</h2>
+          </div>
+        </RouterLink>
+      </section>
+    </div>
+  </article>
 </template>
 
 <style scoped>
@@ -38,13 +36,9 @@ a {
 }
 .list__container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   grid-auto-rows: 225px;
-  grid-column-gap: 25px;
-  grid-row-gap: 40px;
-  max-width: 1350px;
-  margin: auto;
-  padding: 0 50px 0 50px;
+  gap: 40px 25px;
 }
 .list__item {
   text-align: center;
