@@ -6,7 +6,7 @@ import CoWildernessList from "../data/co_wilderness.json";
   <div>
     <header class="header">
       <img
-        src="https://winapps.umt.edu/winapps/media2/wilderness/images/NWPS/lib/big/Jennifer-Stagner-Raggeds.tif"
+        src="https://winapps.umt.edu/winapps/media2/wilderness/images/NWPS/lib/small/Jennifer-Stagner-Raggeds.jpg"
         alt="Raggeds Wilderness"
       />
       <h1>Colorado Wilderness Areas</h1>

@@ -91,6 +91,5 @@ h1 {
   gap: 20px;
   height: 75px;
   padding: 0 50px 0 50px;
-
 }
 </style>
