@@ -9,7 +9,9 @@ import CoWildernessList from "../data/co_wilderness.json";
         src="https://winapps.umt.edu/winapps/media2/wilderness/images/NWPS/lib/small/Jennifer-Stagner-Raggeds.jpg"
         alt="Raggeds Wilderness"
       />
-      <h1>Colorado Wilderness Areas</h1>
+      <div class="header__title">
+        <h1>Colorado Wilderness Areas</h1>
+      </div>
     </header>
     <div class="list__container">
       <section
@@ -37,8 +39,8 @@ a {
 .list__container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  grid-auto-rows: 225px;
-  gap: 40px 25px;
+  grid-auto-rows: calc(150px + 3vw);
+  gap: calc(5px + 2vw) 25px;
 }
 .list__item {
   text-align: center;
@@ -46,27 +48,31 @@ a {
   display: flex;
   flex-direction: column;
   transition: all 0.3s;
+  position: relative;
 }
 .list__item:hover {
   filter: saturate(1.4);
   scale: 1.02;
 }
 .list__item-image {
-  height: 150px;
+  height: calc(150px + 1vw);
 }
 .list__item-image img {
   object-fit: cover;
   width: 100%;
   height: 100%;
-  border-radius: 10px 10px 0 0;
+  border-radius: 10px 10px 10px 10px;
 }
 .list__item-title {
-  height: 75px;
+  height: calc(50px + 1vw);
   background-color: var(--green);
   border-radius: 0 0 10px 10px;
   display: flex;
   align-items: center;
   justify-content: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 .list__item-title h2 {
   color: var(--white);

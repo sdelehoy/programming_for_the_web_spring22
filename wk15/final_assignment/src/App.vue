@@ -46,7 +46,7 @@ body {
 .main__container,
 .footer__container {
   margin: auto;
-  padding: 0 calc(10px + 3vw);
+  padding: 0 calc(5px + 3vw);
   max-width: 1250px;
 }
 /* nav and footer */
@@ -68,12 +68,12 @@ body {
 }
 .footer {
   color: var(--green);
-  margin-top: 40px;
+  margin-top: calc(5px + 2vw);
 }
 /* main */
 .header {
-  margin-bottom: 40px;
-  height: 300px;
+  margin-bottom: calc(5px + 2vw);
+  height: calc(175px + 5vw);
   position: relative;
 }
 .header img {
@@ -82,15 +82,22 @@ body {
   height: 100%;
   border-radius: 0 0 10px 10px;
 }
+.header__title {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
 h1 {
   color: var(--white);
+  font-size: clamp(1rem, 0.6rem + 2vw, 3rem);
   letter-spacing: 0.1rem;
   text-align: center;
   text-shadow: 0 0 10px hsla(0, 0%, 0%, 1);
-  z-index: 1;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 </style>

@@ -11,7 +11,9 @@ const wilderness = CoWildernessList.find((wilderness) => {
   <article>
     <header class="header">
       <img :src="wilderness.image" :alt="wilderness.name" />
-      <h1>{{ wilderness.name }}</h1>
+      <div class="header__title">
+        <h1>{{ wilderness.name }}</h1>
+      </div>
     </header>
     <div class="content__container">
       <div>
@@ -78,16 +80,16 @@ const wilderness = CoWildernessList.find((wilderness) => {
 .description__container,
 .facts__container,
 .map__container {
-  padding: 40px calc(10px + 3vw);
+  padding: calc(10px + 2vw) calc(10px + 3vw);
   line-height: 1.5;
-  font-size: clamp(1rem, 0.95rem + 0.25vw, 1.25rem);;
+  font-size: clamp(1rem, 0.95rem + 0.25vw, 1.25rem);
 }
 .description__container p,
 .facts__container p {
   margin: 0;
 }
 .facts__container p {
-  margin-bottom: 30px;
+  margin-bottom: calc(5px + 1vw);
 }
 .facts__container p:last-child {
   margin-bottom: 0;
